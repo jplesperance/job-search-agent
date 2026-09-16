@@ -43,5 +43,20 @@
     "id": "b4c7b1df-e10d-59ad-b76a-5ceac59553f4",
     "rule": "Do not infer people management from titles containing Lead/Principal/Architect; use explicit experience attributes/evidence.",
     "severity": "hard"
+  },
+  {
+    "id": "b77c78e3-87b6-5a65-813e-7ac58a00222d",
+    "rule": "Hilton SAST tooling must be represented as Checkmarx, not CrowdStrike.",
+    "severity": "hard"
+  },
+  {
+    "id": "175c3f5c-31d6-543b-861c-0751fba12699",
+    "rule": "References to “HIPAA High Trust” in the career interview mean two separate requirements/frameworks: HIPAA and HITRUST.",
+    "severity": "hard"
+  },
+  {
+    "id": "c33e95f1-0f83-507c-9cbf-ee4c9611f793",
+    "rule": "Do not include CionSystems or Cuemby advisory-board roles in the canonical career profile or generated resumes; user explicitly removed these roles from the maintained career record.",
+    "severity": "hard"
   }
 ]

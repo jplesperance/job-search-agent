@@ -1,15 +1,15 @@
 {
-  "dataset_version": "2026-09-15.v1",
+  "dataset_version": "2026-09-16.v1.1",
   "counts": {
-    "experiences": 20,
-    "evidence_items": 251,
+    "experiences": 18,
+    "evidence_items": 252,
     "skills": 77,
     "technologies": 65,
-    "frameworks": 15,
+    "frameworks": 16,
     "certifications": 5,
-    "user_verified_evidence": 249,
+    "user_verified_evidence": 250,
     "source_fact_evidence": 2,
-    "resume_public_safe": 213,
+    "resume_public_safe": 214,
     "resume_generalize": 27,
     "internal_only": 11
   },

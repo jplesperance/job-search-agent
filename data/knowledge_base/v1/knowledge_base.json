@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "2026-09-15.v1",
+  "dataset_version": "2026-09-16.v1.1",
   "generated_from": {
     "resume_documents": 5,
     "role_interview": "2026-09-15 conversation"
@@ -348,38 +348,6 @@
       "end_date": "2019-03-01",
       "location": "Sunnyvale, CA",
       "description": "Advisory role; detailed interview deferred.",
-      "verification_status": "SOURCE_FACT",
-      "source_ids": [
-        "1c004045-b054-566f-82a1-e7746a1f525e"
-      ],
-      "attributes": {}
-    },
-    {
-      "id": "78b31fbf-75c2-550c-b175-7b4a8ae28f17",
-      "canonical_key": "cionsystems-advisor-2020",
-      "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
-      "employer": "CionSystems",
-      "title": "Advisory Board Member",
-      "start_date": "2020-06-01",
-      "end_date": null,
-      "location": null,
-      "description": "Source-resume role; current status not re-verified.",
-      "verification_status": "SOURCE_FACT",
-      "source_ids": [
-        "1c004045-b054-566f-82a1-e7746a1f525e"
-      ],
-      "attributes": {}
-    },
-    {
-      "id": "6379e382-92fd-53fa-82fd-0d8bd3b05a00",
-      "canonical_key": "cuemby-advisor-2020",
-      "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
-      "employer": "Cuemby",
-      "title": "Advisory Board Member",
-      "start_date": "2020-06-01",
-      "end_date": null,
-      "location": null,
-      "description": "Source-resume role; current status not re-verified.",
       "verification_status": "SOURCE_FACT",
       "source_ids": [
         "1c004045-b054-566f-82a1-e7746a1f525e"
@@ -1322,7 +1290,7 @@
       "evidence_key": "HLT-TOOLS-004",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "tooling",
-      "claim": "Worked with CrowdStrike-provided application-security scanning capabilities used by the organization.",
+      "claim": "Used Checkmarx for static application security testing (SAST) within Hilton application-security reviews.",
       "context": null,
       "metric": null,
       "verification_status": "USER_VERIFIED",
@@ -1330,13 +1298,14 @@
       "resume_eligible": true,
       "resume_visibility": "public_safe",
       "tags": [
-        "CrowdStrike",
+        "Checkmarx",
+        "SAST",
         "Application Security"
       ],
       "source_ids": [
         "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
       ],
-      "note": "Exact CrowdStrike product remains unverified."
+      "note": null
     },
     {
       "id": "ab31323b-6aef-50e8-a7d5-4d2041a308d6",
@@ -3531,7 +3500,7 @@
       "evidence_key": "APX-COMP-001",
       "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
       "category": "compliance",
-      "claim": "Supported control implementation for SOC 2, PCI, and a healthcare compliance target referred to in the interview as “HIPAA High Trust.”",
+      "claim": "Supported control implementation for SOC 2, PCI DSS, HIPAA, and HITRUST.",
       "context": null,
       "metric": null,
       "verification_status": "USER_VERIFIED",
@@ -3542,12 +3511,13 @@
         "Compliance",
         "SOC 2",
         "PCI DSS",
-        "HIPAA High Trust (user terminology)"
+        "HIPAA",
+        "HITRUST"
       ],
       "source_ids": [
         "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
       ],
-      "note": "Formal framework name needs verification."
+      "note": null
     },
     {
       "id": "730817cf-bae0-573c-9440-0761a1897c53",
@@ -5895,6 +5865,29 @@
         "1c004045-b054-566f-82a1-e7746a1f525e"
       ],
       "note": null
+    },
+    {
+      "id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+      "evidence_key": "RIC-COMP-001",
+      "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+      "category": "compliance",
+      "claim": "Designed the healthcare-focused e-writer platform and AWS backend while working toward HIPAA and HITRUST requirements because the intended workflows included medical information.",
+      "context": null,
+      "metric": null,
+      "verification_status": "USER_VERIFIED",
+      "approval_status": "approved",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe",
+      "tags": [
+        "Healthcare Security",
+        "Compliance",
+        "HIPAA",
+        "HITRUST"
+      ],
+      "source_ids": [
+        "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+      ],
+      "note": null
     }
   ],
   "skills": [
@@ -6434,7 +6427,7 @@
     },
     {
       "id": "990f3d4e-c22e-50ae-a9f4-3def3a3dc086",
-      "name": "CrowdStrike",
+      "name": "Checkmarx",
       "aliases": []
     },
     {
@@ -6701,7 +6694,12 @@
     },
     {
       "id": "1d8e7a45-1dc8-5be6-925d-f5b4836ffa86",
-      "name": "HIPAA High Trust (user terminology)",
+      "name": "HIPAA",
+      "aliases": []
+    },
+    {
+      "id": "27ad2862-45d3-5376-824b-5c93c836db1b",
+      "name": "HITRUST",
       "aliases": []
     },
     {
@@ -6717,6 +6715,11 @@
     {
       "id": "360df7ec-3911-5e5c-ae5a-b59e11df82f8",
       "name": "MITRE D3FEND",
+      "aliases": []
+    },
+    {
+      "id": "e0b7b58b-463c-502d-9a46-26077c2c3d48",
+      "name": "mTLS",
       "aliases": []
     },
     {
@@ -6757,11 +6760,6 @@
     {
       "id": "2060d243-78cb-5513-adeb-b079c4283b83",
       "name": "SSO",
-      "aliases": []
-    },
-    {
-      "id": "e0b7b58b-463c-502d-9a46-26077c2c3d48",
-      "name": "mTLS",
       "aliases": []
     }
   ],
@@ -9051,6 +9049,14 @@
     {
       "evidence_id": "5c89bda1-7394-5bcf-b188-56296d5d7176",
       "skill_id": "8b51f54d-5388-59e2-b68f-93b0f22a314a"
+    },
+    {
+      "evidence_id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+      "skill_id": "9b2af55b-9eb7-5546-a690-7d46f7c7d7ca"
+    },
+    {
+      "evidence_id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+      "skill_id": "10e9f3f5-e16c-5267-b9e8-9389c49d10b9"
     }
   ],
   "evidence_technology_mappings": [
@@ -9743,6 +9749,18 @@
     {
       "evidence_id": "e9b85c5a-8832-5fe8-9d8a-57cc2d47c118",
       "framework_id": "2060d243-78cb-5513-adeb-b079c4283b83"
+    },
+    {
+      "evidence_id": "953fd5f5-424d-541d-a1dc-ad360730aef4",
+      "framework_id": "27ad2862-45d3-5376-824b-5c93c836db1b"
+    },
+    {
+      "evidence_id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+      "framework_id": "1d8e7a45-1dc8-5be6-925d-f5b4836ffa86"
+    },
+    {
+      "evidence_id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+      "framework_id": "27ad2862-45d3-5376-824b-5c93c836db1b"
     }
   ],
   "metrics": [
@@ -10082,41 +10100,30 @@
       "id": "b4c7b1df-e10d-59ad-b76a-5ceac59553f4",
       "rule": "Do not infer people management from titles containing Lead/Principal/Architect; use explicit experience attributes/evidence.",
       "severity": "hard"
+    },
+    {
+      "id": "b77c78e3-87b6-5a65-813e-7ac58a00222d",
+      "rule": "Hilton SAST tooling must be represented as Checkmarx, not CrowdStrike.",
+      "severity": "hard"
+    },
+    {
+      "id": "175c3f5c-31d6-543b-861c-0751fba12699",
+      "rule": "References to “HIPAA High Trust” in the career interview mean two separate requirements/frameworks: HIPAA and HITRUST.",
+      "severity": "hard"
+    },
+    {
+      "id": "c33e95f1-0f83-507c-9cbf-ee4c9611f793",
+      "rule": "Do not include CionSystems or Cuemby advisory-board roles in the canonical career profile or generated resumes; user explicitly removed these roles from the maintained career record.",
+      "severity": "hard"
     }
   ],
   "unresolved_items": [
-    {
-      "id": "b6c37a15-a0c3-5abb-a8a9-5ad87ea07f53",
-      "topic": "Compliance framework naming",
-      "detail": "User referred to “HIPAA High Trust” at Apixio and Ricoh. Preserve that terminology until the exact formal framework/certification name is verified.",
-      "affects_experiences": [
-        "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
-        "9944c8b8-22ae-58d2-89b4-f4be57a5376f"
-      ]
-    },
-    {
-      "id": "66d3c00f-74f5-5d4e-8484-6ec6bdeafb6e",
-      "topic": "Tool/product identification",
-      "detail": "Hilton used CrowdStrike for SAST per user interview; exact CrowdStrike product/integration was not identified.",
-      "affects_experiences": [
-        "9d310b24-7960-5373-8c04-e0df52f049ad"
-      ]
-    },
     {
       "id": "62422c8c-94e3-5992-8ea6-ccec0f3244ac",
       "topic": "Pipeline detail",
       "detail": "Video conversion/transcoding may have been part of the unified video pipeline, but user was not certain.",
       "affects_experiences": [
         "c634354f-6398-5233-9b3c-c5a4095ee22d"
-      ]
-    },
-    {
-      "id": "826cfbcd-292c-54cb-b0f0-71a1b3a2ecbe",
-      "topic": "Supplemental experience status",
-      "detail": "CionSystems and Cuemby advisory-board roles appear on historical resume with “Present”; current status has not been re-verified.",
-      "affects_experiences": [
-        "78b31fbf-75c2-550c-b175-7b4a8ae28f17",
-        "6379e382-92fd-53fa-82fd-0d8bd3b05a00"
       ]
     }
   ],

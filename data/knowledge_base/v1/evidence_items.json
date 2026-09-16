@@ -917,7 +917,7 @@
     "evidence_key": "HLT-TOOLS-004",
     "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
     "category": "tooling",
-    "claim": "Worked with CrowdStrike-provided application-security scanning capabilities used by the organization.",
+    "claim": "Used Checkmarx for static application security testing (SAST) within Hilton application-security reviews.",
     "context": null,
     "metric": null,
     "verification_status": "USER_VERIFIED",
@@ -925,13 +925,14 @@
     "resume_eligible": true,
     "resume_visibility": "public_safe",
     "tags": [
-      "CrowdStrike",
+      "Checkmarx",
+      "SAST",
       "Application Security"
     ],
     "source_ids": [
       "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
     ],
-    "note": "Exact CrowdStrike product remains unverified."
+    "note": null
   },
   {
     "id": "ab31323b-6aef-50e8-a7d5-4d2041a308d6",
@@ -3126,7 +3127,7 @@
     "evidence_key": "APX-COMP-001",
     "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
     "category": "compliance",
-    "claim": "Supported control implementation for SOC 2, PCI, and a healthcare compliance target referred to in the interview as “HIPAA High Trust.”",
+    "claim": "Supported control implementation for SOC 2, PCI DSS, HIPAA, and HITRUST.",
     "context": null,
     "metric": null,
     "verification_status": "USER_VERIFIED",
@@ -3137,12 +3138,13 @@
       "Compliance",
       "SOC 2",
       "PCI DSS",
-      "HIPAA High Trust (user terminology)"
+      "HIPAA",
+      "HITRUST"
     ],
     "source_ids": [
       "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
     ],
-    "note": "Formal framework name needs verification."
+    "note": null
   },
   {
     "id": "730817cf-bae0-573c-9440-0761a1897c53",
@@ -5488,6 +5490,29 @@
     ],
     "source_ids": [
       "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "note": null
+  },
+  {
+    "id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
+    "evidence_key": "RIC-COMP-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "compliance",
+    "claim": "Designed the healthcare-focused e-writer platform and AWS backend while working toward HIPAA and HITRUST requirements because the intended workflows included medical information.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Healthcare Security",
+      "Compliance",
+      "HIPAA",
+      "HITRUST"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
     ],
     "note": null
   }

@@ -22,10 +22,10 @@ This dataset is the Phase 1 seed knowledge base for the job-agent system. It is 
 - **HARD** — Do not infer people management from titles containing Lead/Principal/Architect; use explicit experience attributes/evidence.
 
 ## Unresolved items
-- **Compliance framework naming** — User referred to “HIPAA High Trust” at Apixio and Ricoh. Preserve that terminology until the exact formal framework/certification name is verified.
-- **Tool/product identification** — Hilton used CrowdStrike for SAST per user interview; exact CrowdStrike product/integration was not identified.
+- **Compliance framework naming** — Resolved: “HIPAA High Trust” was clarified by the user to mean HIPAA and HITRUST.
+- **Tool/product identification** — Resolved: Hilton used Checkmarx for SAST.
 - **Pipeline detail** — Video conversion/transcoding may have been part of the unified video pipeline, but user was not certain.
-- **Supplemental experience status** — CionSystems and Cuemby advisory-board roles appear on historical resume with “Present”; current status has not been re-verified.
+- **Supplemental experience status** — Resolved: CionSystems and Cuemby advisory-board roles were removed from the maintained career record at the user’s direction.
 
 ## Evidence by experience
 
@@ -78,7 +78,7 @@ Evidence items: **31**
 - `HLT-TOOLS-001` Used AuditBoard to track security reviews and findings.
 - `HLT-TOOLS-002` Used ServiceNow as the security-review request/ticketing system, with review tickets automatically creating corresponding AuditBoard projects.
 - `HLT-TOOLS-003` Worked in GitLab-based source-control and CI/CD environments.
-- `HLT-TOOLS-004` Worked with CrowdStrike-provided application-security scanning capabilities used by the organization.
+- `HLT-TOOLS-004` Used Checkmarx for static application security testing (SAST) within Hilton application-security reviews.
 - `HLT-OPERA-001` Reviewed bidirectional API flows carrying guest PII and payment data between Oracle OPERA and Hilton reservation systems.
 - `HLT-OPERA-002` Assessed whether payment information handled by OPERA was stored and transmitted in accordance with Hilton PCI requirements.
 - `HLT-OPERA-003` Reviewed Hilton-developed extensions built against OPERA APIs for unsupported functionality such as shared bookings.
@@ -135,12 +135,6 @@ Evidence items: **32**
 - `STL-CICD-005` Used TruffleHog and GitRob to identify secrets and API credentials committed to source repositories.
 - `STL-NET-001` Used Fortinet FortiGate firewalls as an egress-control/proxy layer and AWS-native WAF controls.
 
-### CionSystems — Advisory Board Member
-Evidence items: **0**
-
-
-### Cuemby — Advisory Board Member
-Evidence items: **0**
 
 
 ### Octarine Security — Technical Advisor
@@ -210,7 +204,7 @@ Evidence items: **27**
 
 - `APX-SCOPE-001` Served as the sole DevOps engineer despite the Manager of DevOps title and owned Apixio’s production infrastructure.
 - `APX-SCOPE-002` Also owned security responsibilities for production and partnered with the Chief Compliance Officer on audit/control requirements.
-- `APX-COMP-001` Supported control implementation for SOC 2, PCI, and a healthcare compliance target referred to in the interview as “HIPAA High Trust.”
+- `APX-COMP-001` Supported control implementation for SOC 2, PCI DSS, HIPAA, and HITRUST.
 - `APX-DEPLOY-001` Replaced a fully manual, server-by-server WAR deployment process with automated Ansible-based deployment playbooks.
 - `APX-DEPLOY-002` Integrated Jenkins and Artifactory so successful builds were automatically published for centralized deployment.
 - `APX-DEPLOY-003` Reduced deployment windows from approximately 60 minutes to about 5 minutes while supporting roughly 2–3 production deployments per week. — *~60 min → ~5 min; 2–3 deployments/week*
@@ -290,6 +284,8 @@ Evidence items: **14**
 - `RIC-PERF-001` Conducted load/performance testing to identify bottlenecks and validate workflow latency; defined stress, load, and failover testing processes.
 - `RIC-SCALE-001` Platform launch planning included approximately 20,000 hardware devices; pre-launch/test traffic reached roughly 150 transactions per minute. — *~20,000 planned devices; ~150 transactions/min test traffic*
 - `RIC-LIFE-001` Left Ricoh before the product’s public launch, so post-launch production metrics should not be attributed to this tenure. [internal_only]
+
+- `RIC-COMP-001` Designed the healthcare-focused e-writer platform and AWS backend while working toward HIPAA and HITRUST requirements because the intended workflows included medical information.
 
 ### CBS Interactive / TV.com — Senior Software Engineer
 Evidence items: **8**

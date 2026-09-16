@@ -340,38 +340,6 @@
     "attributes": {}
   },
   {
-    "id": "78b31fbf-75c2-550c-b175-7b4a8ae28f17",
-    "canonical_key": "cionsystems-advisor-2020",
-    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
-    "employer": "CionSystems",
-    "title": "Advisory Board Member",
-    "start_date": "2020-06-01",
-    "end_date": null,
-    "location": null,
-    "description": "Source-resume role; current status not re-verified.",
-    "verification_status": "SOURCE_FACT",
-    "source_ids": [
-      "1c004045-b054-566f-82a1-e7746a1f525e"
-    ],
-    "attributes": {}
-  },
-  {
-    "id": "6379e382-92fd-53fa-82fd-0d8bd3b05a00",
-    "canonical_key": "cuemby-advisor-2020",
-    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
-    "employer": "Cuemby",
-    "title": "Advisory Board Member",
-    "start_date": "2020-06-01",
-    "end_date": null,
-    "location": null,
-    "description": "Source-resume role; current status not re-verified.",
-    "verification_status": "SOURCE_FACT",
-    "source_ids": [
-      "1c004045-b054-566f-82a1-e7746a1f525e"
-    ],
-    "attributes": {}
-  },
-  {
     "id": "daad568c-69b5-553c-bd21-857f167685fd",
     "canonical_key": "infragard-board-2022-2024",
     "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",

@@ -11,7 +11,12 @@
   },
   {
     "id": "1d8e7a45-1dc8-5be6-925d-f5b4836ffa86",
-    "name": "HIPAA High Trust (user terminology)",
+    "name": "HIPAA",
+    "aliases": []
+  },
+  {
+    "id": "27ad2862-45d3-5376-824b-5c93c836db1b",
+    "name": "HITRUST",
     "aliases": []
   },
   {
@@ -27,6 +32,11 @@
   {
     "id": "360df7ec-3911-5e5c-ae5a-b59e11df82f8",
     "name": "MITRE D3FEND",
+    "aliases": []
+  },
+  {
+    "id": "e0b7b58b-463c-502d-9a46-26077c2c3d48",
+    "name": "mTLS",
     "aliases": []
   },
   {
@@ -67,11 +77,6 @@
   {
     "id": "2060d243-78cb-5513-adeb-b079c4283b83",
     "name": "SSO",
-    "aliases": []
-  },
-  {
-    "id": "e0b7b58b-463c-502d-9a46-26077c2c3d48",
-    "name": "mTLS",
     "aliases": []
   }
 ]

@@ -1,4 +1,4 @@
-# Knowledge Base v1
+# Knowledge Base v1.1
 
 Primary artifact: `knowledge_base.json`.
 
@@ -27,3 +27,15 @@ PYTHONPATH=src python scripts/import_knowledge_base.py
 ```
 
 The richer JSON remains authoritative because the current database schema intentionally collapses technologies and frameworks into the `skills` table. A later migration can normalize those into dedicated tables without losing information from `knowledge_base.json`.
+
+
+## Applying v1.1 corrections to an existing v1 database
+
+If v1 has already been imported, run:
+
+```bash
+PYTHONPATH=src python scripts/apply_kb_corrections_v1_1.py --dry-run
+PYTHONPATH=src python scripts/apply_kb_corrections_v1_1.py
+```
+
+This removes the retired CionSystems/Cuemby advisory experiences, corrects Hilton SAST tooling to Checkmarx, normalizes HIPAA/HITRUST, and adds the missing Ricoh compliance evidence.
