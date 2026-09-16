@@ -1,0 +1,50 @@
+[
+  {
+    "id": "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+    "key": "resume-current-docx",
+    "type": "resume",
+    "filename": "Copy of Jesse Resume(1).docx",
+    "sha256": "4685946348ce7adc92d56a78aa80d75db48a8301c102fdd160126dca6bdd32e8",
+    "description": "Current comprehensive resume with TikTok USDS role."
+  },
+  {
+    "id": "ef49904e-a1cc-5bca-8b26-fcb62d03eabd",
+    "key": "resume-current-copy-docx",
+    "type": "resume",
+    "filename": "Copy of Jesse Resume.docx",
+    "sha256": "4685946348ce7adc92d56a78aa80d75db48a8301c102fdd160126dca6bdd32e8",
+    "description": "Duplicate/current comprehensive resume copy."
+  },
+  {
+    "id": "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27",
+    "key": "resume-modern-docx",
+    "type": "resume",
+    "filename": "Jesse Resume.docx",
+    "sha256": "476b18ecf71020f97d49dcae9522f7ff8a6a1399a18b185de7f788344cf17a06",
+    "description": "Modern concise resume used for recent role summaries."
+  },
+  {
+    "id": "1c004045-b054-566f-82a1-e7746a1f525e",
+    "key": "resume-historical-docx",
+    "type": "resume",
+    "filename": "Jesse Paul Lesperance Resume (1).docx",
+    "sha256": "9aec6a601c1bc627366c6bf1957dc2d0b859e95760d5455401b2cfb15bd9673a",
+    "description": "Historical detailed resume with expanded pre-SentiLink role detail."
+  },
+  {
+    "id": "ebea6c76-da89-5571-9a4d-e14a7cc180ed",
+    "key": "resume-historical-pdf",
+    "type": "resume",
+    "filename": "Jesse Paul Lesperance Resume (1).pdf",
+    "sha256": "8913881e38bfeca25e816355e4232a8a971eac07158f87ebefc8f4f2cdb35936",
+    "description": "PDF copy of historical detailed resume."
+  },
+  {
+    "id": "8f0a69fa-6a8e-594b-a453-8af60bf81aec",
+    "key": "career-interview-2026-09-15",
+    "type": "user_interview",
+    "filename": null,
+    "sha256": null,
+    "description": "Role-by-role career knowledge interview conducted in this conversation; user-confirmed facts are marked USER_VERIFIED."
+  }
+]

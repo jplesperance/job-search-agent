@@ -1,0 +1,464 @@
+[
+  {
+    "id": "d46330f6-fe78-5bd2-9cd3-61a655fe9cfd",
+    "name": "AI Safety",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "e6053d60-7e67-5269-a83d-a355d2e90468",
+    "name": "AI/LLM Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "5c786344-d0a5-5458-8d39-e1dc0a205cb7",
+    "name": "API Architecture",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "074ed460-405f-555b-8430-cfd614b8fafc",
+    "name": "Application Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "e02ec403-66ab-5531-aa8a-9bfdf3092375",
+    "name": "Audit Leadership",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "f97cf01a-4bbc-5216-8588-a706eb32f95e",
+    "name": "BCDR Planning",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "5fbc8de6-a9db-53e8-8055-a3b5a0af7d6e",
+    "name": "Business Risk Translation",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "02a98862-056b-5701-a471-14ed095e813e",
+    "name": "CI/CD",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "a9073aef-9725-570d-aa29-d846ac6e93df",
+    "name": "Capacity Planning",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "09dbe731-7a8f-516c-849a-110f4843a439",
+    "name": "Change Management",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "65728150-c027-5a35-afc2-a4b8d85f2c9d",
+    "name": "Cloud Architecture",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "3b879677-5fb8-540c-a017-58bb1babf3b2",
+    "name": "Cloud Cost Optimization",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "3d381e89-0551-50cf-adb1-b9b28a29ea83",
+    "name": "Cloud Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "4634f6ef-2eb6-5ab8-ab8a-7b4cfa2a72af",
+    "name": "Coaching",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "9b2af55b-9eb7-5546-a690-7d46f7c7d7ca",
+    "name": "Compliance",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "732ffcba-48cc-5000-91a9-806495ee72b3",
+    "name": "Configuration Management",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "c23fbf37-b9b4-5ed6-b880-19eb19bb8723",
+    "name": "Container Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "e48422df-5ea4-522f-9c60-6a0ae5775f03",
+    "name": "Contract Security",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "4d5d4204-89bc-57f1-9783-8afb85b8d01f",
+    "name": "Cryptography",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "13b68e40-4957-5200-aa55-39c3cde620e0",
+    "name": "Customer Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "411bef5e-3884-53d8-a4ee-2d3ca04c03cf",
+    "name": "DFIR",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "d8cf5f05-5e23-5f14-9c53-1930b0532154",
+    "name": "Data Center Operations",
+    "category": "operations",
+    "aliases": []
+  },
+  {
+    "id": "88c8a6bf-4de6-503c-9be7-fca8797629a1",
+    "name": "Data Ingestion",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "f23fe2a1-c4b4-5df3-89d1-95c56bd96a36",
+    "name": "Data Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "d8e53d74-60a2-5902-9f01-1b0622191104",
+    "name": "Database Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "bc235e6c-b32e-5396-8861-c86e624b83b2",
+    "name": "Detection Engineering",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "55541738-318b-5faf-8c9b-0f52c679f071",
+    "name": "DevSecOps",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "dee74810-ca25-52ce-a894-b00ff4c7036f",
+    "name": "Distributed Systems",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "10caf0ab-df9e-5435-9bb6-d7d48f634c84",
+    "name": "Engineering Management",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "6ab211a9-d31b-503c-a77e-ff5d893f8b69",
+    "name": "Facilities Operations",
+    "category": "operations",
+    "aliases": []
+  },
+  {
+    "id": "10e9f3f5-e16c-5267-b9e8-9389c49d10b9",
+    "name": "Healthcare Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "f0cddaf5-fed6-5fa7-86f8-9b5d725dea56",
+    "name": "IAM Architecture",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "b6f9259b-2452-543a-a0b4-7dcc9e9c7553",
+    "name": "Identity Federation",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "8fe8e9bf-e2c8-5f10-ae9b-109195fa3906",
+    "name": "Incident Response",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "6d7c6f66-7ae9-5900-b2f0-6f6a39347a64",
+    "name": "Infrastructure Automation",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "9879e130-f57a-5f83-8ff7-9d54f4ff2551",
+    "name": "Infrastructure as Code",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "bd7949a2-3666-5873-83ad-9fa54f086d3b",
+    "name": "Just-in-Time Access",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "5abff38e-5c41-51a4-9d47-07f6b771f33e",
+    "name": "Kubernetes Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "071652b4-0b64-5911-9c44-4acedd321b43",
+    "name": "Least Privilege",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "9f845b7e-6d61-550b-8c5b-1dd11fb4aebe",
+    "name": "Media Platform Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "481dfc2c-a808-5327-8b8e-301fa2d13898",
+    "name": "Network Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "36bde7c9-5db4-558a-a26e-e029d5e9c54d",
+    "name": "PKI Architecture",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "4c9c1165-d39c-5766-b3da-99548d9cb6a1",
+    "name": "Payment Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "56ae5c53-d339-53cc-9c18-48c8dc75d1df",
+    "name": "People Leadership",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "8b51f54d-5388-59e2-b68f-93b0f22a314a",
+    "name": "Performance Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "1c80c239-1475-54eb-ad29-5b1f7c1e5daa",
+    "name": "Physical Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "70c39076-6a86-591c-807a-5ac0872617fc",
+    "name": "Platform Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "1b549eec-f230-5351-84d0-54bdc19e0b97",
+    "name": "Pre-Sales",
+    "category": "business",
+    "aliases": []
+  },
+  {
+    "id": "3bffd49b-0c5e-581e-9b35-619f6a4b3637",
+    "name": "Privacy Engineering",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "30020cd1-b8b9-504e-8bf8-5c5fc85a21bf",
+    "name": "Private Cloud Architecture",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "9ddc3efe-c760-51f2-a6fe-0242e8783fca",
+    "name": "Privileged Access Management",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "12b6090e-fbb8-5e5f-8162-c9bcd5674aba",
+    "name": "Product Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "fe00d563-8d04-51f0-a9ed-fd6c46d6707f",
+    "name": "Professional Services",
+    "category": "business",
+    "aliases": []
+  },
+  {
+    "id": "dddb4ad8-f052-5135-b89f-b2cb048d1ae5",
+    "name": "Release Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "54bc860f-bbc5-5cf0-9a03-cf99d51c9779",
+    "name": "Reliability Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "1c20133d-4c46-5a2d-be58-8f9723d79d0b",
+    "name": "Risk Management",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "988775e4-56b6-52de-b556-be6032929a01",
+    "name": "SSDLC",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "4f6dfb27-daf9-5a25-a1d5-c9930176fce3",
+    "name": "Secrets Management",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "e0cb1237-7e85-548d-9303-cf319ae8fa09",
+    "name": "Secure Coding",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "b36d1f23-9b0b-5ad4-aa07-c1200e5a10ad",
+    "name": "Security Architecture",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "9d5096f2-d6e8-5288-bed1-f7d9892f5cd8",
+    "name": "Security Automation",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "4a2c43dc-77d6-5a6e-a4e1-6bc175a3f5cc",
+    "name": "Security Awareness",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "694684fc-bd61-542e-a8db-578c0d0dc6b8",
+    "name": "Security Governance",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "fc698773-cb63-5492-a54f-74c21497358d",
+    "name": "Security Monitoring",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "78a04adc-d920-5e4b-a2a3-4de9a8a4393f",
+    "name": "Software Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "e1d089c5-aa50-5acd-a391-e99deb642065",
+    "name": "Strategy",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "7bcd83cd-fbd6-543c-b0e8-f5fc6c615cbd",
+    "name": "Supply Chain Security",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "9a1767eb-c554-5451-9e50-6066bdbcbe4a",
+    "name": "Team Building",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "48eb42b6-abbb-5df2-bbf3-7f7eae49c2e1",
+    "name": "Technical Consulting",
+    "category": "business",
+    "aliases": []
+  },
+  {
+    "id": "5ebbd255-9fef-5a12-b9e3-46d9cb441c8e",
+    "name": "Technical Leadership",
+    "category": "leadership",
+    "aliases": []
+  },
+  {
+    "id": "ab91c9ae-cb8b-51c0-a6dd-75bdfa1810a5",
+    "name": "Technical Training",
+    "category": "business",
+    "aliases": []
+  },
+  {
+    "id": "53a31a3c-0d6b-565f-8a54-bd1dbf10c701",
+    "name": "Third-Party Risk",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "4f0c94bc-9598-5e45-8b84-d6d3a5860d96",
+    "name": "Threat Modeling",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "20afb6b6-49f9-548a-8922-5ac4fc3bbbe2",
+    "name": "Vendor Risk",
+    "category": "governance",
+    "aliases": []
+  },
+  {
+    "id": "6f73e251-27f2-57b1-acad-56e277e1b4b0",
+    "name": "Vulnerability Management",
+    "category": "security",
+    "aliases": []
+  },
+  {
+    "id": "a82222c6-dfc2-5b9c-b3ea-6e286c0e0a01",
+    "name": "Web Platform Engineering",
+    "category": "engineering",
+    "aliases": []
+  },
+  {
+    "id": "9bed8786-76a8-5759-863e-ca3d6a1bdea0",
+    "name": "Workflow Automation",
+    "category": "engineering",
+    "aliases": []
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "b6c37a15-a0c3-5abb-a8a9-5ad87ea07f53",
+    "topic": "Compliance framework naming",
+    "detail": "User referred to “HIPAA High Trust” at Apixio and Ricoh. Preserve that terminology until the exact formal framework/certification name is verified.",
+    "affects_experiences": [
+      "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+      "9944c8b8-22ae-58d2-89b4-f4be57a5376f"
+    ]
+  },
+  {
+    "id": "66d3c00f-74f5-5d4e-8484-6ec6bdeafb6e",
+    "topic": "Tool/product identification",
+    "detail": "Hilton used CrowdStrike for SAST per user interview; exact CrowdStrike product/integration was not identified.",
+    "affects_experiences": [
+      "9d310b24-7960-5373-8c04-e0df52f049ad"
+    ]
+  },
+  {
+    "id": "62422c8c-94e3-5992-8ea6-ccec0f3244ac",
+    "topic": "Pipeline detail",
+    "detail": "Video conversion/transcoding may have been part of the unified video pipeline, but user was not certain.",
+    "affects_experiences": [
+      "c634354f-6398-5233-9b3c-c5a4095ee22d"
+    ]
+  },
+  {
+    "id": "826cfbcd-292c-54cb-b0f0-71a1b3a2ecbe",
+    "topic": "Supplemental experience status",
+    "detail": "CionSystems and Cuemby advisory-board roles appear on historical resume with “Present”; current status has not been re-verified.",
+    "affects_experiences": [
+      "78b31fbf-75c2-550c-b175-7b4a8ae28f17",
+      "6379e382-92fd-53fa-82fd-0d8bd3b05a00"
+    ]
+  }
+]

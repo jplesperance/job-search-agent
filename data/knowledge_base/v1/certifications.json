@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2f68be55-adb9-527e-88a3-3eaaf232d5df",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "canonical_key": "cism",
+    "name": "Certified Information Security Manager (CISM)",
+    "issuer": "ISACA",
+    "issued_on": "2021-05-01",
+    "expires_on": null,
+    "credential_id": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "approved",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ]
+  },
+  {
+    "id": "242db0d4-1878-57d7-ae2b-58b5f48759da",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "canonical_key": "oswp",
+    "name": "Offensive Security Wireless Professional (OSWP)",
+    "issuer": "Offensive Security",
+    "issued_on": "2019-05-01",
+    "expires_on": null,
+    "credential_id": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "approved",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ]
+  },
+  {
+    "id": "0ca46ecd-8a33-569f-b824-504468ba9d67",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "canonical_key": "ejpt",
+    "name": "eJPT Junior Penetration Tester",
+    "issuer": "INE Security",
+    "issued_on": "2019-04-01",
+    "expires_on": null,
+    "credential_id": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "approved",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ]
+  },
+  {
+    "id": "cb848695-a19a-5996-abeb-02c34cafef54",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "canonical_key": "ccsp",
+    "name": "Certified Cloud Security Professional (CCSP)",
+    "issuer": "(ISC)²",
+    "issued_on": "2017-07-01",
+    "expires_on": null,
+    "credential_id": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "approved",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ]
+  },
+  {
+    "id": "32e126f9-44b6-580d-8650-51219aa14194",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "canonical_key": "cisa",
+    "name": "Certified Information Systems Auditor (CISA)",
+    "issuer": "ISACA",
+    "issued_on": "2016-11-01",
+    "expires_on": null,
+    "credential_id": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "approved",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ]
+  }
+]

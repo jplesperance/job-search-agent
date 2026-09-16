@@ -1,0 +1,38 @@
+{
+  "dataset_version": "2026-09-15.v1",
+  "counts": {
+    "experiences": 20,
+    "evidence_items": 251,
+    "skills": 77,
+    "technologies": 65,
+    "frameworks": 15,
+    "certifications": 5,
+    "user_verified_evidence": 249,
+    "source_fact_evidence": 2,
+    "resume_public_safe": 213,
+    "resume_generalize": 27,
+    "internal_only": 11
+  },
+  "files": [
+    "README.md",
+    "REVIEW.md",
+    "career_profile.json",
+    "certifications.json",
+    "corrections_and_agent_constraints.json",
+    "evidence_framework_mappings.json",
+    "evidence_items.json",
+    "evidence_skill_mappings.json",
+    "evidence_technology_mappings.json",
+    "experiences.json",
+    "frameworks.json",
+    "knowledge_base.json",
+    "knowledge_base.schema.json",
+    "metrics.json",
+    "postgres_compat_seed.json",
+    "skills.json",
+    "source_documents.json",
+    "supplemental_source_facts.json",
+    "technologies.json",
+    "unresolved_items.json"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.job-agent-system/schemas/career-knowledge-base-v1.json",
+  "title": "Career Knowledge Base v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_version",
+    "profile",
+    "experiences",
+    "evidence_items",
+    "skills",
+    "technologies",
+    "frameworks",
+    "certifications",
+    "source_documents"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "dataset_version": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "id",
+        "display_name"
+      ]
+    },
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "canonical_key",
+          "employer",
+          "title",
+          "start_date"
+        ]
+      }
+    },
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "evidence_key",
+          "category",
+          "claim",
+          "verification_status",
+          "approval_status",
+          "resume_eligible",
+          "tags",
+          "source_ids"
+        ]
+      }
+    },
+    "skills": {
+      "type": "array"
+    },
+    "technologies": {
+      "type": "array"
+    },
+    "frameworks": {
+      "type": "array"
+    },
+    "certifications": {
+      "type": "array"
+    },
+    "source_documents": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "canonical_key": "tiktok-usds-2025-present",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "TikTok USDS JVc",
+    "title": "Senior SSDLC Specialist / Tech-Lead",
+    "start_date": "2025-11-01",
+    "end_date": null,
+    "location": "Hybrid",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "leadership_model": "functional_technical_lead_with_delegated_people_management"
+    }
+  },
+  {
+    "id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "canonical_key": "hilton-romack-2024-2025",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Hilton via Romack Inc",
+    "title": "Lead Application Security Architect",
+    "start_date": "2024-05-01",
+    "end_date": "2025-11-01",
+    "location": "Remote",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "leadership_model": "senior_individual_contributor",
+      "people_management": false,
+      "release_blocking_authority": false
+    }
+  },
+  {
+    "id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "canonical_key": "sentilink-2021-2024",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "SentiLink",
+    "title": "Principal Security Architect",
+    "start_date": "2021-08-01",
+    "end_date": "2024-03-01",
+    "location": "San Francisco, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "security_program_owner": true,
+      "compliance_program_owner": true,
+      "direct_security_reports": 1
+    }
+  },
+  {
+    "id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "canonical_key": "evernote-2018-2021",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Evernote",
+    "title": "Senior Security Architect",
+    "start_date": "2018-01-01",
+    "end_date": "2021-08-01",
+    "location": "Redwood City, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "role_type": "security_architect",
+      "people_management": false
+    }
+  },
+  {
+    "id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "canonical_key": "ebay-2016-2017",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "eBay Inc",
+    "title": "Sr. DevOps Engineer / Crypto Infrastructure Specialist",
+    "start_date": "2016-04-01",
+    "end_date": "2017-12-01",
+    "location": "San Jose, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "crypto_time_percent_range": "10-28",
+      "role_split": "primarily DevOps/platform engineering with cross-functional cryptography leadership"
+    }
+  },
+  {
+    "id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "canonical_key": "apixio-2015-2016",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Apixio Inc",
+    "title": "Manager of DevOps",
+    "start_date": "2015-03-01",
+    "end_date": "2016-04-01",
+    "location": "San Mateo, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "direct_reports": 0,
+      "role_reality": "sole DevOps engineer; owned production infrastructure and security"
+    }
+  },
+  {
+    "id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "canonical_key": "hortonworks-2012-2015",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Hortonworks Inc",
+    "title": "IT Operations Manager",
+    "start_date": "2012-11-01",
+    "end_date": "2015-01-01",
+    "location": "San Jose, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "direct_reports": 4,
+      "it_org_total_staff": 7,
+      "de_facto_security_owner": true
+    }
+  },
+  {
+    "id": "3025af99-f293-54ff-962e-82a94a5e4701",
+    "canonical_key": "taos-machine-zone-2012",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Taos Mountain / Machine Zone",
+    "title": "Technical Consultant",
+    "start_date": "2012-01-01",
+    "end_date": "2012-12-31",
+    "location": "San Jose, CA",
+    "description": "Redis SME consulting engagement; detailed interview deferred.",
+    "verification_status": "SOURCE_FACT",
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {}
+  },
+  {
+    "id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "canonical_key": "appcelerator-2012",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Appcelerator Inc",
+    "title": "Lead Software / DevOps Engineer",
+    "start_date": "2012-05-01",
+    "end_date": "2012-10-01",
+    "location": "San Jose, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "web_properties_direct_reports": 5,
+      "devops_team_size_including_user": 3,
+      "devops_leadership": "technical"
+    }
+  },
+  {
+    "id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "canonical_key": "ricoh-2010-2011",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Ricoh Innovations Inc",
+    "title": "Director of Engineering – Web Services & Partner Development",
+    "start_date": "2010-05-01",
+    "end_date": "2011-12-01",
+    "location": "San Jose, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "org_size": 20,
+      "teams": 3,
+      "managers": 2
+    }
+  },
+  {
+    "id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "canonical_key": "cbs-tvcom-2008-2010",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "CBS Interactive / TV.com",
+    "title": "Senior Software Engineer",
+    "start_date": "2008-09-01",
+    "end_date": "2010-05-01",
+    "location": "San Francisco, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "role_type": "senior_individual_contributor",
+      "technical_leadership": true,
+      "people_management": false
+    }
+  },
+  {
+    "id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "canonical_key": "zend-2008",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Zend Technologies",
+    "title": "Senior Software Architect / Technical Consultant",
+    "start_date": "2008-04-01",
+    "end_date": "2008-09-01",
+    "location": "Cupertino, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "major_consulting_engagements": 4
+    }
+  },
+  {
+    "id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "canonical_key": "pickspal-2007-2008",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Pickspal Inc",
+    "title": "Director of Technology",
+    "start_date": "2007-10-01",
+    "end_date": "2008-04-01",
+    "location": "Mountain View, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "technology_org_size": 9,
+      "direct_reports": 8,
+      "hands_on_architecture": true,
+      "hands_on_development": true
+    }
+  },
+  {
+    "id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "canonical_key": "vmware-2007",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "VMware Inc",
+    "title": "Senior Web Developer",
+    "start_date": "2007-01-01",
+    "end_date": "2007-10-01",
+    "location": "Palo Alto, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "role_type": "individual_contributor",
+      "lead_engineer_marketplace": true,
+      "lead_developer_technical_network": true
+    }
+  },
+  {
+    "id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
+    "canonical_key": "symantec-falcon-2006",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Symantec Corp – Falcon Project",
+    "title": "Web Developer",
+    "start_date": "2006-06-01",
+    "end_date": "2006-09-01",
+    "location": "Cupertino, CA",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "role_type": "individual_contributor",
+      "engagement_type": "short_contract"
+    }
+  },
+  {
+    "id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "canonical_key": "wiscasset-2000-2006",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Wiscasset Web Development",
+    "title": "Lead Developer",
+    "start_date": "2000-01-01",
+    "end_date": "2006-09-01",
+    "location": "Wiscasset, ME",
+    "description": null,
+    "verification_status": "CORROBORATED",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7",
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {
+      "business_owner": false,
+      "employee": true,
+      "team_size_peak": 6
+    }
+  },
+  {
+    "id": "081470c1-86b1-50d8-aa5b-3124942886a4",
+    "canonical_key": "octarine-advisor-2018-2019",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Octarine Security",
+    "title": "Technical Advisor",
+    "start_date": "2018-09-01",
+    "end_date": "2019-03-01",
+    "location": "Sunnyvale, CA",
+    "description": "Advisory role; detailed interview deferred.",
+    "verification_status": "SOURCE_FACT",
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {}
+  },
+  {
+    "id": "78b31fbf-75c2-550c-b175-7b4a8ae28f17",
+    "canonical_key": "cionsystems-advisor-2020",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "CionSystems",
+    "title": "Advisory Board Member",
+    "start_date": "2020-06-01",
+    "end_date": null,
+    "location": null,
+    "description": "Source-resume role; current status not re-verified.",
+    "verification_status": "SOURCE_FACT",
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {}
+  },
+  {
+    "id": "6379e382-92fd-53fa-82fd-0d8bd3b05a00",
+    "canonical_key": "cuemby-advisor-2020",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "Cuemby",
+    "title": "Advisory Board Member",
+    "start_date": "2020-06-01",
+    "end_date": null,
+    "location": null,
+    "description": "Source-resume role; current status not re-verified.",
+    "verification_status": "SOURCE_FACT",
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "attributes": {}
+  },
+  {
+    "id": "daad568c-69b5-553c-bd21-857f167685fd",
+    "canonical_key": "infragard-board-2022-2024",
+    "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
+    "employer": "InfraGard SF Bay Area Members Alliance",
+    "title": "Board Member – Secretary",
+    "start_date": "2022-01-01",
+    "end_date": "2024-03-01",
+    "location": null,
+    "description": "Professional board service.",
+    "verification_status": "SOURCE_FACT",
+    "source_ids": [
+      "5b5bd68d-c6ff-54fc-8484-bddaec7a7b27"
+    ],
+    "attributes": {}
+  }
+]

@@ -1,0 +1,5494 @@
+[
+  {
+    "id": "576096c3-c197-5960-8601-f78f529e2b7c",
+    "evidence_key": "TT-LEAD-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "leadership",
+    "claim": "Technically led a six-person functional security team, defining priorities, team strategy, partnerships, and work assignments.",
+    "context": null,
+    "metric": "6-person functional team",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Strategy",
+      "Team Building"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "28129e82-79ce-5c06-bdf6-16bb361e3e51",
+    "evidence_key": "TT-LEAD-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "leadership",
+    "claim": "Performed delegated people-management responsibilities for the functional team, including coaching and performance feedback.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "People Leadership",
+      "Coaching"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "4794449e-b2b9-5fef-b34d-356115ae5fdf",
+    "evidence_key": "TT-AI-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ai_security",
+    "claim": "Architected AI-agent security workflows using Gemini and Google Vertex AI.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "AI/LLM Security",
+      "Security Automation",
+      "Gemini",
+      "Google Vertex AI"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "18252faa-0503-5ee0-a9f3-12e15f206fdd",
+    "evidence_key": "TT-AI-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "security_automation",
+    "claim": "Developed Python-based AI-agent integrations with Lark, Meegle, and internal findings-management APIs.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Security Automation",
+      "Workflow Automation",
+      "Python",
+      "Lark API",
+      "Meegle API"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "2cdd299e-4c1b-503b-847f-219aa5b2aa71",
+    "evidence_key": "TT-AI-003",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ssdlc",
+    "claim": "Automated portions of secure-design-review and threat-modeling workflows through agentic systems.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "SSDLC",
+      "Threat Modeling",
+      "Security Automation",
+      "AI/LLM Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9b27afbd-58ce-5e07-a58a-db42e85ed337",
+    "evidence_key": "TT-TM-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "threat_modeling",
+    "claim": "Automated mapping of identified threats/findings to the MITRE ATT&CK framework.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Threat Modeling",
+      "Security Automation",
+      "MITRE ATT&CK"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d155a143-3e19-558b-a8cb-28064f5d009f",
+    "evidence_key": "TT-TM-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "threat_modeling",
+    "claim": "Automated generation of remediation guidance mapped to MITRE D3FEND.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Threat Modeling",
+      "Security Automation",
+      "MITRE D3FEND"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d4def39c-b04b-5cd1-887f-5e5d91b3da5f",
+    "evidence_key": "TT-TM-003",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "impact",
+    "claim": "Reduced manual security-assessment effort by approximately 20–30 hours per assessment/review through automated document analysis, threat mapping, and report generation.",
+    "context": null,
+    "metric": "~20–30 hours saved per assessment/review",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Automation",
+      "SSDLC",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "09250fb3-db6f-59fb-a2c9-a9075e440ebd",
+    "evidence_key": "TT-ARCH-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "security_review",
+    "claim": "Conducted secure-design reviews for infrastructure platforms supporting sale/distribution of AI models.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "AI/LLM Security",
+      "Security Architecture",
+      "Product Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "83ef138f-54cb-5861-a903-e19dad03e6f4",
+    "evidence_key": "TT-ARCH-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "security_review",
+    "claim": "Conducted security reviews for social-media applications and TikTok features/add-ons.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Application Security",
+      "Product Security",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d03a1a50-f0d5-51d3-8522-c10e6f09e5a1",
+    "evidence_key": "TT-ARCH-003",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "security_review",
+    "claim": "Conducted security reviews for standalone applications, frequently involving AI functionality or integrations.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Application Security",
+      "AI/LLM Security",
+      "Product Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "eca3f0eb-b02f-56a6-a325-45720ff5dfb5",
+    "evidence_key": "TT-INTAKE-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "workflow",
+    "claim": "Consolidated five separate Meegle review projects/queues into a unified intake model to simplify request tracking and operational visibility.",
+    "context": null,
+    "metric": "5 queues consolidated",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Workflow Automation",
+      "SSDLC",
+      "Meegle API"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "01783446-bf98-5e7f-aba4-2c232c98883e",
+    "evidence_key": "TT-INTAKE-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "workflow",
+    "claim": "Designed a Lark-based intake bot that allowed users to initiate security reviews through a single interface and create the corresponding request in a consolidated Meegle queue.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Security Automation",
+      "Workflow Automation",
+      "Lark API",
+      "Meegle API"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "55d26f0f-998c-5049-a5b8-f89fd8bd5acf",
+    "evidence_key": "TT-SSDL-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ssdlc",
+    "claim": "Standardized seven SSDLC security-review tracks: Application, Feature, Domain, AI/LLM Security, Chrome Extension, Endpoint Software, and Architectural Reviews.",
+    "context": null,
+    "metric": "7 review tracks",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "SSDLC",
+      "Application Security",
+      "AI/LLM Security",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "161aefba-af8e-513b-a5ef-16bb983da5fe",
+    "evidence_key": "TT-AISEC-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ai_security",
+    "claim": "Established AI/LLM security reviews using the OWASP LLM Top 10 and MITRE ATLAS as foundational threat frameworks.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "AI/LLM Security",
+      "OWASP LLM Top 10",
+      "MITRE ATLAS",
+      "Threat Modeling"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1da4cd3e-5a1d-5654-bfbc-28702a5b89dd",
+    "evidence_key": "TT-AISEC-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ai_security",
+    "claim": "Assessed AI/LLM systems for prompt injection, sensitive-data exposure, insecure output handling, authentication/authorization weaknesses, RAG risks, tool abuse, supply-chain concerns, and inadequate sandboxing.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "AI/LLM Security",
+      "Application Security",
+      "Supply Chain Security",
+      "Data Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d18f0cba-c6be-5a44-ae47-dc184ff05ae5",
+    "evidence_key": "TT-AISAFE-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ai_safety",
+    "claim": "Initially participated in both AI/LLM security and AI Safety assessment responsibilities within the SSDLC team.",
+    "context": "AI Safety responsibilities transitioned to a dedicated Content Assurance team about three months after joining.",
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "AI/LLM Security",
+      "AI Safety"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "38ecd170-6a5e-5943-80b8-1f5488060590",
+    "evidence_key": "TT-AISAFE-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "ai_safety",
+    "claim": "Continued partnering with the Content Assurance team after AI Safety responsibilities transitioned out of SSDLC.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "AI Safety",
+      "AI/LLM Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "90cd98f5-4dbc-5903-bece-7a23bec03e53",
+    "evidence_key": "TT-OPS-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "operations",
+    "claim": "The consolidated Lark/Meegle intake channel receives approximately 40 security-review requests per month.",
+    "context": null,
+    "metric": "~40 requests/month",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "SSDLC",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "4d2b8053-dec3-558f-8352-cf946306a523",
+    "evidence_key": "TT-OPS-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "operations",
+    "claim": "A separate SSDLC intake channel receives approximately 40–50 review requests per day.",
+    "context": null,
+    "metric": "~40–50 requests/day",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "SSDLC"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": "Do not conflate this volume with the consolidated Lark/Meegle channel."
+  },
+  {
+    "id": "d0cf56e4-8d9f-56fc-b286-b0d64ff7be87",
+    "evidence_key": "TT-GOV-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "governance",
+    "claim": "Identified that security findings previously existed only in reviewer-owned readiness reports, with no centralized vulnerability visibility or remediation tracking.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Security Governance",
+      "Vulnerability Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3049fcb3-4eb3-5425-b93b-4e1885dc1b65",
+    "evidence_key": "TT-GOV-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "governance",
+    "claim": "Established a process requiring open threats and vulnerabilities from security assessments to be entered into ByteSoc for SLA and remediation tracking.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Security Governance",
+      "Vulnerability Management",
+      "ByteSoc"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cae03eea-d368-5cd8-a185-5b00f9d7bfef",
+    "evidence_key": "TT-GOV-003",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "governance",
+    "claim": "Integrated SSDLC findings into the vulnerability-management workflow so findings receive ownership, SLA tracking, follow-up, and remediation accountability.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "SSDLC",
+      "Vulnerability Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cb3b75aa-0528-528f-a776-4eb687152fd4",
+    "evidence_key": "TT-REPORT-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "reporting",
+    "claim": "Defined technical Threat Model Reports for engineering audiences containing detailed findings and remediation-relevant technical context.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Threat Modeling",
+      "Business Risk Translation",
+      "SSDLC"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6ad94aa7-50ad-5fbb-9b0e-8e39bd54f0a4",
+    "evidence_key": "TT-REPORT-002",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "reporting",
+    "claim": "Defined Business Risk Reports that translate technical threat findings into business-risk context for leadership decision making.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Business Risk Translation",
+      "Risk Management",
+      "SSDLC"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e8f7771a-3f40-5248-bc2a-68b959a1c321",
+    "evidence_key": "TT-REPORT-003",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "reporting",
+    "claim": "Business Risk Reports were used by executive leadership, including the CEO, as input to product go/no-go decisions.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Business Risk Translation",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b5f1e9a7-1940-5e17-8e14-947ccbae7ba3",
+    "evidence_key": "TT-SLA-001",
+    "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
+    "category": "impact",
+    "claim": "Reduced SSDLC review SLA from 14 business days to 5 business days using standardized report templates and AI-assisted analysis/report automation.",
+    "context": null,
+    "metric": "14 days → 5 days (~64% reduction)",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "SSDLC",
+      "Security Automation",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "aa01a947-0f4b-54d5-a695-c2f675de7f7f",
+    "evidence_key": "HLT-SCOPE-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "scope",
+    "claim": "Served on Hilton’s Application Security team supporting user-facing web applications across the enterprise.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "15ea0742-db92-5f61-8f47-c4117de6d8bd",
+    "evidence_key": "HLT-SCOPE-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "scope",
+    "claim": "Served as the primary AppSec architect for the Oracle OPERA implementation into Hilton’s ecosystem.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "Oracle OPERA",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "253d16e7-e708-56bb-b6c2-88fb52fd91c9",
+    "evidence_key": "HLT-SCOPE-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "scope",
+    "claim": "Provided application-security oversight for payment-related applications and changes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "Payment Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d790b991-da01-58f5-a8c2-0506142d56ca",
+    "evidence_key": "HLT-SCOPE-004",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "scope",
+    "claim": "Supported security reviews for Hilton for Business commercial applications.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Application Security",
+      "Product Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ba4f3a02-b20f-5e1e-823b-75c624f9476e",
+    "evidence_key": "HLT-SCOPE-005",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "scope",
+    "claim": "Assumed security-review responsibility for Hilton’s internally developed PEP hospitality-management platform near the end of the engagement.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Application Security",
+      "Product Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c25f4a55-b229-56e6-86c1-5da3442988ca",
+    "evidence_key": "HLT-SSDLC-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "ssdlc",
+    "claim": "Embedded with development teams and participated in project meetings to provide security requirements and guidance throughout the development lifecycle.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "SSDLC",
+      "Secure Coding"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "abc2ee42-8a80-54f7-a9cf-e4ad61fccd98",
+    "evidence_key": "HLT-ARCH-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Reviewed application architectures, APIs, API payloads, and integration designs for security weaknesses and control requirements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "API Architecture",
+      "Threat Modeling"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "16f7e7a6-85ef-5da7-996b-a54dc91eab0c",
+    "evidence_key": "HLT-TEST-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Incorporated SAST and DAST results into application-security assessments and remediation planning.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "SAST",
+      "DAST"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3a78eb3a-f505-5a3b-90dc-3ec57e09c3ed",
+    "evidence_key": "HLT-RISK-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "risk_management",
+    "claim": "Produced project risk reports containing identified findings and estimated likelihood/probability of exploitation.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Risk Management",
+      "Business Risk Translation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "12a89faf-55dc-5a21-8a2d-858556ad829f",
+    "evidence_key": "HLT-RISK-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "risk_management",
+    "claim": "Partnered with Hilton Risk Management to combine exploitation likelihood with business impact into overall risk ratings.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Risk Management",
+      "Business Risk Translation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "47830052-2f3a-50be-a4a7-08fadc3c5adb",
+    "evidence_key": "HLT-RISK-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "risk_management",
+    "claim": "Presented final application-security risk reports to business owners for formal risk acceptance or remediation decisions.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Risk Management",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "5355cd40-bb56-5864-85d7-52ac2c89b253",
+    "evidence_key": "HLT-GOV-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "governance",
+    "claim": "Hilton Security did not possess unilateral release-blocking authority; unresolved findings were escalated as risks requiring business-owner acceptance or engineering remediation.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Risk Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0f9daec2-dd4e-5062-bf73-398843f5a572",
+    "evidence_key": "HLT-TOOLS-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "tooling",
+    "claim": "Used AuditBoard to track security reviews and findings.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "AuditBoard",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6ed634e8-c4a2-519b-88c3-07bb3d51ae99",
+    "evidence_key": "HLT-TOOLS-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "tooling",
+    "claim": "Used ServiceNow as the security-review request/ticketing system, with review tickets automatically creating corresponding AuditBoard projects.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "ServiceNow",
+      "AuditBoard",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9c196c04-01ca-5ef6-9841-43d975811735",
+    "evidence_key": "HLT-TOOLS-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "tooling",
+    "claim": "Worked in GitLab-based source-control and CI/CD environments.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "GitLab",
+      "CI/CD"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6236f5b2-c3f6-54fc-a9b9-4f0e9c6b6d2b",
+    "evidence_key": "HLT-TOOLS-004",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "tooling",
+    "claim": "Worked with CrowdStrike-provided application-security scanning capabilities used by the organization.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CrowdStrike",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": "Exact CrowdStrike product remains unverified."
+  },
+  {
+    "id": "ab31323b-6aef-50e8-a7d5-4d2041a308d6",
+    "evidence_key": "HLT-OPERA-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "third_party_integration",
+    "claim": "Reviewed bidirectional API flows carrying guest PII and payment data between Oracle OPERA and Hilton reservation systems.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "Payment Security",
+      "Data Security",
+      "Oracle OPERA",
+      "API Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e4c4e4e4-d9f0-5553-921e-f56880970289",
+    "evidence_key": "HLT-OPERA-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "compliance",
+    "claim": "Assessed whether payment information handled by OPERA was stored and transmitted in accordance with Hilton PCI requirements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Payment Security",
+      "Compliance",
+      "PCI DSS",
+      "Oracle OPERA"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1ae6d065-101d-5067-8d8e-4dc5bc405de1",
+    "evidence_key": "HLT-OPERA-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Reviewed Hilton-developed extensions built against OPERA APIs for unsupported functionality such as shared bookings.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "Oracle OPERA",
+      "API Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "342986d6-63da-50a6-8d80-11c115ccd857",
+    "evidence_key": "HLT-OPERA-004",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Evaluated custom booking/payment logic for flaws that could result in incorrect or unauthorized guest charges.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "Payment Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "71c0601f-a105-5119-9d5c-bb6895201256",
+    "evidence_key": "HLT-PAY-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "payment_security",
+    "claim": "Performed AppSec review for implementation of guest buy-now-pay-later functionality.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Payment Security",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "38cc4d1d-46ae-51c4-af8f-f647f245e039",
+    "evidence_key": "HLT-PAY-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "payment_security",
+    "claim": "Performed AppSec review for a long-term-stay commercial credit/payment capability supporting recurring charges against company credit arrangements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Payment Security",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ea81f6f0-6d57-5303-aba3-ab1a70c2453d",
+    "evidence_key": "HLT-PAY-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "payment_security",
+    "claim": "Reviewed payment APIs, cardholder-data flows, PCI scope, tokenization boundaries, encryption at rest/in transit, and API authentication between Hilton and third parties.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Payment Security",
+      "PCI DSS",
+      "Data Security",
+      "API Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3e824bba-8a05-5dea-b0bd-ea142cdc211b",
+    "evidence_key": "HLT-FIND-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "finding_management",
+    "claim": "Worked with engineering teams throughout development to remediate issues during implementation rather than deferring all findings until release.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "SSDLC",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "28b12f64-d661-5c2b-a8e4-43669f034d12",
+    "evidence_key": "HLT-FIND-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "finding_management",
+    "claim": "Large reviews could contain roughly 30–50 unresolved findings late in the lifecycle before additional remediation and risk reduction.",
+    "context": null,
+    "metric": "~30–50 open findings late in large reviews",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Application Security",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "dbacb77c-5e49-590e-9869-16d2f80e5b3a",
+    "evidence_key": "HLT-FIND-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "finding_management",
+    "claim": "Final risk reports commonly contained approximately 5–10 accepted/unresolved findings after remediation efforts.",
+    "context": null,
+    "metric": "~5–10 residual findings",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "317720e5-799d-56fe-a033-27617322056c",
+    "evidence_key": "HLT-FIND-004",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "finding_management",
+    "claim": "Approximately one-third of findings across reviews were typically Critical or High severity.",
+    "context": null,
+    "metric": "~1/3 Critical or High",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Application Security",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c16b4018-8ec8-5ae1-8656-d456c52f937d",
+    "evidence_key": "HLT-FIND-005",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "finding_management",
+    "claim": "Identified payment-data handling concerns in a third-party platform, including a payload capable of transmitting up to 96 non-tokenized card numbers in one request.",
+    "context": null,
+    "metric": "up to 96 non-tokenized card numbers/payload",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Payment Security",
+      "Third-Party Risk",
+      "Oracle OPERA"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "42b13772-27ed-5530-a81b-497378103aa5",
+    "evidence_key": "HLT-TECH-001",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Performed manual threat modeling as part of application-security reviews.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Threat Modeling",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d72daf6c-db94-5007-ad95-98ed7385c302",
+    "evidence_key": "HLT-TECH-002",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Used SAST and DAST findings to drive targeted manual source-code review on large codebases.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "SAST",
+      "DAST",
+      "Secure Coding"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "80b1e629-5942-58c6-8908-d80d9cf27908",
+    "evidence_key": "HLT-TECH-003",
+    "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
+    "category": "application_security",
+    "claim": "Performed manual API security testing and escalated to dedicated penetration testing when initial testing warranted deeper validation.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Application Security",
+      "API Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "199227cd-3341-59a7-9853-5e63663b0a67",
+    "evidence_key": "STL-LEAD-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "leadership",
+    "claim": "Joined after approximately nine months without dedicated security personnel and rebuilt the security function.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Governance",
+      "Team Building",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b98c0300-75d2-560d-9842-149500f08fa6",
+    "evidence_key": "STL-LEAD-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "leadership",
+    "claim": "Served as the primary owner of SentiLink’s security and compliance programs.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Governance",
+      "Compliance",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "213f386d-c957-568a-94ea-37c9b253223b",
+    "evidence_key": "STL-LEAD-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "leadership",
+    "claim": "Hired a mid-level security engineer after approximately six months, primarily assigning that engineer responsibility for application security.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "People Leadership",
+      "Team Building",
+      "Application Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d343fd32-4d4e-5998-b4c8-11dfffbf6d72",
+    "evidence_key": "STL-FUNC-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "scope",
+    "claim": "Owned vulnerability management, incident response/digital forensics, cloud security, DevSecOps, third-party risk, customer security, and compliance.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Incident Response",
+      "DFIR",
+      "Cloud Security",
+      "DevSecOps",
+      "Third-Party Risk",
+      "Customer Security",
+      "Compliance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "863580a3-26cf-5049-be00-2d98dc50d111",
+    "evidence_key": "STL-CUST-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "customer_security",
+    "claim": "Met directly with customers to address security questions and support customer security reviews.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Customer Security",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0eabfc37-af89-546b-a317-a130e14fcdfa",
+    "evidence_key": "STL-TPRM-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "third_party_risk",
+    "claim": "Conducted and supported third-party security audits and assessments involving external organizations.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Third-Party Risk",
+      "Vendor Risk"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fde153aa-0a69-5f0e-bd48-5de03f56e83f",
+    "evidence_key": "STL-COMP-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "compliance",
+    "claim": "Served as primary program owner for annual SOC 2 and PCI compliance cycles.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "Audit Leadership",
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "50f7374b-94ca-55be-add4-150f5b377c10",
+    "evidence_key": "STL-COMP-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "compliance",
+    "claim": "Worked directly with external auditors each audit cycle and delegated evidence/control items to internal owners based on function.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "Audit Leadership",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6719f0be-0ea0-5e51-8e0d-487913e84535",
+    "evidence_key": "STL-COMP-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "compliance",
+    "claim": "Maintained PCI and SOC 2 compliance through subsequent audit cycles with no exceptions.",
+    "context": null,
+    "metric": "No audit exceptions during tenure",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "PCI DSS",
+      "SOC 2"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "919baf58-7630-5154-9e62-99255a842460",
+    "evidence_key": "STL-CLOUD-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "cloud_security",
+    "claim": "Operated primarily in an AWS environment using Kubernetes and serverless architectures.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Security",
+      "AWS",
+      "Kubernetes"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "33ef8a15-8f73-54e7-9328-071e873ec3f4",
+    "evidence_key": "STL-IAC-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "cloud_security",
+    "claim": "Used Terraform as the infrastructure-as-code platform.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Infrastructure as Code",
+      "Terraform",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d2d9b808-79ac-5d9c-a3ec-45f6ebd35750",
+    "evidence_key": "STL-CICD-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "devsecops",
+    "claim": "Worked with Jenkins-based CI/CD pipelines in a Python/Go engineering environment.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "DevSecOps",
+      "Jenkins",
+      "Python",
+      "Go"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e414d843-552a-57e7-b15c-d0ff314c10bf",
+    "evidence_key": "STL-IAM-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "iam",
+    "claim": "Implemented Okta-based centralized authentication/authorization integration with AWS IAM to consolidate access across tools and environments.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Identity Federation",
+      "Least Privilege",
+      "Okta",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "127eba87-fcb3-544c-a42a-d6e8f31ab5dd",
+    "evidence_key": "STL-VM-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "vulnerability_management",
+    "claim": "Operated vulnerability management using Tenable for internal scanning, Clone Systems as the PCI ASV, and Dependabot for dependency vulnerability discovery.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Tenable",
+      "Clone Systems",
+      "Dependabot"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "8e19c338-849e-5b21-a0e9-3a9d9e495673",
+    "evidence_key": "STL-VM-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "vulnerability_management",
+    "claim": "Built automation that consolidated findings from multiple vulnerability sources into a normalized dataset for processing and deduplication.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Security Automation",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cee3a6d2-60a0-5d31-b4d7-3341a9afd2f5",
+    "evidence_key": "STL-VM-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "vulnerability_management",
+    "claim": "Automated creation of Jira remediation tickets for newly identified, deduplicated vulnerabilities.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Security Automation",
+      "Jira"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9e06d652-66fa-5010-9f69-b5599c562f6b",
+    "evidence_key": "STL-VM-004",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "vulnerability_management",
+    "claim": "Built dashboards showing open findings, SLA status, overdue remediation, and warnings for vulnerabilities approaching SLA deadlines.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "12a7b6c0-8891-5f8f-bcf4-e26d78e96398",
+    "evidence_key": "STL-VM-005",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "vulnerability_management",
+    "claim": "Shifted routine security patching from DevOps to Security to accelerate remediation; escalated OS upgrades and complex fixes to DevOps.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "42bf023f-4e36-5f56-9e69-3c62cae29ae7",
+    "evidence_key": "STL-IR-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "incident_response",
+    "claim": "Served as Incident Commander and owned the company incident-response program.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "DFIR",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "12aa52d0-a606-5e89-9178-47f76593b6bf",
+    "evidence_key": "STL-IR-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "incident_response",
+    "claim": "Maintained incident-response runbooks and used Nagios for monitoring and Slack for incident communications.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "Nagios",
+      "Slack"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e4453b81-3171-509d-9f5b-29a18fc8bc41",
+    "evidence_key": "STL-IR-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "incident_response",
+    "claim": "Conducted semiannual incident-response and digital-forensics training with engineering teams, including simulated breach investigations.",
+    "context": null,
+    "metric": "Semiannual IR/DFIR training",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "DFIR",
+      "Technical Training"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "a7caf5fc-071e-5136-952f-5b1cef535888",
+    "evidence_key": "STL-IR-004",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "incident_response",
+    "claim": "Led two security-incident investigations during tenure; both were ultimately determined to be benign.",
+    "context": null,
+    "metric": "2 investigations",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Incident Response",
+      "DFIR"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9846af33-d689-54a3-9c95-959eb28e8ddc",
+    "evidence_key": "STL-BCDR-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "bcdr",
+    "claim": "Led annual business-continuity/disaster-recovery exercises.",
+    "context": null,
+    "metric": "Annual BCDR exercises",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "BCDR Planning",
+      "Incident Response",
+      "BCDR"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "af921682-24db-50ae-ba8a-076360ab0b9d",
+    "evidence_key": "STL-K8S-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "kubernetes_security",
+    "claim": "Hardened Kubernetes with service-to-service mTLS and network policies restricting communication to required workloads/services.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Kubernetes",
+      "mTLS",
+      "Network Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7939fc6f-8d60-5ab4-95a8-315f4447d6c8",
+    "evidence_key": "STL-K8S-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "kubernetes_security",
+    "claim": "Standardized secrets management using AWS Secrets Manager for application secrets and keys.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Secrets Management",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1dcb2bdd-50f4-51d7-8e2f-5019557cc3d2",
+    "evidence_key": "STL-K8S-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "supply_chain",
+    "claim": "Strengthened container supply-chain governance by controlling how images were built, inventoried, approved, and scanned.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Supply Chain Security",
+      "Container Security",
+      "Kubernetes Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e12192eb-4345-5afb-81ef-7acf7917c85d",
+    "evidence_key": "STL-K8S-004",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "kubernetes_security",
+    "claim": "Expanded Kubernetes runtime logging and began implementation of workload identity before leaving the company.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Security Monitoring",
+      "IAM Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c51afc5b-74bf-5482-b011-c2c2b5780f39",
+    "evidence_key": "STL-CICD-002",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "devsecops",
+    "claim": "Implemented pre-merge SAST and SCA security gates; failed security checks prevented merges.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "DevSecOps",
+      "CI/CD",
+      "SAST",
+      "SCA",
+      "Secure Coding"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f4c6fda9-9e71-5d7c-8ffc-5806bb4da0ed",
+    "evidence_key": "STL-CICD-003",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "devsecops",
+    "claim": "Introduced Snyk container-image scanning, including layer-level vulnerability analysis.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "DevSecOps",
+      "Container Security",
+      "Snyk"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f2bd6a4c-ccce-5f33-837d-0d575b7862c6",
+    "evidence_key": "STL-CICD-004",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "container_security",
+    "claim": "Used Palo Alto Networks Twistlock for Kubernetes/container runtime monitoring and malicious/abnormal activity detection.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Container Security",
+      "Kubernetes Security",
+      "Twistlock",
+      "Detection Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ee48cc16-7bb9-5703-b617-eeca8b703e91",
+    "evidence_key": "STL-CICD-005",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "devsecops",
+    "claim": "Used TruffleHog and GitRob to identify secrets and API credentials committed to source repositories.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "DevSecOps",
+      "Secrets Management",
+      "TruffleHog",
+      "GitRob"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "2445092f-84b5-586b-9561-8023d5ea092f",
+    "evidence_key": "STL-NET-001",
+    "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
+    "category": "network_security",
+    "claim": "Used Fortinet FortiGate firewalls as an egress-control/proxy layer and AWS-native WAF controls.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Network Security",
+      "FortiGate",
+      "AWS WAF",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "485b06c6-3a44-5dd4-9959-edb146e2bd77",
+    "evidence_key": "EVR-SCOPE-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "scope",
+    "claim": "Served as the security architect responsible for domains outside the dedicated application-security function, including cloud, infrastructure, corporate, network, and data security.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Architecture",
+      "Cloud Security",
+      "Network Security",
+      "Data Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "89304ef9-f87c-567f-a397-b5bd9efacc04",
+    "evidence_key": "EVR-SCOPE-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "authority",
+    "claim": "Reported to the Director of Security and had authority to require infrastructure/operations changes necessary to protect the Evernote environment.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Architecture",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "5f5fc50f-6665-5ed6-84b8-4775bfbdeef2",
+    "evidence_key": "EVR-IAM-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "iam",
+    "claim": "Identified approximately 30 engineers with GCP Owner-level access to the production cloud environment.",
+    "context": null,
+    "metric": "~30 GCP Owners",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "IAM Architecture",
+      "Least Privilege",
+      "GCP"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cddf9eae-667a-5ad1-a171-2e1bd9f77098",
+    "evidence_key": "EVR-IAM-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "iam",
+    "claim": "Replaced broad GCP primitive roles with custom least-privilege roles based on actual team operational requirements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Least Privilege",
+      "GCP"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7f6c7b8b-0f8a-55c2-a72c-0e029357c252",
+    "evidence_key": "EVR-IAM-003",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "privacy",
+    "claim": "Separated infrastructure-management permissions from permissions to read customer data, reinforcing privacy controls for privileged operations staff.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Privacy Engineering",
+      "Least Privilege",
+      "GCP"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b492a33c-e10a-5013-9ca2-45a1e51cd375",
+    "evidence_key": "EVR-IAM-004",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "iam",
+    "claim": "Designed IAM so attempts to elevate access to customer data would generate auditable changes and alerts.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Detection Engineering",
+      "Privacy Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "af716707-13d7-561b-ac32-cd6e8dcb056a",
+    "evidence_key": "EVR-IAM-005",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "identity",
+    "claim": "Integrated AWS access with Google identities to centralize authentication and simplify joiner/mover/leaver access lifecycle management.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Identity Federation",
+      "AWS",
+      "GCP",
+      "SSO"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "82d3fb2e-e688-5c19-9e75-9a1d64983a8a",
+    "evidence_key": "EVR-IAM-006",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "identity",
+    "claim": "Enabled manager-driven group membership so employees inherited appropriate access based on organizational role rather than individually assigned privileges.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Least Privilege",
+      "RBAC"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7e88a88d-822c-5ee6-9f5c-24c4629e16fe",
+    "evidence_key": "EVR-IAM-007",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "impact",
+    "claim": "Reduced IAM configuration errors through centralized identity and group-based access administration.",
+    "context": null,
+    "metric": "Resume source states ~40% reduction in IAM misconfigurations",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Least Privilege"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": "Interview confirmed direct reduction; exact 40% figure remains source-derived rather than re-verified."
+  },
+  {
+    "id": "98249798-ecfc-5f4f-85c3-00059e8a104e",
+    "evidence_key": "EVR-K8S-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "kubernetes_security",
+    "claim": "Created a Kubernetes Security Maturity roadmap after identifying unmanaged cluster ownership and widespread access to manually encrypted application secrets.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Security Architecture",
+      "Secrets Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c55a8d20-d683-51ba-982e-3235abf8bec3",
+    "evidence_key": "EVR-K8S-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "kubernetes_security",
+    "claim": "Drove adoption of Istio service mesh, including network policies, mTLS, sidecar traffic proxying/logging, and granular Kubernetes RBAC.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Istio",
+      "mTLS",
+      "RBAC",
+      "Network Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "73990e5f-36c8-5367-8de5-7a39a9789387",
+    "evidence_key": "EVR-K8S-003",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "governance",
+    "claim": "Migrated Kubernetes operational ownership from decentralized engineering teams to Operations to establish stronger governance and support controls.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Kubernetes Security",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "92350c0d-1ca4-5610-8eb7-37b35a41f097",
+    "evidence_key": "EVR-K8S-004",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "container_security",
+    "claim": "Deployed Twistlock for Kubernetes/container security monitoring.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Container Security",
+      "Kubernetes Security",
+      "Twistlock"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "bcc7111d-13cc-557e-ac22-7a9f32b00d99",
+    "evidence_key": "EVR-SECRET-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "secrets",
+    "claim": "Integrated HashiCorp Vault with Kubernetes to support direct secrets injection into containers and reduce developer access to secret material.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Secrets Management",
+      "HashiCorp Vault",
+      "Kubernetes Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6b8eb30e-ff9d-5481-bf64-71e38e2a61b9",
+    "evidence_key": "EVR-DATA-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "data_security",
+    "claim": "Created a data catalog documenting data locations, classifications, flows, and associated security controls after migration to GCP.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Security",
+      "Cloud Security",
+      "GCP",
+      "Privacy Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e6cb795f-c5ac-5e7a-963b-2d46762349de",
+    "evidence_key": "EVR-DATA-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "data_security",
+    "claim": "Mapped controls to data classifications to identify gaps in protection of sensitive customer information.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Security",
+      "Privacy Engineering",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "17cd2b45-5cf2-523e-9a56-a8cf0ce84416",
+    "evidence_key": "EVR-THREAT-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "threat_detection",
+    "claim": "Supported response to a multi-year credential/account compromise campaign targeting users believed to store cryptocurrency wallet information in Evernote accounts.",
+    "context": "This was a user-account compromise campaign, not a claim of compromise of Evernote infrastructure.",
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Incident Response",
+      "Detection Engineering",
+      "Data Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6fb2b1bd-8b03-5a3e-a874-a1cd3f74192f",
+    "evidence_key": "EVR-DETECT-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "detection_engineering",
+    "claim": "Used historical attack telemetry to identify behavioral indicators associated with coordinated account-compromise and data-extraction activity.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Detection Engineering",
+      "Incident Response",
+      "Data Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "83eaba2b-6ad7-5235-9896-41a3111a3e91",
+    "evidence_key": "EVR-DETECT-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "detection_engineering",
+    "claim": "Built SIEM detections for abnormal patterns such as coordinated account searches and search-infrastructure traffic spikes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Detection Engineering",
+      "Security Monitoring",
+      "BigQuery"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "14592daf-aaa6-5101-a104-2acd391a661f",
+    "evidence_key": "EVR-SIEM-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "security_monitoring",
+    "claim": "Used GCP BigQuery as the primary SIEM/data-analysis platform, with Logstash forwarding security and infrastructure logs into BigQuery.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Monitoring",
+      "Detection Engineering",
+      "BigQuery",
+      "Logstash",
+      "GCP"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "8a731740-d227-5164-aa5d-57915d8201f3",
+    "evidence_key": "EVR-ATO-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "security_control",
+    "claim": "Evaluated Shape as an additional anti-automation/account-protection control; removed it after it proved ineffective against the ongoing attack pattern.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Detection Engineering",
+      "Shape"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1ad01ca8-bc17-5313-a98b-485d1a48049c",
+    "evidence_key": "EVR-TPRM-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "third_party_risk",
+    "claim": "Performed security reviews for prospective third-party vendors in partnership with Legal.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Third-Party Risk",
+      "Vendor Risk"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "af55a53a-a906-5cbe-8df4-f2ce85f0a45d",
+    "evidence_key": "EVR-CUST-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "customer_security",
+    "claim": "Completed security questionnaires from enterprise customers evaluating Evernote’s security posture.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Customer Security",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e10225cb-cd82-5224-bbf8-56a51cacfd39",
+    "evidence_key": "EVR-LEGAL-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "contract_security",
+    "claim": "Reviewed and redlined security-related provisions in MSAs and commercial contracts in partnership with Legal.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Contract Security",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "60ef51d1-8f44-5fa4-8e90-2899355f5ba5",
+    "evidence_key": "EVR-AWARE-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "security_awareness",
+    "claim": "Designed and produced a company-wide security-awareness program when the organization declined to purchase a commercial training platform.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Awareness",
+      "Technical Training"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0c5576a5-d3af-5b5b-84d4-ce15f9d0c4c2",
+    "evidence_key": "EVR-AWARE-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "security_awareness",
+    "claim": "Personally created and recorded training covering phishing, password security, attacker techniques, compliance, secure coding, engineering security, and general best practices.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Awareness",
+      "Secure Coding",
+      "Technical Training"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f8c91275-369f-50f7-8910-f0bfdb9cb560",
+    "evidence_key": "EVR-IR-001",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "incident_response",
+    "claim": "Served in the on-call Security Incident Manager rotation and coordinated triage, investigation, stakeholders, containment, and final reporting.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "bcfcefb6-eac1-5791-b4e8-ce8e14c1d575",
+    "evidence_key": "EVR-IR-002",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "incident_response",
+    "claim": "Had authority to shut down individual services during security incidents when necessary, short of causing a complete service outage.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "40be574f-3cb6-55a0-aab5-ff9a3af42afd",
+    "evidence_key": "EVR-IR-003",
+    "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
+    "category": "incident_response",
+    "claim": "Produced post-incident recommendations for management and leadership aimed at preventing recurrence.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Incident Response",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cae13443-612d-5616-9241-52c308aa548f",
+    "evidence_key": "EBY-ROLE-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "scope",
+    "claim": "Joined eBay primarily for DevOps/platform-engineering responsibilities and later took on cross-functional cryptography leadership responsibilities.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Platform Engineering",
+      "Cryptography",
+      "Technical Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "30867fcb-87ea-570b-8ab7-a5fea0260a35",
+    "evidence_key": "EBY-CRYPTO-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "cryptography",
+    "claim": "Was recruited into eBay’s cross-functional Crypto Vigilantes group and subsequently asked by the enterprise cryptography architect to lead the group.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Cryptography",
+      "Technical Leadership",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fae651ed-aabe-54f0-bc85-1e7740c1d632",
+    "evidence_key": "EBY-CRYPTO-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "cryptography",
+    "claim": "Architected and operated a HashiCorp Vault cluster backed by an HSM.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cryptography",
+      "Secrets Management",
+      "HashiCorp Vault",
+      "HSM"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "170238a2-c85a-5d1a-a8bd-0f13384642a2",
+    "evidence_key": "EBY-CRYPTO-003",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "business_impact",
+    "claim": "Designed the Vault/HSM platform to support external international partners handling sensitive information required for e-commerce operations.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Cryptography",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c208024a-e8a0-56ea-958b-c779f407936b",
+    "evidence_key": "EBY-CRYPTO-004",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "business_impact",
+    "claim": "Cryptographic infrastructure supported approximately $5–10 million in annual revenue.",
+    "context": null,
+    "metric": "$5–10M annual revenue supported",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cryptography",
+      "Business Risk Translation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "21cd565e-4c57-5bb3-a7f4-3d7999b28857",
+    "evidence_key": "EBY-GOV-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "governance",
+    "claim": "Worked across organizations to identify cryptography-related infrastructure and bring teams toward a standardized enterprise cryptographic platform.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cryptography",
+      "Security Governance",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "834edf93-bf42-508c-bc38-5633cac74f6f",
+    "evidence_key": "EBY-GOV-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "leadership",
+    "claim": "Led meetings, set agendas, defined strategic priorities, and coordinated execution for the cross-functional cryptography working group.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Strategy",
+      "Cryptography"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "94391992-a949-5d39-b6a2-763e680ad516",
+    "evidence_key": "EBY-GOV-003",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "leadership",
+    "claim": "Expanded the cryptography working group’s senior advisory council to align initiatives with longer-term company strategy.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Strategy",
+      "Cryptography"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fa8d20d8-8ad5-5e79-b2a6-2f47f36efefc",
+    "evidence_key": "EBY-SECCHAMP-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "security_champion",
+    "claim": "Served as a Security Champion, partnering with development teams to provide secure-development guidance and escalate deviations from security policies/best practices.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Secure Coding",
+      "SSDLC",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e42b8ea2-2572-5434-9c0a-c2ac2f0e1074",
+    "evidence_key": "EBY-PRIV-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "privacy",
+    "claim": "Served as a Privacy Champion, partnering with teams on data-privacy practices in a role analogous to the Security Champion function but focused on privacy.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Privacy Engineering",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c4c9de3c-4506-50db-a238-727f85b181b7",
+    "evidence_key": "EBY-AUTO-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "infrastructure_automation",
+    "claim": "Introduced SaltStack to automate management of approximately 800 servers used by eBay’s security organization.",
+    "context": null,
+    "metric": "~800 servers",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Infrastructure Automation",
+      "Configuration Management",
+      "SaltStack"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "416b009c-01a8-55c0-921b-f20a109156cf",
+    "evidence_key": "EBY-AUTO-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "infrastructure_automation",
+    "claim": "Reduced new-server provisioning from hours/days to approximately 20–30 minutes using repeatable configuration automation.",
+    "context": null,
+    "metric": "~20–30 minute provisioning",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Infrastructure Automation",
+      "SaltStack",
+      "Reliability Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3a6f64dd-f6db-599e-a3b2-e0d8f914b026",
+    "evidence_key": "EBY-DR-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "reliability",
+    "claim": "Reduced HashiCorp Vault recovery time from roughly 8–10 hours to approximately 1 hour after infrastructure automation.",
+    "context": null,
+    "metric": "~8–10 hours → ~1 hour",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Reliability Engineering",
+      "Infrastructure Automation",
+      "HashiCorp Vault",
+      "SaltStack"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "977495b4-8ff1-5895-8a96-7327fb4d3c8c",
+    "evidence_key": "EBY-SCALE-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "enterprise_adoption",
+    "claim": "Demonstrated SaltStack scalability to a Marketplace organization managing approximately 1,500 servers after that team encountered Puppet scaling limitations.",
+    "context": null,
+    "metric": "~1,500 servers",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Infrastructure Automation",
+      "SaltStack",
+      "Puppet",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1e7efada-8336-5ec5-b1ed-347365b89fb2",
+    "evidence_key": "EBY-SCALE-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "enterprise_adoption",
+    "claim": "Helped drive broader SaltStack adoption across eBay Marketplace, eBay Classifieds, and StubHub, contributing to standardization on a common infrastructure-management platform.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Infrastructure Automation",
+      "SaltStack",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "885212eb-5b58-5505-85cd-3de0fe4aa7f1",
+    "evidence_key": "EBY-POL-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "policy",
+    "claim": "Served as a policy/standards SME for cryptography, key management, hashing/encryption, public cloud security, internal PKI infrastructure, and system lifecycle management.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cryptography",
+      "PKI Architecture",
+      "Cloud Security",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "89bdb381-e224-5a4f-ab96-b578873d81ff",
+    "evidence_key": "EBY-KEY-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "cryptography",
+    "claim": "Co-authored eBay’s encryption key lifecycle policy with the enterprise cryptography architect.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cryptography",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "84dbd572-6fc2-51b6-a87d-974625b799ae",
+    "evidence_key": "EBY-PKI-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "pki",
+    "claim": "Designed and implemented automated PKI capabilities using HashiCorp Vault backed by HSM infrastructure.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "PKI Architecture",
+      "Cryptography",
+      "HashiCorp Vault",
+      "HSM",
+      "PKI"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "83908dfb-b32e-5193-9d50-4dad8f695d83",
+    "evidence_key": "EBY-PKI-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "pki",
+    "claim": "Configured certificate issuance and revocation in Vault, validated service functionality, and supported the first production adopter.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "PKI Architecture",
+      "HashiCorp Vault",
+      "PKI",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fa775f90-bf2f-519a-a9e8-01ce6433d58b",
+    "evidence_key": "EBY-WAZUH-001",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "security_monitoring",
+    "claim": "Upgraded OSSEC to the Wazuh branch and built SaltStack playbooks to deploy/configure Wazuh consistently across servers.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Monitoring",
+      "Wazuh",
+      "OSSEC",
+      "SaltStack"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "bd5971cd-be5a-5360-96b7-d146c5d093f7",
+    "evidence_key": "EBY-WAZUH-002",
+    "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
+    "category": "security_monitoring",
+    "claim": "Defined Wazuh file-integrity monitoring and configuration-drift rules for managed servers.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Monitoring",
+      "Wazuh",
+      "Configuration Management",
+      "Detection Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3fcef80b-747b-5c38-b4e0-ca259a386d57",
+    "evidence_key": "APX-SCOPE-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "scope",
+    "claim": "Served as the sole DevOps engineer despite the Manager of DevOps title and owned Apixio’s production infrastructure.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Platform Engineering",
+      "Cloud Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b70ab1d5-a4d0-58e3-b64c-eac194de74d7",
+    "evidence_key": "APX-SCOPE-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "scope",
+    "claim": "Also owned security responsibilities for production and partnered with the Chief Compliance Officer on audit/control requirements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Architecture",
+      "Compliance",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "953fd5f5-424d-541d-a1dc-ad360730aef4",
+    "evidence_key": "APX-COMP-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "compliance",
+    "claim": "Supported control implementation for SOC 2, PCI, and a healthcare compliance target referred to in the interview as “HIPAA High Trust.”",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "SOC 2",
+      "PCI DSS",
+      "HIPAA High Trust (user terminology)"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": "Formal framework name needs verification."
+  },
+  {
+    "id": "730817cf-bae0-573c-9440-0761a1897c53",
+    "evidence_key": "APX-DEPLOY-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "ci_cd",
+    "claim": "Replaced a fully manual, server-by-server WAR deployment process with automated Ansible-based deployment playbooks.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Infrastructure Automation",
+      "Ansible"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7caec2dc-0c7b-5281-8fad-1ab5f80c2cbb",
+    "evidence_key": "APX-DEPLOY-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "ci_cd",
+    "claim": "Integrated Jenkins and Artifactory so successful builds were automatically published for centralized deployment.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Jenkins",
+      "Artifactory"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cbd9e448-4702-59bb-8892-d2e18501932c",
+    "evidence_key": "APX-DEPLOY-003",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "impact",
+    "claim": "Reduced deployment windows from approximately 60 minutes to about 5 minutes while supporting roughly 2–3 production deployments per week.",
+    "context": null,
+    "metric": "~60 min → ~5 min; 2–3 deployments/week",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Infrastructure Automation",
+      "Ansible",
+      "Jenkins"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7a467efd-6513-5fe2-bd70-0cb2d0b0b08c",
+    "evidence_key": "APX-CONFIG-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "configuration_management",
+    "claim": "Introduced Consul as centralized configuration management to prevent environment-specific configuration drift.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Configuration Management",
+      "Consul"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7dd464db-e4b1-5606-831b-79ad80fa45e9",
+    "evidence_key": "APX-SECRET-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "secrets",
+    "claim": "Introduced HashiCorp Vault for centralized secrets and API-key management.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Secrets Management",
+      "HashiCorp Vault"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "a6e2f0b7-9454-5d0b-8411-4eb669dd0b00",
+    "evidence_key": "APX-PHI-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "healthcare_security",
+    "claim": "Protected a healthcare-data environment containing complete medical histories for hundreds of millions of individuals.",
+    "context": null,
+    "metric": "Hundreds of millions of health histories",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Healthcare Security",
+      "Data Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "72dc75f9-4779-5dcc-ae6f-494b2c039d03",
+    "evidence_key": "APX-PHI-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "healthcare_security",
+    "claim": "Implemented application-level encryption in addition to cloud-provider default encryption for sensitive health data.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Healthcare Security",
+      "Data Security",
+      "Cryptography"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "63cf346e-e390-5cf5-907a-a00a7120b54b",
+    "evidence_key": "APX-NET-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "network_security",
+    "claim": "Implemented network segmentation and built tooling to manage AWS firewall/Security Group rules controlling service-to-service communication.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Network Security",
+      "AWS",
+      "Security Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "2a4da3a2-1870-5005-9291-a4b425dc159f",
+    "evidence_key": "APX-LOG-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "security_monitoring",
+    "claim": "Ensured security- and access-relevant events were logged to enable detection of anomalous authentication and activity patterns.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Monitoring",
+      "Detection Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ec2bde2e-c55e-55c5-ae32-47be2773fd33",
+    "evidence_key": "APX-ARCH-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "cloud_architecture",
+    "claim": "Evaluated container/orchestration platforms and selected Mesosphere with Marathon and Chronos.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Architecture",
+      "Mesosphere",
+      "Marathon",
+      "Chronos",
+      "Docker"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "18751e53-e938-5cae-8ba0-570b011256ed",
+    "evidence_key": "APX-ARCH-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "cloud_architecture",
+    "claim": "Designed a container platform using Mesosphere, Marathon, Chronos, Consul, Vault, Terraform, and Ansible.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Architecture",
+      "Mesosphere",
+      "Marathon",
+      "Chronos",
+      "Consul",
+      "HashiCorp Vault",
+      "Terraform",
+      "Ansible",
+      "Infrastructure as Code"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f61cb96a-3ab5-5598-8d41-4f5f29103b5c",
+    "evidence_key": "APX-ARCH-003",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "reliability",
+    "claim": "Used containers and infrastructure-as-code to reduce dependence on heavy EC2 recreation and improve deployment/recovery agility.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Reliability Engineering",
+      "Cloud Architecture",
+      "EC2",
+      "Terraform",
+      "Docker"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d15185df-1dd1-5f20-b489-2ca13ad0e038",
+    "evidence_key": "APX-SCALE-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "scalability",
+    "claim": "Designed the platform to handle capacity changes that previously required scaling by hundreds of EC2 instances.",
+    "context": null,
+    "metric": "Scaling by hundreds of EC2 instances",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Architecture",
+      "Capacity Planning",
+      "EC2"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ef04dd79-f76d-588b-9ef5-d99a5a754e5b",
+    "evidence_key": "APX-COST-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "cost",
+    "claim": "Planned container lifecycle policies so workloads could be torn down when no longer required, reducing unnecessary cloud operating cost.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Cost Optimization",
+      "Cloud Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cd8a0ee0-edef-5dd4-9f00-bd11a7ad641c",
+    "evidence_key": "APX-PCI-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "compliance",
+    "claim": "Researched and selected an external PCI scanning provider; initial scan identified 17 issues.",
+    "context": null,
+    "metric": "17 initial PCI scan findings",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "PCI DSS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f7b275e9-8e3c-5d1f-b102-9095ce0f65e2",
+    "evidence_key": "APX-PCI-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "compliance",
+    "claim": "Personally remediated all 17 PCI scan findings, coordinated a rescan, and achieved a clean result supporting PCI certification/audit outcome.",
+    "context": null,
+    "metric": "17/17 remediated; clean rescan",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Compliance",
+      "PCI DSS",
+      "Vulnerability Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "a35ed663-1e08-5c43-9068-2fca07f83b45",
+    "evidence_key": "APX-PCI-003",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "compliance",
+    "claim": "Apixio did not process payment data; the business reason for pursuing PCI certification was not established in the interview.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Compliance",
+      "PCI DSS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d9ff51a2-8ece-55d1-8bde-f2509fe244d7",
+    "evidence_key": "APX-GATE-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "cloud_security",
+    "claim": "Created “Gatekeeper,” a Python/SaltStack AWS Security Group governance tool using a canonical allowlist of approved rules.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Security",
+      "Security Automation",
+      "Network Security",
+      "Python",
+      "SaltStack",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e2b0bfdc-ab0d-5e75-b25d-b8be09fd3c83",
+    "evidence_key": "APX-GATE-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "cloud_security",
+    "claim": "Gatekeeper audited Security Groups on a recurring basis, removed unauthorized rules, restored approved configuration, and reported rule changes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Security",
+      "Security Automation",
+      "Configuration Management",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cf25ee46-e2d0-5e85-a46c-9c2d81906e5b",
+    "evidence_key": "APX-SSH-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "privileged_access",
+    "claim": "Built a self-service web application for temporary production SSH access using single-use SSH key pairs.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Privileged Access Management",
+      "Just-in-Time Access",
+      "Security Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0c6f1ac5-6c8b-5adc-9ef5-ab2e9e282197",
+    "evidence_key": "APX-SSH-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "privileged_access",
+    "claim": "Automated creation of temporary Unix accounts, home directories, public-key installation, SSH service activation, and Security Group access using SaltStack.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Privileged Access Management",
+      "Just-in-Time Access",
+      "SaltStack",
+      "AWS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "54fe6d43-17a9-519f-91de-b69f7a6071bd",
+    "evidence_key": "APX-SSH-003",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "privileged_access",
+    "claim": "Closed inbound SSH access after the user connected, then removed temporary account/key/home-directory access after disconnect while preserving command history centrally.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Privileged Access Management",
+      "Just-in-Time Access",
+      "Security Monitoring",
+      "SaltStack"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c705b2f3-30ef-5917-a63b-a2da6a9e4564",
+    "evidence_key": "APX-VM-001",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "vulnerability_management",
+    "claim": "Used Nessus for external and internal authenticated vulnerability scanning and personally reviewed/remediated infrastructure findings.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Vulnerability Management",
+      "Nessus"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "cfaac30d-5f62-559b-8b6e-aa2fef39d101",
+    "evidence_key": "APX-VM-002",
+    "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
+    "category": "vulnerability_management",
+    "claim": "Vulnerability remediation was operationally managed rather than governed by a formal SLA framework at that stage.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Vulnerability Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "55852658-d3a8-5cac-89c4-086cafd70197",
+    "evidence_key": "HTW-ORG-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "leadership",
+    "claim": "Joined two weeks after the Director of IT as one of the founding members of the IT organization and helped build Technical Operations and Security Operations from scratch.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Team Building",
+      "Engineering Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "91850115-a61a-5c82-be3e-d2f650ba4727",
+    "evidence_key": "HTW-ORG-002",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "leadership",
+    "claim": "Directly managed four team members within an IT organization that also included three additional support staff.",
+    "context": null,
+    "metric": "4 direct reports; 7 total IT staff",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "People Leadership",
+      "Engineering Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "81f57d24-6879-5fb4-b298-315ca7d778da",
+    "evidence_key": "HTW-DC-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "data_center",
+    "claim": "Helped build a new office’s IT infrastructure and personally installed/configured approximately 140 rack servers in the data center.",
+    "context": null,
+    "metric": "~140 rack servers",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Center Operations",
+      "Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "22c8c112-9627-5425-b811-543878a90927",
+    "evidence_key": "HTW-OPS-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "scope",
+    "claim": "Shared responsibility for operating data centers, corporate infrastructure, physical security, cybersecurity, and facilities.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Center Operations",
+      "Physical Security",
+      "Facilities Operations",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "daeb821b-79d2-592b-bdc4-b1f7db03c4f6",
+    "evidence_key": "HTW-LEAD-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "leadership",
+    "claim": "Had substantial influence over IT/security strategy, architecture, operational decisions, and budget, frequently acting as the Director of IT’s trusted hands-on technical decision-maker.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Strategy",
+      "Engineering Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b61935fb-0223-50b5-8b66-a63c822a08d5",
+    "evidence_key": "HTW-SEC-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "security_scope",
+    "claim": "Functioned as the de facto security organization because Hortonworks had no separate security team.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Governance",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7a5a9da6-6d52-5f50-81ec-fb4e1067a932",
+    "evidence_key": "HTW-CLOUD-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "private_cloud",
+    "claim": "Helped select OpenStack as the internal private-cloud platform and defined architecture, configuration, security-control, and monitoring requirements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Private Cloud Architecture",
+      "OpenStack",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "821a5220-44c6-50ff-96ba-793e9db8e3a1",
+    "evidence_key": "HTW-CLOUD-002",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "private_cloud",
+    "claim": "Operated an OpenStack cluster of approximately 60 physical nodes used for Hadoop development/performance testing in cloud-style environments.",
+    "context": null,
+    "metric": "~60 physical nodes",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Private Cloud Architecture",
+      "OpenStack",
+      "Capacity Planning"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "030244eb-ed01-5eb0-9974-dd81672b798e",
+    "evidence_key": "HTW-CLOUD-003",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "private_cloud",
+    "claim": "Expanded the private cloud to support customer POCs/demos with VPN access and tenant-isolation controls preventing cross-customer data exposure.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Private Cloud Architecture",
+      "Network Security",
+      "OpenStack",
+      "Customer Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ef19f382-9aa4-5d69-a8f6-ffc8cad70ad4",
+    "evidence_key": "HTW-CHANGE-001",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "change_management",
+    "claim": "Designed and launched Hortonworks’ formal change-control process and selected/established the Change/Release Advisory committee.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Change Management",
+      "Security Governance",
+      "Strategy"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b31c216a-589c-5f4d-9e36-f686da3f540a",
+    "evidence_key": "HTW-CHANGE-002",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "change_management",
+    "claim": "Required changes to undergo triage, security-impact review, implementation instructions, rollback plans, and committee approval before execution.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Change Management",
+      "Security Governance",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "777a2df9-e3c6-5f58-a106-f7af2d629bf0",
+    "evidence_key": "HTW-CHANGE-003",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "change_management",
+    "claim": "Established recurring deployment windows, coordinated status communications, and instituted postmortems following failed changes or rollbacks.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Change Management",
+      "Reliability Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "8b34521e-8974-58ac-9f84-c0a1ef1bed24",
+    "evidence_key": "HTW-CHANGE-004",
+    "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
+    "category": "authority",
+    "claim": "Held approval authority through the change-governance process to approve, deny, or defer infrastructure and operational changes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Change Management",
+      "Security Governance"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b74a96d7-c7f6-52e8-a025-617fc902f39b",
+    "evidence_key": "APC-LEAD-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "leadership",
+    "claim": "Managed a five-person web-properties engineering team as direct reports.",
+    "context": null,
+    "metric": "5 direct reports",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "People Leadership",
+      "Engineering Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7eb48db6-f1bb-5e24-a88c-9b5c7aee7302",
+    "evidence_key": "APC-LEAD-002",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "leadership",
+    "claim": "Provided technical leadership to a three-person DevOps function, including yourself and two additional engineers.",
+    "context": null,
+    "metric": "3-person DevOps function",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "91017f2b-d972-5a68-ab67-e17e1e7b4d9b",
+    "evidence_key": "APC-ARCH-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "software_architecture",
+    "claim": "Re-architected Appcelerator’s corporate website from CodeIgniter to Zend Framework.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "CodeIgniter",
+      "Zend Framework"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fb0d3856-b307-55f6-ad86-14459a7b8497",
+    "evidence_key": "APC-ARCH-002",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "impact",
+    "claim": "Used framework-provided logging/authentication/authorization and other scaffolding to reduce application codebase size by approximately 40%.",
+    "context": null,
+    "metric": "~40% fewer lines of code",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Zend Framework"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e72e6da7-1b81-599b-a31c-2ba92ed98a3f",
+    "evidence_key": "APC-PERF-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "impact",
+    "claim": "Improved website performance by approximately 30% after the Zend Framework rearchitecture.",
+    "context": null,
+    "metric": "~30% faster",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Performance Engineering",
+      "Zend Framework"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "49ba4311-75e2-5135-808e-761fcba92ca6",
+    "evidence_key": "APC-SDLC-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "sdlc",
+    "claim": "Introduced a Git-based source-control workflow using branches, pull requests, code review, and conflict-resolution discipline.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Git",
+      "CI/CD",
+      "Secure Coding"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6aae0bc0-0af7-5f4b-bd05-0603e18e4d60",
+    "evidence_key": "APC-TEST-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "testing",
+    "claim": "Introduced automated unit testing and required tests to cover both success and failure/error conditions.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "CI/CD"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "db23350c-1643-5979-a3d8-3520d95e26b5",
+    "evidence_key": "APC-CI-001",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "ci_cd",
+    "claim": "Configured Jenkins builds to fail when unit-test coverage fell below 85%.",
+    "context": null,
+    "metric": "85% minimum unit-test coverage",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Jenkins"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "dc40ec98-9fe6-501d-8e30-06ed9462203f",
+    "evidence_key": "APC-CI-003",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "ci_cd",
+    "claim": "Designed a distributed Jenkins architecture with a centralized controller coordinating OS-specific worker/build nodes for multi-platform builds.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Jenkins",
+      "Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1d51d41d-0a16-5ae2-a4a1-f252b6b94582",
+    "evidence_key": "APC-CI-004",
+    "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
+    "category": "ci_cd",
+    "claim": "Centralized multi-platform build orchestration to avoid unmanaged, ad hoc builds across different operating systems.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "CI/CD",
+      "Jenkins",
+      "Release Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "40bf2c32-aa37-52e1-b16e-10b2e9b400e6",
+    "evidence_key": "RIC-LEAD-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "leadership",
+    "claim": "Joined as the first software engineer for the web-services effort and helped grow the organization from one person to roughly 15 engineers before promotion to Director.",
+    "context": null,
+    "metric": "1 → ~15 before Director promotion",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Team Building",
+      "Engineering Management",
+      "Technical Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "64134234-f867-5d69-b1ee-871c762e2a88",
+    "evidence_key": "RIC-LEAD-002",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "leadership",
+    "claim": "As Director, led an organization of approximately 20 people across three engineering teams.",
+    "context": null,
+    "metric": "~20 people / 3 teams",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Engineering Management",
+      "People Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "5b19fbaa-8d41-59f0-ba33-0f28a8077278",
+    "evidence_key": "RIC-LEAD-003",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "leadership",
+    "claim": "Led a five-person contractor UI team, an SDK team with a manager and four engineers, and an API team with a manager and nine engineers.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Engineering Management",
+      "People Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9402c0e0-78d1-5ebe-a55c-b581eb280d62",
+    "evidence_key": "RIC-LEAD-004",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "leadership",
+    "claim": "Promoted two senior engineers into engineering-manager positions as the organization scaled.",
+    "context": null,
+    "metric": "2 internal manager promotions",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "People Leadership",
+      "Coaching",
+      "Team Building"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "45dccec7-fc86-5e0b-8a12-71abdf3454b3",
+    "evidence_key": "RIC-PROD-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "product",
+    "claim": "Led engineering for a stylus-enabled electronic writing device designed to digitize paper-based workflows, with healthcare as a primary target market.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Healthcare Security",
+      "Software Engineering",
+      "Product Security"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6bc7eca9-e51b-535f-adc2-f6f5749de063",
+    "evidence_key": "RIC-PROD-002",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "product",
+    "claim": "Platform incorporated OCR, ICR, signature-validation, device/backend integration, and cloud document storage.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Data Security",
+      "Cloud Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "4d47f057-a24e-5110-83ef-4bba1305f84f",
+    "evidence_key": "RIC-INTEG-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "integrity",
+    "claim": "Designed document-integrity capabilities capable of producing certification that a document had not been altered during its lifecycle.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Security",
+      "Cryptography",
+      "Security Architecture"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "aede4c8d-a5d8-51d8-acde-21ea83141bff",
+    "evidence_key": "RIC-CLOUD-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "cloud_architecture",
+    "claim": "Built the backend platform on AWS/EC2 using PHP, Zend Framework, MySQL, and a distributed microservice-oriented architecture.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Cloud Architecture",
+      "AWS",
+      "EC2",
+      "PHP",
+      "Zend Framework",
+      "MySQL",
+      "Distributed Systems"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "4affec1a-0e93-58fb-862e-f3e5cf0e7b3b",
+    "evidence_key": "RIC-ARCH-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "architecture",
+    "claim": "Designed services so individual platform components could scale independently, controlling cost by scaling only constrained functions.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Distributed Systems",
+      "Cloud Architecture",
+      "Cloud Cost Optimization"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "5f5de3fa-e09e-5f21-98b3-888f9e9daf43",
+    "evidence_key": "RIC-SYNC-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "distributed_systems",
+    "claim": "Used Git-based synchronization between devices and backend services to leverage established conflict-resolution semantics rather than building a proprietary synchronization engine.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Distributed Systems",
+      "Git",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "023b675e-d3d3-57cc-8364-ffe617884642",
+    "evidence_key": "RIC-MQ-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "reliability",
+    "claim": "Implemented clustered ActiveMQ to improve messaging availability/resiliency and exponential backoff to prevent recovery-time retry storms.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Reliability Engineering",
+      "Distributed Systems",
+      "ActiveMQ"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1c321434-ce27-55a8-8507-3367a1412930",
+    "evidence_key": "RIC-PERF-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "performance",
+    "claim": "Conducted load/performance testing to identify bottlenecks and validate workflow latency; defined stress, load, and failover testing processes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Performance Engineering",
+      "Reliability Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "544db58b-daca-5599-8a29-9ba2341b4ac4",
+    "evidence_key": "RIC-SCALE-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "scale",
+    "claim": "Platform launch planning included approximately 20,000 hardware devices; pre-launch/test traffic reached roughly 150 transactions per minute.",
+    "context": null,
+    "metric": "~20,000 planned devices; ~150 transactions/min test traffic",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Capacity Planning",
+      "Performance Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "089814cd-4567-57fc-80e4-d5cd765dd1fa",
+    "evidence_key": "RIC-LIFE-001",
+    "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
+    "category": "scope",
+    "claim": "Left Ricoh before the product’s public launch, so post-launch production metrics should not be attributed to this tenure.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "bd76cbb0-5eef-56c2-86aa-64665ddc6373",
+    "evidence_key": "CBS-SCALE-001",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "scale",
+    "claim": "Worked on TV.com while the platform had approximately 150 million active users.",
+    "context": null,
+    "metric": "~150M active users",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Web Platform Engineering",
+      "Capacity Planning"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d8c74804-6185-5247-a112-f946b3401776",
+    "evidence_key": "CBS-SCALE-002",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "scale",
+    "claim": "Supported a data environment containing several terabytes of information, including nationwide television-listing data and a large video library.",
+    "context": null,
+    "metric": "Several TB of data",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Database Engineering",
+      "Media Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "d18a32b7-5336-51c9-a440-110fb661de49",
+    "evidence_key": "CBS-WATCH-001",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "product",
+    "claim": "Worked in an environment where the Watch List was a major feature, with typical users tracking approximately 60–75 shows.",
+    "context": null,
+    "metric": "~60–75 shows/watch list",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "7f147a93-95ba-55ff-9de9-0b7cb71b3bae",
+    "evidence_key": "CBS-VIDEO-001",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "media_pipeline",
+    "claim": "Helped build a unified video-ingestion architecture that replaced a substantially manual partner-video onboarding process.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Media Platform Engineering",
+      "Data Ingestion",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "381f2dcb-2582-518d-bb37-df363427c084",
+    "evidence_key": "CBS-VIDEO-002",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "media_pipeline",
+    "claim": "Enabled partners to submit content into a centralized intake process for normalization, metadata processing, downstream updates, and publication with substantially less manual effort.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Media Platform Engineering",
+      "Data Ingestion",
+      "Workflow Automation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "9759d3ac-be8a-5609-9e97-23ee75c117c9",
+    "evidence_key": "CBS-LEAD-001",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "leadership",
+    "claim": "Served as the most senior engineer on the team and provided informal technical leadership and architectural input on major projects without direct reports.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "232be055-bcff-5245-ab6f-9e9ce3296c85",
+    "evidence_key": "CBS-DB-001",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "database",
+    "claim": "Implemented slow-query logging to identify expensive MySQL queries against multi-terabyte datasets.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Database Engineering",
+      "Performance Engineering",
+      "MySQL"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ca89624a-eb98-54fe-aed9-d7dee129da74",
+    "evidence_key": "CBS-DB-002",
+    "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
+    "category": "database",
+    "claim": "Analyzed query patterns and underlying datasets, tuned indexes, and decomposed oversized datasets into multiple tables to improve lookup performance.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Database Engineering",
+      "Performance Engineering",
+      "MySQL"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0b760afa-d1cf-56f7-b602-bd5691e47926",
+    "evidence_key": "ZND-CONS-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "consulting",
+    "claim": "Delivered four major consulting engagements during a six-month tenure with Zend Technologies.",
+    "context": null,
+    "metric": "4 major engagements / ~6 months",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Professional Services",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "c5ea3e2a-edf6-50d4-929b-2ccf9289c4c4",
+    "evidence_key": "ZND-TRAIN-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "training",
+    "claim": "Traveled onsite to train customer developers in Zend Framework usage, unit testing, and application security.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Training",
+      "Zend Framework",
+      "Secure Coding"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "0a0c9b32-fec5-58da-b952-bd10782ca229",
+    "evidence_key": "ZND-DEV-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "software_engineering",
+    "claim": "Performed hands-on development for a social-media company, including design and implementation of a search capability.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Professional Services"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "16d19e85-4b06-5929-8c46-d93bb5e9948f",
+    "evidence_key": "ZND-ARCH-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "architecture",
+    "claim": "Helped design and build customer PHP application infrastructure using Zend Framework.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Consulting",
+      "Software Engineering",
+      "PHP",
+      "Zend Framework"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "33ba2e5b-c69d-5cbd-86bb-222e4952f560",
+    "evidence_key": "ZND-CI-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "consulting",
+    "claim": "Consulted with customers on continuous integration and unit-testing best practices.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Consulting",
+      "CI/CD",
+      "Technical Training"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "b1e9f710-c98c-50c2-8886-be7498047c11",
+    "evidence_key": "ZND-AUDIT-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "assessment",
+    "claim": "Performed architecture and security assessments using architecture diagrams, source-code review, configuration review, and database review.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Architecture",
+      "Application Security",
+      "Technical Consulting",
+      "Database Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ac2d7b14-4ca6-5f13-9ab4-4f12ceab5896",
+    "evidence_key": "ZND-AUDIT-002",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "assessment",
+    "claim": "Evaluated gaps between current customer architecture/security posture and desired scale/security/operational goals, then produced recommendations.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Security Architecture",
+      "Technical Consulting",
+      "Risk Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "8ca29e92-3466-5221-b4a6-655ea9bb36c7",
+    "evidence_key": "ZND-PRESALES-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "presales",
+    "claim": "Participated in pre-sales calls to explain consulting capabilities, answer technical questions, and help customers assess whether the team had the expertise needed for engagements.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Pre-Sales",
+      "Technical Consulting",
+      "Professional Services"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "2911a1ae-f2d5-5561-9639-91dfc798ede7",
+    "evidence_key": "ZND-EDU-001",
+    "experience_id": "199d9bd9-567c-5a03-98e8-8a5adcb61e4a",
+    "category": "training",
+    "claim": "Conducted technical webinars on application security, continuous integration, and unit testing.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Training",
+      "Application Security",
+      "CI/CD"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "5faf2cfb-cf7d-52ae-af0a-17e38ff2951f",
+    "evidence_key": "PKP-LEAD-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "leadership",
+    "claim": "Served as Director of Technology for a nine-person technology organization with eight direct reports.",
+    "context": null,
+    "metric": "9-person org; 8 direct reports",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Engineering Management",
+      "People Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "524383d3-0033-54be-8051-da8ea6d2e36e",
+    "evidence_key": "PKP-PROD-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "product",
+    "claim": "Led technology for Facebook-based social sports games covering football, basketball, soccer, hockey, and special events such as the NCAA Final Four, using non-real-money wagering/prediction mechanics.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Web Platform Engineering",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "50877a79-f18a-520c-b956-ff71e8dbc33b",
+    "evidence_key": "PKP-INFRA-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "infrastructure",
+    "claim": "Operated approximately 20 physical servers colocated in a data center.",
+    "context": null,
+    "metric": "~20 physical servers",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Data Center Operations",
+      "Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "57bcbea5-8d57-503c-b207-7a590ec743ac",
+    "evidence_key": "PKP-DB-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "database",
+    "claim": "Designed and operated three MySQL database clusters using master-master replication for high availability and workload distribution.",
+    "context": null,
+    "metric": "3 MySQL HA clusters",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Database Engineering",
+      "Reliability Engineering",
+      "MySQL"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "a923549f-96ef-5ff8-96e9-f13e5a5583db",
+    "evidence_key": "PKP-WEB-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "scalability",
+    "claim": "Designed a horizontally scalable web cluster for event-driven traffic spikes.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Web Platform Engineering",
+      "Capacity Planning",
+      "Reliability Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "00848a50-8c03-527a-9248-d8e27b8ba224",
+    "evidence_key": "PKP-SCALE-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "scalability",
+    "claim": "Architected the platform for anticipated NCAA Final Four traffic of approximately 10,000 visits per minute.",
+    "context": null,
+    "metric": "~10,000 visits/minute expected",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Capacity Planning",
+      "Performance Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fd79e715-06f6-5e57-b6f7-099816f90f66",
+    "evidence_key": "PKP-ARCH-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "architecture",
+    "claim": "Architected Pickspal’s technology platform from the ground up and remained highly hands-on as Director.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Technical Leadership",
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6afa0151-1e03-58f3-9279-df2fea76a9e3",
+    "evidence_key": "PKP-DEV-001",
+    "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
+    "category": "software_engineering",
+    "claim": "Continued writing a substantial portion of production code while leading the technology organization.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "Engineering Management"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "dfb85021-b679-5b5e-a8b0-081589e49f40",
+    "evidence_key": "VMW-ROLE-001",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "scope",
+    "claim": "Served as an individual contributor on VMware’s web development team while acting as lead engineer for the Virtual Appliance Marketplace and lead developer for the VMware Technical Network.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "25521b40-0d24-59e3-bcb2-10757e1853fc",
+    "evidence_key": "VMW-SSO-001",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "identity",
+    "claim": "Integrated the Virtual Appliance Marketplace with VMware’s standardized SOAP-based SSO ecosystem using Java calls to the authentication service.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Identity Federation",
+      "SSO",
+      "SOAP",
+      "Java"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e9b85c5a-8832-5fe8-9d8a-57cc2d47c118",
+    "evidence_key": "VMW-SSO-002",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "identity",
+    "claim": "Enabled users to move across VMware web properties without repeated authentication.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Identity Federation",
+      "SSO"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "81606d0f-f086-578e-84ba-1055d65d2a41",
+    "evidence_key": "VMW-DEPLOY-001",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "release_engineering",
+    "claim": "Built a publishing workflow that exported CMS content, combined it with CVS-managed assets, and prepared versioned production releases.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Release Engineering",
+      "Workflow Automation",
+      "CVS"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "dcecb5cd-64c2-5967-bdff-653e4af84cd3",
+    "evidence_key": "VMW-DEPLOY-002",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "release_engineering",
+    "claim": "Replaced rsync-centric publishing with a versioned directory/symlink deployment model enabling near-instantaneous rollback by switching symlink targets.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Release Engineering",
+      "Reliability Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1345c4c1-23fc-5012-b9f1-a0bbb0868d9e",
+    "evidence_key": "VMW-MKT-001",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "product",
+    "claim": "Helped build the VMware Virtual Appliance Marketplace, allowing vendors to publish preconfigured virtual machines for customers to purchase and run on VMware platforms.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Web Platform Engineering",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ec785e41-5865-546d-9f4a-b08a66735bda",
+    "evidence_key": "VMW-MKT-002",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "business_impact",
+    "claim": "Supported a platform that created an additional commercial/revenue channel for VMware and participating software vendors.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ad202f47-457a-5876-9df4-694a5f041e22",
+    "evidence_key": "VMW-IDENT-001",
+    "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
+    "category": "identity",
+    "claim": "Worked with LDAP and ACL-related functionality for internal user/access-management applications.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "IAM Architecture",
+      "Identity Federation"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "e3fe4038-c911-5ad5-8ae9-ee22a93b2b0b",
+    "evidence_key": "SYM-PROD-001",
+    "experience_id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
+    "category": "product",
+    "claim": "Worked on Symantec’s Falcon initiative, which moved Norton Antivirus software activation from locally validated CD keys to an online activation model.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Web Platform Engineering",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "21a2ff6c-34fd-5bdf-8151-11dd641f8351",
+    "evidence_key": "SYM-PROD-002",
+    "experience_id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
+    "category": "product",
+    "claim": "The online activation workflow enabled validation of software entitlements and reduced reuse/piracy of previously activated distributions.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "generalize",
+    "tags": [
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "15ca205c-462d-5813-9497-58ea0a7eba9e",
+    "evidence_key": "SYM-ROLE-001",
+    "experience_id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
+    "category": "scope",
+    "claim": "Served purely as an individual-contributor web developer on a short-term contract.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "daa363be-bca6-54c7-90bb-76044e13b65d",
+    "evidence_key": "SYM-WEB-001",
+    "experience_id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
+    "category": "web_development",
+    "claim": "Contributed JSP, JavaScript, CSS, XML, AJAX, and web-content development to the Falcon/customer-experience project.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "JSP",
+      "JavaScript",
+      "CSS",
+      "XML"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "ea458a69-8539-5c4b-9f24-577f872e0edc",
+    "evidence_key": "WIS-ROLE-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "scope",
+    "claim": "Served as Lead Developer for Wiscasset Web Development; was not the business owner.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Software Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": "Corrects a newer resume that inaccurately labeled the role “Lead Developer / Owner.”"
+  },
+  {
+    "id": "88a56dd3-0c85-5c09-9829-191d4349a787",
+    "evidence_key": "WIS-BIZ-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "business_context",
+    "claim": "Worked for a small web-development business that grew out of an internet café and primarily served local businesses, especially automobile dealerships.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Professional Services",
+      "Technical Consulting"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "3b86afd4-230e-5d0f-b268-96fbb12f1a12",
+    "evidence_key": "WIS-TECH-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "software_engineering",
+    "claim": "Developed web applications primarily using PHP and Perl, with MySQL and flat-file data storage.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Software Engineering",
+      "PHP",
+      "Perl",
+      "MySQL"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "fe28f99f-60ed-5e7a-bcb2-2fcd7475a509",
+    "evidence_key": "WIS-INFRA-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "infrastructure",
+    "claim": "Hosted customer applications on rented colocated infrastructure from Rackspace.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Platform Engineering",
+      "Rackspace"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "f09ef85a-df57-53ec-8646-dc4f9fa2fe42",
+    "evidence_key": "WIS-TEAM-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "leadership",
+    "claim": "Worked with one additional employee plus contractors brought in as project demand required; led project teams of up to approximately six developers.",
+    "context": null,
+    "metric": "Teams up to ~6 developers",
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "People Leadership"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "6e44c548-f9a7-5dc3-842d-3bc28b23661a",
+    "evidence_key": "WIS-LEAD-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "leadership",
+    "claim": "Assigned workloads and reviewed developer output for quality prior to customer delivery.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Leadership",
+      "Professional Services"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "1497b52b-54eb-56bf-94e5-a3845e3f61c1",
+    "evidence_key": "WIS-CLIENT-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "consulting",
+    "claim": "Worked directly with customers to understand business and technical requirements and supported estimation, documentation, milestone delivery, and developer training.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Consulting",
+      "Professional Services",
+      "Technical Training"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "826d16d2-ff51-575e-8245-156835b8cf48",
+    "evidence_key": "WIS-PROJ-001",
+    "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
+    "category": "scope",
+    "claim": "Primarily delivered smaller, non-ecommerce business websites rather than large-scale transactional applications.",
+    "context": null,
+    "metric": null,
+    "verification_status": "USER_VERIFIED",
+    "approval_status": "approved",
+    "resume_eligible": false,
+    "resume_visibility": "internal_only",
+    "tags": [
+      "Web Platform Engineering"
+    ],
+    "source_ids": [
+      "8f0a69fa-6a8e-594b-a453-8af60bf81aec"
+    ],
+    "note": null
+  },
+  {
+    "id": "93a05762-b70b-5f97-9119-0589becc958a",
+    "evidence_key": "TAO-REDIS-001",
+    "experience_id": "3025af99-f293-54ff-962e-82a94a5e4701",
+    "category": "consulting",
+    "claim": "Served as a Redis SME supporting load testing, capacity planning, and Redis architecture for Machine Zone.",
+    "context": null,
+    "metric": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "draft",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Technical Consulting",
+      "Performance Engineering",
+      "Capacity Planning"
+    ],
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "note": null
+  },
+  {
+    "id": "5c89bda1-7394-5bcf-b188-56296d5d7176",
+    "evidence_key": "TAO-REDIS-002",
+    "experience_id": "3025af99-f293-54ff-962e-82a94a5e4701",
+    "category": "tooling",
+    "claim": "Used tcpdump and a Python wrapper around tcpkali to replay captured Redis traffic and shape playback for testing.",
+    "context": null,
+    "metric": null,
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "draft",
+    "resume_eligible": true,
+    "resume_visibility": "public_safe",
+    "tags": [
+      "Python",
+      "Performance Engineering"
+    ],
+    "source_ids": [
+      "1c004045-b054-566f-82a1-e7746a1f525e"
+    ],
+    "note": null
+  }
+]

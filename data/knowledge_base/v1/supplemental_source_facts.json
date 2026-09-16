@@ -1,0 +1,32 @@
+[
+  {
+    "id": "321475e5-abaa-52b7-8cc1-fab4ef69347d",
+    "type": "professional_activity",
+    "claim": "Resume states frequent speaker at cybersecurity conferences and workshops.",
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "draft",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7"
+    ]
+  },
+  {
+    "id": "9b3d46b9-443d-54f9-b4a8-3e9d4f41e703",
+    "type": "professional_activity",
+    "claim": "Resume states contributions to security whitepapers and best-practice guides.",
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "draft",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7"
+    ]
+  },
+  {
+    "id": "d6b57a81-5275-5922-8a4d-7723812b6ab3",
+    "type": "professional_activity",
+    "claim": "Resume states maintenance/contribution to open-source software.",
+    "verification_status": "SOURCE_FACT",
+    "approval_status": "draft",
+    "source_ids": [
+      "53f6b9b2-6b6c-51fd-b460-30d9cbc788d7"
+    ]
+  }
+]

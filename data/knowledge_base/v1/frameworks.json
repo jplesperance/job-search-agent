@@ -1,0 +1,77 @@
+[
+  {
+    "id": "f1ea2985-4775-5bfb-90e0-10828cf079d5",
+    "name": "BCDR",
+    "aliases": []
+  },
+  {
+    "id": "1f1c4936-5905-5719-8fb6-02c4a58227e4",
+    "name": "DAST",
+    "aliases": []
+  },
+  {
+    "id": "1d8e7a45-1dc8-5be6-925d-f5b4836ffa86",
+    "name": "HIPAA High Trust (user terminology)",
+    "aliases": []
+  },
+  {
+    "id": "a5f81a40-5d08-55cd-9060-de660c7ef929",
+    "name": "MITRE ATLAS",
+    "aliases": []
+  },
+  {
+    "id": "0af5fb08-4882-58fb-8732-949b8d0bc966",
+    "name": "MITRE ATT&CK",
+    "aliases": []
+  },
+  {
+    "id": "360df7ec-3911-5e5c-ae5a-b59e11df82f8",
+    "name": "MITRE D3FEND",
+    "aliases": []
+  },
+  {
+    "id": "e5d807da-09de-5df0-8174-aa99d0d2f081",
+    "name": "OWASP LLM Top 10",
+    "aliases": []
+  },
+  {
+    "id": "e23f7a42-40ee-5e65-a1bf-00cda8a4585a",
+    "name": "PCI DSS",
+    "aliases": []
+  },
+  {
+    "id": "5b3e69db-4c64-5894-b830-068faf5456ee",
+    "name": "PKI",
+    "aliases": []
+  },
+  {
+    "id": "59510cc2-db9e-5f54-9b91-d5bf1816fd77",
+    "name": "RBAC",
+    "aliases": []
+  },
+  {
+    "id": "be13a307-b278-5cbb-986f-8f327f72ce62",
+    "name": "SAST",
+    "aliases": []
+  },
+  {
+    "id": "c3af4a4f-fe72-5dbe-be78-d47cd6f83cef",
+    "name": "SCA",
+    "aliases": []
+  },
+  {
+    "id": "bf0d24ba-00cf-5da9-862b-1f64f1c90537",
+    "name": "SOC 2",
+    "aliases": []
+  },
+  {
+    "id": "2060d243-78cb-5513-adeb-b079c4283b83",
+    "name": "SSO",
+    "aliases": []
+  },
+  {
+    "id": "e0b7b58b-463c-502d-9a46-26077c2c3d48",
+    "name": "mTLS",
+    "aliases": []
+  }
+]

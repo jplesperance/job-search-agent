@@ -1,0 +1,47 @@
+[
+  {
+    "id": "7a9a770b-e54c-552b-bcf8-ee394dabec00",
+    "rule": "Wiscasset Web Development role must not be represented as company ownership. Canonical title is Lead Developer; business_owner=false.",
+    "severity": "hard"
+  },
+  {
+    "id": "7860e986-d50e-54f0-9f42-1f1fce03ddc8",
+    "rule": "Hilton “Lead Application Security Architect” was a leveling title, not a people-management or functional-team-lead role.",
+    "severity": "hard"
+  },
+  {
+    "id": "b5232002-248a-56fe-adcb-291a2c8b0831",
+    "rule": "TikTok SSDLC handled AI Safety only for approximately the first three months of tenure; it then transitioned to a dedicated Content Assurance team, with ongoing partnership.",
+    "severity": "hard"
+  },
+  {
+    "id": "44b9fb06-5353-50a6-94eb-d7f58c6f2670",
+    "rule": "Do not conflate ~40/month on the consolidated Lark/Meegle intake with the separate 40–50/day intake channel.",
+    "severity": "hard"
+  },
+  {
+    "id": "4ea2683c-b50c-5d8b-8b19-af34fff0db50",
+    "rule": "Evernote attack evidence concerns large-scale user-account compromise/data-access attempts; do not characterize it as a confirmed compromise of Evernote infrastructure.",
+    "severity": "hard"
+  },
+  {
+    "id": "a304d693-4c05-59c7-8b38-fd5c72b77bd7",
+    "rule": "Apixio did not process payment data; do not imply PCI work was driven by payment processing unless later verified.",
+    "severity": "hard"
+  },
+  {
+    "id": "ca61b421-78b8-5690-b72e-d43b0b651c47",
+    "rule": "Do not attribute post-launch production metrics to Ricoh tenure because user left before public launch.",
+    "severity": "hard"
+  },
+  {
+    "id": "9161323e-ad15-5545-a027-a554765c4a4b",
+    "rule": "Do not state that the CBS unified video pipeline performed transcoding unless later verified; user said it probably did.",
+    "severity": "hard"
+  },
+  {
+    "id": "b4c7b1df-e10d-59ad-b76a-5ceac59553f4",
+    "rule": "Do not infer people management from titles containing Lead/Principal/Architect; use explicit experience attributes/evidence.",
+    "severity": "hard"
+  }
+]

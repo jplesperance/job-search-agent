@@ -1,0 +1,327 @@
+[
+  {
+    "id": "240b97a4-48e5-531c-9292-fe94881e8c8c",
+    "name": "AWS",
+    "aliases": []
+  },
+  {
+    "id": "d61902bc-8fd8-5806-8d25-f5d9a2f03145",
+    "name": "AWS WAF",
+    "aliases": []
+  },
+  {
+    "id": "2948c072-1cb9-5134-b10e-313d4ecdb660",
+    "name": "ActiveMQ",
+    "aliases": []
+  },
+  {
+    "id": "3e2da78e-3890-504e-bd50-6790d796f56b",
+    "name": "Ansible",
+    "aliases": []
+  },
+  {
+    "id": "42c37e5b-9e13-5c0d-8bdd-681eab2b537b",
+    "name": "Artifactory",
+    "aliases": []
+  },
+  {
+    "id": "59965781-915f-5c2c-b3ae-3e7a6c2f177b",
+    "name": "AuditBoard",
+    "aliases": []
+  },
+  {
+    "id": "400fe555-8409-5650-89b9-897bcafe7546",
+    "name": "BigQuery",
+    "aliases": []
+  },
+  {
+    "id": "8670d0a4-e35f-5aa8-8ee5-05e7f74338aa",
+    "name": "ByteSoc",
+    "aliases": []
+  },
+  {
+    "id": "010f58a9-b39c-5d02-a9bb-b5f57926cc95",
+    "name": "CSS",
+    "aliases": []
+  },
+  {
+    "id": "ec16a0b8-ee99-529b-a4fa-79dc39e2dad0",
+    "name": "CVS",
+    "aliases": []
+  },
+  {
+    "id": "7deccde9-d2cc-52e3-8ea9-e3e972ceb83c",
+    "name": "Chronos",
+    "aliases": []
+  },
+  {
+    "id": "95414b73-ff08-55b7-8d22-69c09c50abab",
+    "name": "Clone Systems",
+    "aliases": []
+  },
+  {
+    "id": "fbedc10d-8d00-597d-a355-71f30a4167c1",
+    "name": "CodeIgniter",
+    "aliases": []
+  },
+  {
+    "id": "045efde4-7c51-5252-8b48-d187d94194b7",
+    "name": "Consul",
+    "aliases": []
+  },
+  {
+    "id": "990f3d4e-c22e-50ae-a9f4-3def3a3dc086",
+    "name": "CrowdStrike",
+    "aliases": []
+  },
+  {
+    "id": "f1f8dd56-e73b-5e3a-981a-74b9d34e492a",
+    "name": "Dependabot",
+    "aliases": []
+  },
+  {
+    "id": "088ec1b1-1fe5-560b-b654-e8690fd7138d",
+    "name": "Docker",
+    "aliases": []
+  },
+  {
+    "id": "2ed6102d-64f4-591b-b363-3626767d7f0e",
+    "name": "EC2",
+    "aliases": []
+  },
+  {
+    "id": "83ac1162-19be-567d-bbee-2b23c11dcd46",
+    "name": "FortiGate",
+    "aliases": []
+  },
+  {
+    "id": "31c26ff4-c924-565e-a46a-736b3e0640e6",
+    "name": "GCP",
+    "aliases": []
+  },
+  {
+    "id": "c17fd240-639b-54fe-b278-4c4d6ab173f4",
+    "name": "Gemini",
+    "aliases": []
+  },
+  {
+    "id": "51a8db26-1c2e-5fd6-ada1-2d3c434fe699",
+    "name": "Git",
+    "aliases": []
+  },
+  {
+    "id": "420fc33d-d66d-5e56-be68-e1b37d626088",
+    "name": "GitLab",
+    "aliases": []
+  },
+  {
+    "id": "4e3f549f-b16d-5c0f-8e44-3ed40241a0e9",
+    "name": "GitRob",
+    "aliases": []
+  },
+  {
+    "id": "b9522ec6-29c9-5bdb-b7e9-24d73bd99b64",
+    "name": "Go",
+    "aliases": []
+  },
+  {
+    "id": "0a28396f-1b8f-53d5-9c8d-5fa8a3f9c46b",
+    "name": "Google Vertex AI",
+    "aliases": []
+  },
+  {
+    "id": "6c3c7e87-693b-5f82-b399-d4069269d62f",
+    "name": "HSM",
+    "aliases": []
+  },
+  {
+    "id": "40bac801-722e-5be7-9aa5-000001aaf513",
+    "name": "HashiCorp Vault",
+    "aliases": []
+  },
+  {
+    "id": "793dd017-8a14-5035-a0b3-06630dc9e7c6",
+    "name": "Istio",
+    "aliases": []
+  },
+  {
+    "id": "0bdf7747-c448-5529-98da-6e0161e100d6",
+    "name": "JSP",
+    "aliases": []
+  },
+  {
+    "id": "025314ae-6260-5d67-a151-dfae294f5d70",
+    "name": "Java",
+    "aliases": []
+  },
+  {
+    "id": "bc0b34e8-8066-5e07-a2e1-77bb0d695d55",
+    "name": "JavaScript",
+    "aliases": []
+  },
+  {
+    "id": "6f698051-e9a0-593e-8fe9-77bc18da9395",
+    "name": "Jenkins",
+    "aliases": []
+  },
+  {
+    "id": "9b52a356-3f18-5b12-b02a-b702f28f8d0a",
+    "name": "Jira",
+    "aliases": []
+  },
+  {
+    "id": "62029edf-126d-5e8f-9c93-342d7fa94728",
+    "name": "Kubernetes",
+    "aliases": []
+  },
+  {
+    "id": "d2e2b054-892c-53e0-9cea-f8adb8bb8a15",
+    "name": "Lark API",
+    "aliases": []
+  },
+  {
+    "id": "a9971700-dc27-5d53-a2dd-a5d8afb1624e",
+    "name": "Logstash",
+    "aliases": []
+  },
+  {
+    "id": "01459806-716c-5ec4-ae8f-f4ee95f3080e",
+    "name": "Marathon",
+    "aliases": []
+  },
+  {
+    "id": "e5aa83fa-fcd9-522d-8bc0-6c0ed0ccce4d",
+    "name": "Meegle API",
+    "aliases": []
+  },
+  {
+    "id": "a84eb058-1886-58b3-ac2d-51e580707283",
+    "name": "Mesosphere",
+    "aliases": []
+  },
+  {
+    "id": "59aebf26-4837-512c-bb3f-acf6df7d3623",
+    "name": "MySQL",
+    "aliases": []
+  },
+  {
+    "id": "c885e6c8-169e-58c1-9489-db4c0bc790a8",
+    "name": "Nagios",
+    "aliases": []
+  },
+  {
+    "id": "3a002eba-de67-555a-b0fd-1afe2d1507d9",
+    "name": "Nessus",
+    "aliases": []
+  },
+  {
+    "id": "9845b9da-7e26-5beb-a552-e8cecde8a3f8",
+    "name": "OSSEC",
+    "aliases": []
+  },
+  {
+    "id": "6b457702-2c5e-5609-a4c5-6b8c11a43c52",
+    "name": "Okta",
+    "aliases": []
+  },
+  {
+    "id": "81e726d2-fe5c-541d-8eec-535aa292f57d",
+    "name": "OpenStack",
+    "aliases": []
+  },
+  {
+    "id": "abbf27ad-8fb3-5728-9f1a-9d4dc4fd45bf",
+    "name": "Oracle OPERA",
+    "aliases": []
+  },
+  {
+    "id": "a3db1a1f-9903-5375-b282-080d5e45aa82",
+    "name": "PHP",
+    "aliases": []
+  },
+  {
+    "id": "877bc953-a2b2-5858-a606-5d475b137edc",
+    "name": "Perl",
+    "aliases": []
+  },
+  {
+    "id": "35eb3486-5d81-5512-975b-fcc43841784e",
+    "name": "Puppet",
+    "aliases": []
+  },
+  {
+    "id": "b9926a50-572d-559a-8314-1fcf3d9532de",
+    "name": "Python",
+    "aliases": []
+  },
+  {
+    "id": "75bf0da4-eee3-514c-8876-fdfb7c30560e",
+    "name": "Rackspace",
+    "aliases": []
+  },
+  {
+    "id": "945791d8-9517-536b-bdce-2ac4e29bfda8",
+    "name": "SOAP",
+    "aliases": []
+  },
+  {
+    "id": "18650f3f-96ab-5230-a4c5-e67774df9bf6",
+    "name": "SaltStack",
+    "aliases": []
+  },
+  {
+    "id": "968299f2-8c09-5a84-b7cc-c738b596f186",
+    "name": "ServiceNow",
+    "aliases": []
+  },
+  {
+    "id": "1d462364-a2d1-57c1-9bbf-828097190499",
+    "name": "Shape",
+    "aliases": []
+  },
+  {
+    "id": "62b324de-df1e-5842-b187-997c3e327757",
+    "name": "Slack",
+    "aliases": []
+  },
+  {
+    "id": "c4313bdd-42aa-5785-a3b9-c2afb0c202b3",
+    "name": "Snyk",
+    "aliases": []
+  },
+  {
+    "id": "2a96cf33-cca9-5b6f-918d-4e13285a2dca",
+    "name": "Tenable",
+    "aliases": []
+  },
+  {
+    "id": "210e81ba-d8cc-5dcd-b939-5453e2150fdb",
+    "name": "Terraform",
+    "aliases": []
+  },
+  {
+    "id": "3aadbd59-0cd9-5faf-9d51-c859014dedc7",
+    "name": "TruffleHog",
+    "aliases": []
+  },
+  {
+    "id": "8d499813-03be-5cbf-99c5-d4fe8ec6e3f3",
+    "name": "Twistlock",
+    "aliases": []
+  },
+  {
+    "id": "70bbce02-367b-58d7-9c27-43882f8f52f3",
+    "name": "Wazuh",
+    "aliases": []
+  },
+  {
+    "id": "f49c9f10-63b2-5554-b7f8-78d620db92e1",
+    "name": "XML",
+    "aliases": []
+  },
+  {
+    "id": "0d14b6d7-931a-57fd-aa0a-55cf2a9b0da8",
+    "name": "Zend Framework",
+    "aliases": []
+  }
+]

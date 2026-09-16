@@ -1,0 +1,242 @@
+[
+  {
+    "id": "43755e18-5b3f-5fa0-b1f4-7ed8fb2bf2f4",
+    "evidence_id": "576096c3-c197-5960-8601-f78f529e2b7c",
+    "text": "6-person functional team"
+  },
+  {
+    "id": "fe3193ce-e991-5b2f-b619-d603b6539298",
+    "evidence_id": "d4def39c-b04b-5cd1-887f-5e5d91b3da5f",
+    "text": "~20–30 hours saved per assessment/review"
+  },
+  {
+    "id": "9dc861e9-cf55-55d4-9f63-957fbbb2126f",
+    "evidence_id": "eca3f0eb-b02f-56a6-a325-45720ff5dfb5",
+    "text": "5 queues consolidated"
+  },
+  {
+    "id": "5dc00eba-3c8d-5b7d-8197-1e096d496004",
+    "evidence_id": "55d26f0f-998c-5049-a5b8-f89fd8bd5acf",
+    "text": "7 review tracks"
+  },
+  {
+    "id": "313c593f-66aa-50c7-9551-667c45c2b0ba",
+    "evidence_id": "90cd98f5-4dbc-5903-bece-7a23bec03e53",
+    "text": "~40 requests/month"
+  },
+  {
+    "id": "b1066583-e3f0-5ad6-80a4-3f81cab72c82",
+    "evidence_id": "4d2b8053-dec3-558f-8352-cf946306a523",
+    "text": "~40–50 requests/day"
+  },
+  {
+    "id": "424a7ef4-09a7-50d6-af2a-02cdda96907c",
+    "evidence_id": "b5f1e9a7-1940-5e17-8e14-947ccbae7ba3",
+    "text": "14 days → 5 days (~64% reduction)"
+  },
+  {
+    "id": "00b856c3-ebf7-56fb-a515-bf78af1cee01",
+    "evidence_id": "28b12f64-d661-5c2b-a8e4-43669f034d12",
+    "text": "~30–50 open findings late in large reviews"
+  },
+  {
+    "id": "cbcc4cb9-44e1-54c6-90b5-a30a24fbe4f1",
+    "evidence_id": "dbacb77c-5e49-590e-9869-16d2f80e5b3a",
+    "text": "~5–10 residual findings"
+  },
+  {
+    "id": "2ca31518-1001-5e01-a4c9-8b92113e53bd",
+    "evidence_id": "317720e5-799d-56fe-a033-27617322056c",
+    "text": "~1/3 Critical or High"
+  },
+  {
+    "id": "f2944069-79fe-57be-abfa-4ec0e3f72211",
+    "evidence_id": "c16b4018-8ec8-5ae1-8656-d456c52f937d",
+    "text": "up to 96 non-tokenized card numbers/payload"
+  },
+  {
+    "id": "47b9d68b-ba6f-50b4-95b0-b3851ddadd98",
+    "evidence_id": "6719f0be-0ea0-5e51-8e0d-487913e84535",
+    "text": "No audit exceptions during tenure"
+  },
+  {
+    "id": "d04ca384-3f20-5666-88ad-e454b6fc3ba4",
+    "evidence_id": "e4453b81-3171-509d-9f5b-29a18fc8bc41",
+    "text": "Semiannual IR/DFIR training"
+  },
+  {
+    "id": "1de98f70-bcff-5922-b7b9-50ae6c23e4b9",
+    "evidence_id": "a7caf5fc-071e-5136-952f-5b1cef535888",
+    "text": "2 investigations"
+  },
+  {
+    "id": "c57ab622-e266-542a-b810-6c7628bde55f",
+    "evidence_id": "9846af33-d689-54a3-9c95-959eb28e8ddc",
+    "text": "Annual BCDR exercises"
+  },
+  {
+    "id": "68da02d6-90fe-5065-b32a-40ad144bd9ce",
+    "evidence_id": "5f5fc50f-6665-5ed6-84b8-4775bfbdeef2",
+    "text": "~30 GCP Owners"
+  },
+  {
+    "id": "f003388b-7009-5b59-b855-2fdb8924d8eb",
+    "evidence_id": "7e88a88d-822c-5ee6-9f5c-24c4629e16fe",
+    "text": "Resume source states ~40% reduction in IAM misconfigurations"
+  },
+  {
+    "id": "8e287a13-f3b2-5967-b82f-6be11a1d46c0",
+    "evidence_id": "c208024a-e8a0-56ea-958b-c779f407936b",
+    "text": "$5–10M annual revenue supported"
+  },
+  {
+    "id": "11ffa1ad-acfd-567e-a0a4-4ea38b9c437e",
+    "evidence_id": "c4c9de3c-4506-50db-a238-727f85b181b7",
+    "text": "~800 servers"
+  },
+  {
+    "id": "ca519a0f-01fc-5cbc-8354-3d2ddb9d1c6d",
+    "evidence_id": "416b009c-01a8-55c0-921b-f20a109156cf",
+    "text": "~20–30 minute provisioning"
+  },
+  {
+    "id": "9d998578-ee4d-50d0-bc78-fd14617e0ae8",
+    "evidence_id": "3a6f64dd-f6db-599e-a3b2-e0d8f914b026",
+    "text": "~8–10 hours → ~1 hour"
+  },
+  {
+    "id": "9b7a26b0-8de0-5bd5-b662-90f041297b4b",
+    "evidence_id": "977495b4-8ff1-5895-8a96-7327fb4d3c8c",
+    "text": "~1,500 servers"
+  },
+  {
+    "id": "59a35c4b-e003-5022-b2cf-6ad1d56ef9a0",
+    "evidence_id": "cbd9e448-4702-59bb-8892-d2e18501932c",
+    "text": "~60 min → ~5 min; 2–3 deployments/week"
+  },
+  {
+    "id": "9d83902d-d4bd-53b2-92cb-269bc468a6b2",
+    "evidence_id": "a6e2f0b7-9454-5d0b-8411-4eb669dd0b00",
+    "text": "Hundreds of millions of health histories"
+  },
+  {
+    "id": "53f768c1-3c54-55d7-8106-f54f76363fae",
+    "evidence_id": "d15185df-1dd1-5f20-b489-2ca13ad0e038",
+    "text": "Scaling by hundreds of EC2 instances"
+  },
+  {
+    "id": "5e8deb65-fadf-544e-8108-97fe04ea2061",
+    "evidence_id": "cd8a0ee0-edef-5dd4-9f00-bd11a7ad641c",
+    "text": "17 initial PCI scan findings"
+  },
+  {
+    "id": "bdf20434-b024-5fd2-bbdb-6bf48ac453a3",
+    "evidence_id": "f7b275e9-8e3c-5d1f-b102-9095ce0f65e2",
+    "text": "17/17 remediated; clean rescan"
+  },
+  {
+    "id": "4579aaa4-f806-5000-8208-fb796478127d",
+    "evidence_id": "91850115-a61a-5c82-be3e-d2f650ba4727",
+    "text": "4 direct reports; 7 total IT staff"
+  },
+  {
+    "id": "94d3ce69-cc97-56de-9706-a9cdea530376",
+    "evidence_id": "81f57d24-6879-5fb4-b298-315ca7d778da",
+    "text": "~140 rack servers"
+  },
+  {
+    "id": "337b5879-06ed-5e93-a1c9-d0f65c5be57a",
+    "evidence_id": "821a5220-44c6-50ff-96ba-793e9db8e3a1",
+    "text": "~60 physical nodes"
+  },
+  {
+    "id": "9982910e-c7ae-5a83-9c47-f4404db1310a",
+    "evidence_id": "b74a96d7-c7f6-52e8-a025-617fc902f39b",
+    "text": "5 direct reports"
+  },
+  {
+    "id": "5d261350-b953-553b-aea1-f101a5a74841",
+    "evidence_id": "7eb48db6-f1bb-5e24-a88c-9b5c7aee7302",
+    "text": "3-person DevOps function"
+  },
+  {
+    "id": "1e8d3692-6efd-57f2-b2fb-81abe2c4017d",
+    "evidence_id": "fb0d3856-b307-55f6-ad86-14459a7b8497",
+    "text": "~40% fewer lines of code"
+  },
+  {
+    "id": "2ad2a431-7163-5519-bad5-ac298262d1a5",
+    "evidence_id": "e72e6da7-1b81-599b-a31c-2ba92ed98a3f",
+    "text": "~30% faster"
+  },
+  {
+    "id": "6d92af39-644f-57a6-9388-15253140fb8f",
+    "evidence_id": "db23350c-1643-5979-a3d8-3520d95e26b5",
+    "text": "85% minimum unit-test coverage"
+  },
+  {
+    "id": "ecc70d9b-1e28-56a7-939d-b659559059c0",
+    "evidence_id": "40bf2c32-aa37-52e1-b16e-10b2e9b400e6",
+    "text": "1 → ~15 before Director promotion"
+  },
+  {
+    "id": "2ceea907-4704-52d1-9410-60e6c05dca07",
+    "evidence_id": "64134234-f867-5d69-b1ee-871c762e2a88",
+    "text": "~20 people / 3 teams"
+  },
+  {
+    "id": "3ad3692d-b513-5482-bd1e-b1cafb4220f7",
+    "evidence_id": "9402c0e0-78d1-5ebe-a55c-b581eb280d62",
+    "text": "2 internal manager promotions"
+  },
+  {
+    "id": "543c1662-9430-5e24-b397-b61912d62a1c",
+    "evidence_id": "544db58b-daca-5599-8a29-9ba2341b4ac4",
+    "text": "~20,000 planned devices; ~150 transactions/min test traffic"
+  },
+  {
+    "id": "db449217-735b-5b44-a697-d44d03dcf1fa",
+    "evidence_id": "bd76cbb0-5eef-56c2-86aa-64665ddc6373",
+    "text": "~150M active users"
+  },
+  {
+    "id": "6b454394-2162-5164-8e85-4b0e3810dc4a",
+    "evidence_id": "d8c74804-6185-5247-a112-f946b3401776",
+    "text": "Several TB of data"
+  },
+  {
+    "id": "3aa40dd3-e933-5fda-9ebe-3b45eb7935ff",
+    "evidence_id": "d18a32b7-5336-51c9-a440-110fb661de49",
+    "text": "~60–75 shows/watch list"
+  },
+  {
+    "id": "587eb670-fda1-5df1-bf11-47fb4808fde2",
+    "evidence_id": "0b760afa-d1cf-56f7-b602-bd5691e47926",
+    "text": "4 major engagements / ~6 months"
+  },
+  {
+    "id": "886edf62-de96-51ec-ab55-501af94b31bd",
+    "evidence_id": "5faf2cfb-cf7d-52ae-af0a-17e38ff2951f",
+    "text": "9-person org; 8 direct reports"
+  },
+  {
+    "id": "42b1bd9a-3282-5ea2-931f-32d715873471",
+    "evidence_id": "50877a79-f18a-520c-b956-ff71e8dbc33b",
+    "text": "~20 physical servers"
+  },
+  {
+    "id": "b34a036c-dcb9-5b7b-80f8-e87f4c2e248e",
+    "evidence_id": "57bcbea5-8d57-503c-b207-7a590ec743ac",
+    "text": "3 MySQL HA clusters"
+  },
+  {
+    "id": "7cd57140-9e90-5e30-9755-945257ebb57a",
+    "evidence_id": "00848a50-8c03-527a-9248-d8e27b8ba224",
+    "text": "~10,000 visits/minute expected"
+  },
+  {
+    "id": "34c1033e-563e-5a32-a6b3-57abde3951cf",
+    "evidence_id": "f09ef85a-df57-53ec-8646-dc4f9fa2fe42",
+    "text": "Teams up to ~6 developers"
+  }
+]
