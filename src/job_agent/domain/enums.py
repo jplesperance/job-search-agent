@@ -7,6 +7,19 @@ class ApprovalStatus(StrEnum):
     RETIRED = "retired"
 
 
+class VerificationStatus(StrEnum):
+    SOURCE_FACT = "SOURCE_FACT"
+    CORROBORATED = "CORROBORATED"
+    NEEDS_VERIFICATION = "NEEDS_VERIFICATION"
+    USER_VERIFIED = "USER_VERIFIED"
+
+
+class ResumeVisibility(StrEnum):
+    PUBLIC_SAFE = "public_safe"
+    GENERALIZE = "generalize"
+    INTERNAL_ONLY = "internal_only"
+
+
 class ApplicationStatus(StrEnum):
     DISCOVERED = "discovered"
     QUALIFIED = "qualified"

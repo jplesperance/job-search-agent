@@ -6,7 +6,12 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 
-from job_agent.domain.enums import ApplicationStatus, ApprovalStatus
+from job_agent.domain.enums import (
+    ApplicationStatus,
+    ApprovalStatus,
+    ResumeVisibility,
+    VerificationStatus,
+)
 
 
 class DomainModel(BaseModel):
@@ -22,6 +27,7 @@ class CareerProfile(DomainModel):
 
 class Experience(DomainModel):
     id: UUID = Field(default_factory=uuid4)
+    canonical_key: str | None = None
     profile_id: UUID
     employer: str
     title: str
@@ -29,17 +35,22 @@ class Experience(DomainModel):
     end_date: date | None = None
     location: str | None = None
     description: str | None = None
+    verification_status: VerificationStatus | None = None
 
 
 class EvidenceItem(DomainModel):
     id: UUID = Field(default_factory=uuid4)
+    evidence_key: str | None = None
     experience_id: UUID | None = None
     category: str
     claim: str
     context: str | None = None
     metric: str | None = None
     provenance: str | None = None
+    verification_status: VerificationStatus | None = None
     approval_status: ApprovalStatus = ApprovalStatus.DRAFT
+    resume_eligible: bool = False
+    resume_visibility: ResumeVisibility | None = None
     tags: set[str] = Field(default_factory=set)
 
 

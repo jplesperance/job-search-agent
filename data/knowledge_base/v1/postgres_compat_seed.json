@@ -194,7 +194,7 @@
       "canonical_key": "ricoh-2010-2011",
       "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
       "employer": "Ricoh Innovations Inc",
-      "title": "Director of Engineering – Web Services & Partner Development",
+      "title": "Director of Engineering \u2013 Web Services & Partner Development",
       "start_date": "2010-05-01",
       "end_date": "2011-12-01",
       "location": "San Jose, CA",
@@ -297,7 +297,7 @@
       "id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
       "canonical_key": "symantec-falcon-2006",
       "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
-      "employer": "Symantec Corp – Falcon Project",
+      "employer": "Symantec Corp \u2013 Falcon Project",
       "title": "Web Developer",
       "start_date": "2006-06-01",
       "end_date": "2006-09-01",
@@ -355,7 +355,7 @@
       "canonical_key": "infragard-board-2022-2024",
       "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
       "employer": "InfraGard SF Bay Area Members Alliance",
-      "title": "Board Member – Secretary",
+      "title": "Board Member \u2013 Secretary",
       "start_date": "2022-01-01",
       "end_date": "2024-03-01",
       "location": null,
@@ -381,7 +381,11 @@
         "Technical Leadership",
         "Strategy",
         "Team Building"
-      ]
+      ],
+      "evidence_key": "TT-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "28129e82-79ce-5c06-bdf6-16bb361e3e51",
@@ -395,7 +399,11 @@
       "tags": [
         "People Leadership",
         "Coaching"
-      ]
+      ],
+      "evidence_key": "TT-LEAD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "4794449e-b2b9-5fef-b34d-356115ae5fdf",
@@ -411,7 +419,11 @@
         "Security Automation",
         "Gemini",
         "Google Vertex AI"
-      ]
+      ],
+      "evidence_key": "TT-AI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "18252faa-0503-5ee0-a9f3-12e15f206fdd",
@@ -428,7 +440,11 @@
         "Python",
         "Lark API",
         "Meegle API"
-      ]
+      ],
+      "evidence_key": "TT-AI-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "2cdd299e-4c1b-503b-847f-219aa5b2aa71",
@@ -444,7 +460,11 @@
         "Threat Modeling",
         "Security Automation",
         "AI/LLM Security"
-      ]
+      ],
+      "evidence_key": "TT-AI-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "9b27afbd-58ce-5e07-a58a-db42e85ed337",
@@ -459,7 +479,11 @@
         "Threat Modeling",
         "Security Automation",
         "MITRE ATT&CK"
-      ]
+      ],
+      "evidence_key": "TT-TM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d155a143-3e19-558b-a8cb-28064f5d009f",
@@ -474,22 +498,30 @@
         "Threat Modeling",
         "Security Automation",
         "MITRE D3FEND"
-      ]
+      ],
+      "evidence_key": "TT-TM-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d4def39c-b04b-5cd1-887f-5e5d91b3da5f",
       "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
       "category": "impact",
-      "claim": "Reduced manual security-assessment effort by approximately 20–30 hours per assessment/review through automated document analysis, threat mapping, and report generation.",
+      "claim": "Reduced manual security-assessment effort by approximately 20\u201330 hours per assessment/review through automated document analysis, threat mapping, and report generation.",
       "context": null,
-      "metric": "~20–30 hours saved per assessment/review",
+      "metric": "~20\u201330 hours saved per assessment/review",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Security Automation",
         "SSDLC",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "TT-TM-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "09250fb3-db6f-59fb-a2c9-a9075e440ebd",
@@ -504,7 +536,11 @@
         "AI/LLM Security",
         "Security Architecture",
         "Product Security"
-      ]
+      ],
+      "evidence_key": "TT-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "83ef138f-54cb-5861-a903-e19dad03e6f4",
@@ -519,7 +555,11 @@
         "Application Security",
         "Product Security",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "TT-ARCH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "d03a1a50-f0d5-51d3-8522-c10e6f09e5a1",
@@ -534,7 +574,11 @@
         "Application Security",
         "AI/LLM Security",
         "Product Security"
-      ]
+      ],
+      "evidence_key": "TT-ARCH-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "eca3f0eb-b02f-56a6-a325-45720ff5dfb5",
@@ -549,7 +593,11 @@
         "Workflow Automation",
         "SSDLC",
         "Meegle API"
-      ]
+      ],
+      "evidence_key": "TT-INTAKE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "01783446-bf98-5e7f-aba4-2c232c98883e",
@@ -565,7 +613,11 @@
         "Workflow Automation",
         "Lark API",
         "Meegle API"
-      ]
+      ],
+      "evidence_key": "TT-INTAKE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "55d26f0f-998c-5049-a5b8-f89fd8bd5acf",
@@ -581,7 +633,11 @@
         "Application Security",
         "AI/LLM Security",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "TT-SSDL-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "161aefba-af8e-513b-a5ef-16bb983da5fe",
@@ -597,7 +653,11 @@
         "OWASP LLM Top 10",
         "MITRE ATLAS",
         "Threat Modeling"
-      ]
+      ],
+      "evidence_key": "TT-AISEC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1da4cd3e-5a1d-5654-bfbc-28702a5b89dd",
@@ -613,7 +673,11 @@
         "Application Security",
         "Supply Chain Security",
         "Data Security"
-      ]
+      ],
+      "evidence_key": "TT-AISEC-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d18f0cba-c6be-5a44-ae47-dc184ff05ae5",
@@ -627,7 +691,11 @@
       "tags": [
         "AI/LLM Security",
         "AI Safety"
-      ]
+      ],
+      "evidence_key": "TT-AISAFE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "38ecd170-6a5e-5943-80b8-1f5488060590",
@@ -641,7 +709,11 @@
       "tags": [
         "AI Safety",
         "AI/LLM Security"
-      ]
+      ],
+      "evidence_key": "TT-AISAFE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "90cd98f5-4dbc-5903-bece-7a23bec03e53",
@@ -655,20 +727,28 @@
       "tags": [
         "SSDLC",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "TT-OPS-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "4d2b8053-dec3-558f-8352-cf946306a523",
       "experience_id": "1ea3636d-549a-5a54-af02-716d7227c296",
       "category": "operations",
-      "claim": "A separate SSDLC intake channel receives approximately 40–50 review requests per day.",
+      "claim": "A separate SSDLC intake channel receives approximately 40\u201350 review requests per day.",
       "context": null,
-      "metric": "~40–50 requests/day",
+      "metric": "~40\u201350 requests/day",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=internal_only; resume_eligible=False",
       "approval_status": "approved",
       "tags": [
         "SSDLC"
-      ]
+      ],
+      "evidence_key": "TT-OPS-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "d0cf56e4-8d9f-56fc-b286-b0d64ff7be87",
@@ -682,7 +762,11 @@
       "tags": [
         "Security Governance",
         "Vulnerability Management"
-      ]
+      ],
+      "evidence_key": "TT-GOV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "3049fcb3-4eb3-5425-b93b-4e1885dc1b65",
@@ -697,7 +781,11 @@
         "Security Governance",
         "Vulnerability Management",
         "ByteSoc"
-      ]
+      ],
+      "evidence_key": "TT-GOV-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "cae03eea-d368-5cd8-a185-5b00f9d7bfef",
@@ -712,7 +800,11 @@
         "SSDLC",
         "Vulnerability Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "TT-GOV-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cb3b75aa-0528-528f-a776-4eb687152fd4",
@@ -727,7 +819,11 @@
         "Threat Modeling",
         "Business Risk Translation",
         "SSDLC"
-      ]
+      ],
+      "evidence_key": "TT-REPORT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6ad94aa7-50ad-5fbb-9b0e-8e39bd54f0a4",
@@ -742,7 +838,11 @@
         "Business Risk Translation",
         "Risk Management",
         "SSDLC"
-      ]
+      ],
+      "evidence_key": "TT-REPORT-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e8f7771a-3f40-5248-bc2a-68b959a1c321",
@@ -756,7 +856,11 @@
       "tags": [
         "Business Risk Translation",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "TT-REPORT-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "b5f1e9a7-1940-5e17-8e14-947ccbae7ba3",
@@ -764,33 +868,41 @@
       "category": "impact",
       "claim": "Reduced SSDLC review SLA from 14 business days to 5 business days using standardized report templates and AI-assisted analysis/report automation.",
       "context": null,
-      "metric": "14 days → 5 days (~64% reduction)",
+      "metric": "14 days \u2192 5 days (~64% reduction)",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "SSDLC",
         "Security Automation",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "TT-SLA-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "aa01a947-0f4b-54d5-a695-c2f675de7f7f",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "scope",
-      "claim": "Served on Hilton’s Application Security team supporting user-facing web applications across the enterprise.",
+      "claim": "Served on Hilton\u2019s Application Security team supporting user-facing web applications across the enterprise.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-SCOPE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "15ea0742-db92-5f61-8f47-c4117de6d8bd",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "scope",
-      "claim": "Served as the primary AppSec architect for the Oracle OPERA implementation into Hilton’s ecosystem.",
+      "claim": "Served as the primary AppSec architect for the Oracle OPERA implementation into Hilton\u2019s ecosystem.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -799,7 +911,11 @@
         "Application Security",
         "Oracle OPERA",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "HLT-SCOPE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "253d16e7-e708-56bb-b6c2-88fb52fd91c9",
@@ -813,7 +929,11 @@
       "tags": [
         "Application Security",
         "Payment Security"
-      ]
+      ],
+      "evidence_key": "HLT-SCOPE-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d790b991-da01-58f5-a8c2-0506142d56ca",
@@ -827,13 +947,17 @@
       "tags": [
         "Application Security",
         "Product Security"
-      ]
+      ],
+      "evidence_key": "HLT-SCOPE-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "ba4f3a02-b20f-5e1e-823b-75c624f9476e",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "scope",
-      "claim": "Assumed security-review responsibility for Hilton’s internally developed PEP hospitality-management platform near the end of the engagement.",
+      "claim": "Assumed security-review responsibility for Hilton\u2019s internally developed PEP hospitality-management platform near the end of the engagement.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=generalize; resume_eligible=True",
@@ -841,7 +965,11 @@
       "tags": [
         "Application Security",
         "Product Security"
-      ]
+      ],
+      "evidence_key": "HLT-SCOPE-005",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "c25f4a55-b229-56e6-86c1-5da3442988ca",
@@ -856,7 +984,11 @@
         "Application Security",
         "SSDLC",
         "Secure Coding"
-      ]
+      ],
+      "evidence_key": "HLT-SSDLC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "abc2ee42-8a80-54f7-a9cf-e4ad61fccd98",
@@ -871,7 +1003,11 @@
         "Application Security",
         "API Architecture",
         "Threat Modeling"
-      ]
+      ],
+      "evidence_key": "HLT-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "16f7e7a6-85ef-5da7-996b-a54dc91eab0c",
@@ -886,7 +1022,11 @@
         "Application Security",
         "SAST",
         "DAST"
-      ]
+      ],
+      "evidence_key": "HLT-TEST-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "3a78eb3a-f505-5a3b-90dc-3ec57e09c3ed",
@@ -900,7 +1040,11 @@
       "tags": [
         "Risk Management",
         "Business Risk Translation"
-      ]
+      ],
+      "evidence_key": "HLT-RISK-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "12a89faf-55dc-5a21-8a2d-858556ad829f",
@@ -914,7 +1058,11 @@
       "tags": [
         "Risk Management",
         "Business Risk Translation"
-      ]
+      ],
+      "evidence_key": "HLT-RISK-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "47830052-2f3a-50be-a4a7-08fadc3c5adb",
@@ -928,7 +1076,11 @@
       "tags": [
         "Risk Management",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-RISK-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5355cd40-bb56-5864-85d7-52ac2c89b253",
@@ -942,7 +1094,11 @@
       "tags": [
         "Risk Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "HLT-GOV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "0f9daec2-dd4e-5062-bf73-398843f5a572",
@@ -956,7 +1112,11 @@
       "tags": [
         "AuditBoard",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-TOOLS-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6ed634e8-c4a2-519b-88c3-07bb3d51ae99",
@@ -971,7 +1131,11 @@
         "ServiceNow",
         "AuditBoard",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "HLT-TOOLS-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "9c196c04-01ca-5ef6-9841-43d975811735",
@@ -985,7 +1149,11 @@
       "tags": [
         "GitLab",
         "CI/CD"
-      ]
+      ],
+      "evidence_key": "HLT-TOOLS-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6236f5b2-c3f6-54fc-a9b9-4f0e9c6b6d2b",
@@ -1000,7 +1168,11 @@
         "Checkmarx",
         "SAST",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-TOOLS-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ab31323b-6aef-50e8-a7d5-4d2041a308d6",
@@ -1017,7 +1189,11 @@
         "Data Security",
         "Oracle OPERA",
         "API Architecture"
-      ]
+      ],
+      "evidence_key": "HLT-OPERA-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e4c4e4e4-d9f0-5553-921e-f56880970289",
@@ -1033,7 +1209,11 @@
         "Compliance",
         "PCI DSS",
         "Oracle OPERA"
-      ]
+      ],
+      "evidence_key": "HLT-OPERA-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1ae6d065-101d-5067-8d8e-4dc5bc405de1",
@@ -1048,7 +1228,11 @@
         "Application Security",
         "Oracle OPERA",
         "API Architecture"
-      ]
+      ],
+      "evidence_key": "HLT-OPERA-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "342986d6-63da-50a6-8d80-11c115ccd857",
@@ -1062,7 +1246,11 @@
       "tags": [
         "Application Security",
         "Payment Security"
-      ]
+      ],
+      "evidence_key": "HLT-OPERA-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "71c0601f-a105-5119-9d5c-bb6895201256",
@@ -1076,7 +1264,11 @@
       "tags": [
         "Payment Security",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-PAY-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "38cc4d1d-46ae-51c4-af8f-f647f245e039",
@@ -1090,7 +1282,11 @@
       "tags": [
         "Payment Security",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-PAY-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "ea81f6f0-6d57-5303-aba3-ab1a70c2453d",
@@ -1106,7 +1302,11 @@
         "PCI DSS",
         "Data Security",
         "API Architecture"
-      ]
+      ],
+      "evidence_key": "HLT-PAY-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "3e824bba-8a05-5dea-b0bd-ea142cdc211b",
@@ -1121,34 +1321,46 @@
         "Application Security",
         "SSDLC",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "HLT-FIND-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "28b12f64-d661-5c2b-a8e4-43669f034d12",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "finding_management",
-      "claim": "Large reviews could contain roughly 30–50 unresolved findings late in the lifecycle before additional remediation and risk reduction.",
+      "claim": "Large reviews could contain roughly 30\u201350 unresolved findings late in the lifecycle before additional remediation and risk reduction.",
       "context": null,
-      "metric": "~30–50 open findings late in large reviews",
+      "metric": "~30\u201350 open findings late in large reviews",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=internal_only; resume_eligible=False",
       "approval_status": "approved",
       "tags": [
         "Application Security",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "HLT-FIND-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "dbacb77c-5e49-590e-9869-16d2f80e5b3a",
       "experience_id": "9d310b24-7960-5373-8c04-e0df52f049ad",
       "category": "finding_management",
-      "claim": "Final risk reports commonly contained approximately 5–10 accepted/unresolved findings after remediation efforts.",
+      "claim": "Final risk reports commonly contained approximately 5\u201310 accepted/unresolved findings after remediation efforts.",
       "context": null,
-      "metric": "~5–10 residual findings",
+      "metric": "~5\u201310 residual findings",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=internal_only; resume_eligible=False",
       "approval_status": "approved",
       "tags": [
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "HLT-FIND-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "317720e5-799d-56fe-a033-27617322056c",
@@ -1162,7 +1374,11 @@
       "tags": [
         "Application Security",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "HLT-FIND-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "c16b4018-8ec8-5ae1-8656-d456c52f937d",
@@ -1177,7 +1393,11 @@
         "Payment Security",
         "Third-Party Risk",
         "Oracle OPERA"
-      ]
+      ],
+      "evidence_key": "HLT-FIND-005",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "42b13772-27ed-5530-a81b-497378103aa5",
@@ -1191,7 +1411,11 @@
       "tags": [
         "Threat Modeling",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "HLT-TECH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d72daf6c-db94-5007-ad95-98ed7385c302",
@@ -1207,7 +1431,11 @@
         "SAST",
         "DAST",
         "Secure Coding"
-      ]
+      ],
+      "evidence_key": "HLT-TECH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "80b1e629-5942-58c6-8908-d80d9cf27908",
@@ -1221,7 +1449,11 @@
       "tags": [
         "Application Security",
         "API Architecture"
-      ]
+      ],
+      "evidence_key": "HLT-TECH-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "199227cd-3341-59a7-9853-5e63663b0a67",
@@ -1236,13 +1468,17 @@
         "Security Governance",
         "Team Building",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "STL-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b98c0300-75d2-560d-9842-149500f08fa6",
       "experience_id": "9bca6652-b37d-5409-bb63-3c644583ce2e",
       "category": "leadership",
-      "claim": "Served as the primary owner of SentiLink’s security and compliance programs.",
+      "claim": "Served as the primary owner of SentiLink\u2019s security and compliance programs.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -1251,7 +1487,11 @@
         "Security Governance",
         "Compliance",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "STL-LEAD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "213f386d-c957-568a-94ea-37c9b253223b",
@@ -1266,7 +1506,11 @@
         "People Leadership",
         "Team Building",
         "Application Security"
-      ]
+      ],
+      "evidence_key": "STL-LEAD-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d343fd32-4d4e-5998-b4c8-11dfffbf6d72",
@@ -1286,7 +1530,11 @@
         "Third-Party Risk",
         "Customer Security",
         "Compliance"
-      ]
+      ],
+      "evidence_key": "STL-FUNC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "863580a3-26cf-5049-be00-2d98dc50d111",
@@ -1300,7 +1548,11 @@
       "tags": [
         "Customer Security",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "STL-CUST-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "0eabfc37-af89-546b-a317-a130e14fcdfa",
@@ -1314,7 +1566,11 @@
       "tags": [
         "Third-Party Risk",
         "Vendor Risk"
-      ]
+      ],
+      "evidence_key": "STL-TPRM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fde153aa-0a69-5f0e-bd48-5de03f56e83f",
@@ -1330,7 +1586,11 @@
         "Audit Leadership",
         "SOC 2",
         "PCI DSS"
-      ]
+      ],
+      "evidence_key": "STL-COMP-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "50f7374b-94ca-55be-add4-150f5b377c10",
@@ -1345,7 +1605,11 @@
         "Compliance",
         "Audit Leadership",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "STL-COMP-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6719f0be-0ea0-5e51-8e0d-487913e84535",
@@ -1360,7 +1624,11 @@
         "Compliance",
         "PCI DSS",
         "SOC 2"
-      ]
+      ],
+      "evidence_key": "STL-COMP-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "919baf58-7630-5154-9e62-99255a842460",
@@ -1375,7 +1643,11 @@
         "Cloud Security",
         "AWS",
         "Kubernetes"
-      ]
+      ],
+      "evidence_key": "STL-CLOUD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "33ef8a15-8f73-54e7-9328-071e873ec3f4",
@@ -1390,7 +1662,11 @@
         "Infrastructure as Code",
         "Terraform",
         "AWS"
-      ]
+      ],
+      "evidence_key": "STL-IAC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d2d9b808-79ac-5d9c-a3ec-45f6ebd35750",
@@ -1407,7 +1683,11 @@
         "Jenkins",
         "Python",
         "Go"
-      ]
+      ],
+      "evidence_key": "STL-CICD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e414d843-552a-57e7-b15c-d0ff314c10bf",
@@ -1424,7 +1704,11 @@
         "Least Privilege",
         "Okta",
         "AWS"
-      ]
+      ],
+      "evidence_key": "STL-IAM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "127eba87-fcb3-544c-a42a-d6e8f31ab5dd",
@@ -1440,7 +1724,11 @@
         "Tenable",
         "Clone Systems",
         "Dependabot"
-      ]
+      ],
+      "evidence_key": "STL-VM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "8e19c338-849e-5b21-a0e9-3a9d9e495673",
@@ -1455,7 +1743,11 @@
         "Vulnerability Management",
         "Security Automation",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "STL-VM-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cee3a6d2-60a0-5d31-b4d7-3341a9afd2f5",
@@ -1470,7 +1762,11 @@
         "Vulnerability Management",
         "Security Automation",
         "Jira"
-      ]
+      ],
+      "evidence_key": "STL-VM-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "9e06d652-66fa-5010-9f69-b5599c562f6b",
@@ -1484,7 +1780,11 @@
       "tags": [
         "Vulnerability Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "STL-VM-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "12a7b6c0-8891-5f8f-bcf4-e26d78e96398",
@@ -1498,7 +1798,11 @@
       "tags": [
         "Vulnerability Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "STL-VM-005",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "42bf023f-4e36-5f56-9e69-3c62cae29ae7",
@@ -1513,7 +1817,11 @@
         "Incident Response",
         "DFIR",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "STL-IR-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "12aa52d0-a606-5e89-9178-47f76593b6bf",
@@ -1528,7 +1836,11 @@
         "Incident Response",
         "Nagios",
         "Slack"
-      ]
+      ],
+      "evidence_key": "STL-IR-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e4453b81-3171-509d-9f5b-29a18fc8bc41",
@@ -1543,7 +1855,11 @@
         "Incident Response",
         "DFIR",
         "Technical Training"
-      ]
+      ],
+      "evidence_key": "STL-IR-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "a7caf5fc-071e-5136-952f-5b1cef535888",
@@ -1557,7 +1873,11 @@
       "tags": [
         "Incident Response",
         "DFIR"
-      ]
+      ],
+      "evidence_key": "STL-IR-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "9846af33-d689-54a3-9c95-959eb28e8ddc",
@@ -1572,7 +1892,11 @@
         "BCDR Planning",
         "Incident Response",
         "BCDR"
-      ]
+      ],
+      "evidence_key": "STL-BCDR-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "af921682-24db-50ae-ba8a-076360ab0b9d",
@@ -1588,7 +1912,11 @@
         "Kubernetes",
         "mTLS",
         "Network Security"
-      ]
+      ],
+      "evidence_key": "STL-K8S-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7939fc6f-8d60-5ab4-95a8-315f4447d6c8",
@@ -1603,7 +1931,11 @@
         "Kubernetes Security",
         "Secrets Management",
         "AWS"
-      ]
+      ],
+      "evidence_key": "STL-K8S-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1dcb2bdd-50f4-51d7-8e2f-5019557cc3d2",
@@ -1618,7 +1950,11 @@
         "Supply Chain Security",
         "Container Security",
         "Kubernetes Security"
-      ]
+      ],
+      "evidence_key": "STL-K8S-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e12192eb-4345-5afb-81ef-7acf7917c85d",
@@ -1633,7 +1969,11 @@
         "Kubernetes Security",
         "Security Monitoring",
         "IAM Architecture"
-      ]
+      ],
+      "evidence_key": "STL-K8S-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "c51afc5b-74bf-5482-b011-c2c2b5780f39",
@@ -1650,7 +1990,11 @@
         "SAST",
         "SCA",
         "Secure Coding"
-      ]
+      ],
+      "evidence_key": "STL-CICD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f4c6fda9-9e71-5d7c-8ffc-5806bb4da0ed",
@@ -1665,7 +2009,11 @@
         "DevSecOps",
         "Container Security",
         "Snyk"
-      ]
+      ],
+      "evidence_key": "STL-CICD-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f2bd6a4c-ccce-5f33-837d-0d575b7862c6",
@@ -1681,7 +2029,11 @@
         "Kubernetes Security",
         "Twistlock",
         "Detection Engineering"
-      ]
+      ],
+      "evidence_key": "STL-CICD-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ee48cc16-7bb9-5703-b617-eeca8b703e91",
@@ -1697,7 +2049,11 @@
         "Secrets Management",
         "TruffleHog",
         "GitRob"
-      ]
+      ],
+      "evidence_key": "STL-CICD-005",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "2445092f-84b5-586b-9561-8023d5ea092f",
@@ -1713,7 +2069,11 @@
         "FortiGate",
         "AWS WAF",
         "AWS"
-      ]
+      ],
+      "evidence_key": "STL-NET-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "485b06c6-3a44-5dd4-9959-edb146e2bd77",
@@ -1729,7 +2089,11 @@
         "Cloud Security",
         "Network Security",
         "Data Security"
-      ]
+      ],
+      "evidence_key": "EVR-SCOPE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "89304ef9-f87c-567f-a397-b5bd9efacc04",
@@ -1743,7 +2107,11 @@
       "tags": [
         "Security Architecture",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EVR-SCOPE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5f5fc50f-6665-5ed6-84b8-4775bfbdeef2",
@@ -1758,7 +2126,11 @@
         "IAM Architecture",
         "Least Privilege",
         "GCP"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "cddf9eae-667a-5ad1-a171-2e1bd9f77098",
@@ -1773,7 +2145,11 @@
         "IAM Architecture",
         "Least Privilege",
         "GCP"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7f6c7b8b-0f8a-55c2-a72c-0e029357c252",
@@ -1789,7 +2165,11 @@
         "Privacy Engineering",
         "Least Privilege",
         "GCP"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b492a33c-e10a-5013-9ca2-45a1e51cd375",
@@ -1804,7 +2184,11 @@
         "IAM Architecture",
         "Detection Engineering",
         "Privacy Engineering"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "af716707-13d7-561b-ac32-cd6e8dcb056a",
@@ -1821,7 +2205,11 @@
         "AWS",
         "GCP",
         "SSO"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-005",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "82d3fb2e-e688-5c19-9e75-9a1d64983a8a",
@@ -1836,7 +2224,11 @@
         "IAM Architecture",
         "Least Privilege",
         "RBAC"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-006",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7e88a88d-822c-5ee6-9f5c-24c4629e16fe",
@@ -1850,7 +2242,11 @@
       "tags": [
         "IAM Architecture",
         "Least Privilege"
-      ]
+      ],
+      "evidence_key": "EVR-IAM-007",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "98249798-ecfc-5f4f-85c3-00059e8a104e",
@@ -1865,7 +2261,11 @@
         "Kubernetes Security",
         "Security Architecture",
         "Secrets Management"
-      ]
+      ],
+      "evidence_key": "EVR-K8S-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "c55a8d20-d683-51ba-982e-3235abf8bec3",
@@ -1882,7 +2282,11 @@
         "mTLS",
         "RBAC",
         "Network Security"
-      ]
+      ],
+      "evidence_key": "EVR-K8S-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "73990e5f-36c8-5367-8de5-7a39a9789387",
@@ -1896,7 +2300,11 @@
       "tags": [
         "Kubernetes Security",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EVR-K8S-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "92350c0d-1ca4-5610-8eb7-37b35a41f097",
@@ -1911,7 +2319,11 @@
         "Container Security",
         "Kubernetes Security",
         "Twistlock"
-      ]
+      ],
+      "evidence_key": "EVR-K8S-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "bcc7111d-13cc-557e-ac22-7a9f32b00d99",
@@ -1926,7 +2338,11 @@
         "Secrets Management",
         "HashiCorp Vault",
         "Kubernetes Security"
-      ]
+      ],
+      "evidence_key": "EVR-SECRET-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6b8eb30e-ff9d-5481-bf64-71e38e2a61b9",
@@ -1942,7 +2358,11 @@
         "Cloud Security",
         "GCP",
         "Privacy Engineering"
-      ]
+      ],
+      "evidence_key": "EVR-DATA-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e6cb795f-c5ac-5e7a-963b-2d46762349de",
@@ -1957,7 +2377,11 @@
         "Data Security",
         "Privacy Engineering",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "EVR-DATA-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "17cd2b45-5cf2-523e-9a56-a8cf0ce84416",
@@ -1972,7 +2396,11 @@
         "Incident Response",
         "Detection Engineering",
         "Data Security"
-      ]
+      ],
+      "evidence_key": "EVR-THREAT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "6fb2b1bd-8b03-5a3e-a874-a1cd3f74192f",
@@ -1987,7 +2415,11 @@
         "Detection Engineering",
         "Incident Response",
         "Data Security"
-      ]
+      ],
+      "evidence_key": "EVR-DETECT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "83eaba2b-6ad7-5235-9896-41a3111a3e91",
@@ -2002,7 +2434,11 @@
         "Detection Engineering",
         "Security Monitoring",
         "BigQuery"
-      ]
+      ],
+      "evidence_key": "EVR-DETECT-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "14592daf-aaa6-5101-a104-2acd391a661f",
@@ -2019,7 +2455,11 @@
         "BigQuery",
         "Logstash",
         "GCP"
-      ]
+      ],
+      "evidence_key": "EVR-SIEM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "8a731740-d227-5164-aa5d-57915d8201f3",
@@ -2033,7 +2473,11 @@
       "tags": [
         "Detection Engineering",
         "Shape"
-      ]
+      ],
+      "evidence_key": "EVR-ATO-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "1ad01ca8-bc17-5313-a98b-485d1a48049c",
@@ -2047,13 +2491,17 @@
       "tags": [
         "Third-Party Risk",
         "Vendor Risk"
-      ]
+      ],
+      "evidence_key": "EVR-TPRM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "af55a53a-a906-5cbe-8df4-f2ce85f0a45d",
       "experience_id": "e46ee0a2-a2bb-576e-883f-896e417c95b7",
       "category": "customer_security",
-      "claim": "Completed security questionnaires from enterprise customers evaluating Evernote’s security posture.",
+      "claim": "Completed security questionnaires from enterprise customers evaluating Evernote\u2019s security posture.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2061,7 +2509,11 @@
       "tags": [
         "Customer Security",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "EVR-CUST-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e10225cb-cd82-5224-bbf8-56a51cacfd39",
@@ -2075,7 +2527,11 @@
       "tags": [
         "Contract Security",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "EVR-LEGAL-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "60ef51d1-8f44-5fa4-8e90-2899355f5ba5",
@@ -2089,7 +2545,11 @@
       "tags": [
         "Security Awareness",
         "Technical Training"
-      ]
+      ],
+      "evidence_key": "EVR-AWARE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "0c5576a5-d3af-5b5b-84d4-ce15f9d0c4c2",
@@ -2104,7 +2564,11 @@
         "Security Awareness",
         "Secure Coding",
         "Technical Training"
-      ]
+      ],
+      "evidence_key": "EVR-AWARE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f8c91275-369f-50f7-8910-f0bfdb9cb560",
@@ -2118,7 +2582,11 @@
       "tags": [
         "Incident Response",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EVR-IR-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "bcfcefb6-eac1-5791-b4e8-ce8e14c1d575",
@@ -2132,7 +2600,11 @@
       "tags": [
         "Incident Response",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EVR-IR-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "40be574f-3cb6-55a0-aab5-ff9a3af42afd",
@@ -2146,7 +2618,11 @@
       "tags": [
         "Incident Response",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "EVR-IR-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cae13443-612d-5616-9241-52c308aa548f",
@@ -2161,13 +2637,17 @@
         "Platform Engineering",
         "Cryptography",
         "Technical Leadership"
-      ]
+      ],
+      "evidence_key": "EBY-ROLE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "30867fcb-87ea-570b-8ab7-a5fea0260a35",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "cryptography",
-      "claim": "Was recruited into eBay’s cross-functional Crypto Vigilantes group and subsequently asked by the enterprise cryptography architect to lead the group.",
+      "claim": "Was recruited into eBay\u2019s cross-functional Crypto Vigilantes group and subsequently asked by the enterprise cryptography architect to lead the group.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=generalize; resume_eligible=True",
@@ -2176,7 +2656,11 @@
         "Cryptography",
         "Technical Leadership",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "EBY-CRYPTO-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "fae651ed-aabe-54f0-bc85-1e7740c1d632",
@@ -2192,7 +2676,11 @@
         "Secrets Management",
         "HashiCorp Vault",
         "HSM"
-      ]
+      ],
+      "evidence_key": "EBY-CRYPTO-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "170238a2-c85a-5d1a-a8bd-0f13384642a2",
@@ -2206,21 +2694,29 @@
       "tags": [
         "Cryptography",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "EBY-CRYPTO-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "c208024a-e8a0-56ea-958b-c779f407936b",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "business_impact",
-      "claim": "Cryptographic infrastructure supported approximately $5–10 million in annual revenue.",
+      "claim": "Cryptographic infrastructure supported approximately $5\u201310 million in annual revenue.",
       "context": null,
-      "metric": "$5–10M annual revenue supported",
+      "metric": "$5\u201310M annual revenue supported",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Cryptography",
         "Business Risk Translation"
-      ]
+      ],
+      "evidence_key": "EBY-CRYPTO-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "21cd565e-4c57-5bb3-a7f4-3d7999b28857",
@@ -2235,7 +2731,11 @@
         "Cryptography",
         "Security Governance",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "EBY-GOV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "834edf93-bf42-508c-bc38-5633cac74f6f",
@@ -2250,13 +2750,17 @@
         "Technical Leadership",
         "Strategy",
         "Cryptography"
-      ]
+      ],
+      "evidence_key": "EBY-GOV-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "94391992-a949-5d39-b6a2-763e680ad516",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "leadership",
-      "claim": "Expanded the cryptography working group’s senior advisory council to align initiatives with longer-term company strategy.",
+      "claim": "Expanded the cryptography working group\u2019s senior advisory council to align initiatives with longer-term company strategy.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2265,7 +2769,11 @@
         "Technical Leadership",
         "Strategy",
         "Cryptography"
-      ]
+      ],
+      "evidence_key": "EBY-GOV-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fa8d20d8-8ad5-5e79-b2a6-2f47f36efefc",
@@ -2280,7 +2788,11 @@
         "Secure Coding",
         "SSDLC",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EBY-SECCHAMP-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e42b8ea2-2572-5434-9c0a-c2ac2f0e1074",
@@ -2294,13 +2806,17 @@
       "tags": [
         "Privacy Engineering",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EBY-PRIV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "c4c9de3c-4506-50db-a238-727f85b181b7",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "infrastructure_automation",
-      "claim": "Introduced SaltStack to automate management of approximately 800 servers used by eBay’s security organization.",
+      "claim": "Introduced SaltStack to automate management of approximately 800 servers used by eBay\u2019s security organization.",
       "context": null,
       "metric": "~800 servers",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2309,30 +2825,38 @@
         "Infrastructure Automation",
         "Configuration Management",
         "SaltStack"
-      ]
+      ],
+      "evidence_key": "EBY-AUTO-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "416b009c-01a8-55c0-921b-f20a109156cf",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "infrastructure_automation",
-      "claim": "Reduced new-server provisioning from hours/days to approximately 20–30 minutes using repeatable configuration automation.",
+      "claim": "Reduced new-server provisioning from hours/days to approximately 20\u201330 minutes using repeatable configuration automation.",
       "context": null,
-      "metric": "~20–30 minute provisioning",
+      "metric": "~20\u201330 minute provisioning",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Infrastructure Automation",
         "SaltStack",
         "Reliability Engineering"
-      ]
+      ],
+      "evidence_key": "EBY-AUTO-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "3a6f64dd-f6db-599e-a3b2-e0d8f914b026",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "reliability",
-      "claim": "Reduced HashiCorp Vault recovery time from roughly 8–10 hours to approximately 1 hour after infrastructure automation.",
+      "claim": "Reduced HashiCorp Vault recovery time from roughly 8\u201310 hours to approximately 1 hour after infrastructure automation.",
       "context": null,
-      "metric": "~8–10 hours → ~1 hour",
+      "metric": "~8\u201310 hours \u2192 ~1 hour",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
@@ -2340,7 +2864,11 @@
         "Infrastructure Automation",
         "HashiCorp Vault",
         "SaltStack"
-      ]
+      ],
+      "evidence_key": "EBY-DR-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "977495b4-8ff1-5895-8a96-7327fb4d3c8c",
@@ -2356,7 +2884,11 @@
         "SaltStack",
         "Puppet",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "EBY-SCALE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1e7efada-8336-5ec5-b1ed-347365b89fb2",
@@ -2371,7 +2903,11 @@
         "Infrastructure Automation",
         "SaltStack",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "EBY-SCALE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "885212eb-5b58-5505-85cd-3de0fe4aa7f1",
@@ -2387,13 +2923,17 @@
         "PKI Architecture",
         "Cloud Security",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EBY-POL-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "89bdb381-e224-5a4f-ab96-b578873d81ff",
       "experience_id": "d194d8e7-f0f9-524c-9604-6f166d1c5e7a",
       "category": "cryptography",
-      "claim": "Co-authored eBay’s encryption key lifecycle policy with the enterprise cryptography architect.",
+      "claim": "Co-authored eBay\u2019s encryption key lifecycle policy with the enterprise cryptography architect.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2401,7 +2941,11 @@
       "tags": [
         "Cryptography",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "EBY-KEY-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "84dbd572-6fc2-51b6-a87d-974625b799ae",
@@ -2418,7 +2962,11 @@
         "HashiCorp Vault",
         "HSM",
         "PKI"
-      ]
+      ],
+      "evidence_key": "EBY-PKI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "83908dfb-b32e-5193-9d50-4dad8f695d83",
@@ -2434,7 +2982,11 @@
         "HashiCorp Vault",
         "PKI",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "EBY-PKI-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fa775f90-bf2f-519a-a9e8-01ce6433d58b",
@@ -2450,7 +3002,11 @@
         "Wazuh",
         "OSSEC",
         "SaltStack"
-      ]
+      ],
+      "evidence_key": "EBY-WAZUH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "bd5971cd-be5a-5360-96b7-d146c5d093f7",
@@ -2466,13 +3022,17 @@
         "Wazuh",
         "Configuration Management",
         "Detection Engineering"
-      ]
+      ],
+      "evidence_key": "EBY-WAZUH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "3fcef80b-747b-5c38-b4e0-ca259a386d57",
       "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
       "category": "scope",
-      "claim": "Served as the sole DevOps engineer despite the Manager of DevOps title and owned Apixio’s production infrastructure.",
+      "claim": "Served as the sole DevOps engineer despite the Manager of DevOps title and owned Apixio\u2019s production infrastructure.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2480,7 +3040,11 @@
       "tags": [
         "Platform Engineering",
         "Cloud Architecture"
-      ]
+      ],
+      "evidence_key": "APX-SCOPE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b70ab1d5-a4d0-58e3-b64c-eac194de74d7",
@@ -2495,7 +3059,11 @@
         "Security Architecture",
         "Compliance",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "APX-SCOPE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "953fd5f5-424d-541d-a1dc-ad360730aef4",
@@ -2512,7 +3080,11 @@
         "PCI DSS",
         "HIPAA",
         "HITRUST"
-      ]
+      ],
+      "evidence_key": "APX-COMP-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "730817cf-bae0-573c-9440-0761a1897c53",
@@ -2527,7 +3099,11 @@
         "CI/CD",
         "Infrastructure Automation",
         "Ansible"
-      ]
+      ],
+      "evidence_key": "APX-DEPLOY-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7caec2dc-0c7b-5281-8fad-1ab5f80c2cbb",
@@ -2542,15 +3118,19 @@
         "CI/CD",
         "Jenkins",
         "Artifactory"
-      ]
+      ],
+      "evidence_key": "APX-DEPLOY-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cbd9e448-4702-59bb-8892-d2e18501932c",
       "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
       "category": "impact",
-      "claim": "Reduced deployment windows from approximately 60 minutes to about 5 minutes while supporting roughly 2–3 production deployments per week.",
+      "claim": "Reduced deployment windows from approximately 60 minutes to about 5 minutes while supporting roughly 2\u20133 production deployments per week.",
       "context": null,
-      "metric": "~60 min → ~5 min; 2–3 deployments/week",
+      "metric": "~60 min \u2192 ~5 min; 2\u20133 deployments/week",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
@@ -2558,7 +3138,11 @@
         "Infrastructure Automation",
         "Ansible",
         "Jenkins"
-      ]
+      ],
+      "evidence_key": "APX-DEPLOY-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7a467efd-6513-5fe2-bd70-0cb2d0b0b08c",
@@ -2572,7 +3156,11 @@
       "tags": [
         "Configuration Management",
         "Consul"
-      ]
+      ],
+      "evidence_key": "APX-CONFIG-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7dd464db-e4b1-5606-831b-79ad80fa45e9",
@@ -2586,7 +3174,11 @@
       "tags": [
         "Secrets Management",
         "HashiCorp Vault"
-      ]
+      ],
+      "evidence_key": "APX-SECRET-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "a6e2f0b7-9454-5d0b-8411-4eb669dd0b00",
@@ -2600,7 +3192,11 @@
       "tags": [
         "Healthcare Security",
         "Data Security"
-      ]
+      ],
+      "evidence_key": "APX-PHI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "72dc75f9-4779-5dcc-ae6f-494b2c039d03",
@@ -2615,7 +3211,11 @@
         "Healthcare Security",
         "Data Security",
         "Cryptography"
-      ]
+      ],
+      "evidence_key": "APX-PHI-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "63cf346e-e390-5cf5-907a-a00a7120b54b",
@@ -2630,7 +3230,11 @@
         "Network Security",
         "AWS",
         "Security Automation"
-      ]
+      ],
+      "evidence_key": "APX-NET-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "2a4da3a2-1870-5005-9291-a4b425dc159f",
@@ -2644,7 +3248,11 @@
       "tags": [
         "Security Monitoring",
         "Detection Engineering"
-      ]
+      ],
+      "evidence_key": "APX-LOG-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ec2bde2e-c55e-55c5-ae32-47be2773fd33",
@@ -2661,7 +3269,11 @@
         "Marathon",
         "Chronos",
         "Docker"
-      ]
+      ],
+      "evidence_key": "APX-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "18751e53-e938-5cae-8ba0-570b011256ed",
@@ -2682,7 +3294,11 @@
         "Terraform",
         "Ansible",
         "Infrastructure as Code"
-      ]
+      ],
+      "evidence_key": "APX-ARCH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f61cb96a-3ab5-5598-8d41-4f5f29103b5c",
@@ -2699,7 +3315,11 @@
         "EC2",
         "Terraform",
         "Docker"
-      ]
+      ],
+      "evidence_key": "APX-ARCH-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d15185df-1dd1-5f20-b489-2ca13ad0e038",
@@ -2714,7 +3334,11 @@
         "Cloud Architecture",
         "Capacity Planning",
         "EC2"
-      ]
+      ],
+      "evidence_key": "APX-SCALE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ef04dd79-f76d-588b-9ef5-d99a5a754e5b",
@@ -2728,7 +3352,11 @@
       "tags": [
         "Cloud Cost Optimization",
         "Cloud Architecture"
-      ]
+      ],
+      "evidence_key": "APX-COST-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cd8a0ee0-edef-5dd4-9f00-bd11a7ad641c",
@@ -2742,7 +3370,11 @@
       "tags": [
         "Compliance",
         "PCI DSS"
-      ]
+      ],
+      "evidence_key": "APX-PCI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f7b275e9-8e3c-5d1f-b102-9095ce0f65e2",
@@ -2757,7 +3389,11 @@
         "Compliance",
         "PCI DSS",
         "Vulnerability Management"
-      ]
+      ],
+      "evidence_key": "APX-PCI-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "a35ed663-1e08-5c43-9068-2fca07f83b45",
@@ -2771,13 +3407,17 @@
       "tags": [
         "Compliance",
         "PCI DSS"
-      ]
+      ],
+      "evidence_key": "APX-PCI-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "d9ff51a2-8ece-55d1-8bde-f2509fe244d7",
       "experience_id": "e7bdfa84-1c2c-5b2b-aa32-79c6306357fd",
       "category": "cloud_security",
-      "claim": "Created “Gatekeeper,” a Python/SaltStack AWS Security Group governance tool using a canonical allowlist of approved rules.",
+      "claim": "Created \u201cGatekeeper,\u201d a Python/SaltStack AWS Security Group governance tool using a canonical allowlist of approved rules.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2789,7 +3429,11 @@
         "Python",
         "SaltStack",
         "AWS"
-      ]
+      ],
+      "evidence_key": "APX-GATE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e2b0bfdc-ab0d-5e75-b25d-b8be09fd3c83",
@@ -2805,7 +3449,11 @@
         "Security Automation",
         "Configuration Management",
         "AWS"
-      ]
+      ],
+      "evidence_key": "APX-GATE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cf25ee46-e2d0-5e85-a46c-9c2d81906e5b",
@@ -2820,7 +3468,11 @@
         "Privileged Access Management",
         "Just-in-Time Access",
         "Security Automation"
-      ]
+      ],
+      "evidence_key": "APX-SSH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "0c6f1ac5-6c8b-5adc-9ef5-ab2e9e282197",
@@ -2836,7 +3488,11 @@
         "Just-in-Time Access",
         "SaltStack",
         "AWS"
-      ]
+      ],
+      "evidence_key": "APX-SSH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "54fe6d43-17a9-519f-91de-b69f7a6071bd",
@@ -2852,7 +3508,11 @@
         "Just-in-Time Access",
         "Security Monitoring",
         "SaltStack"
-      ]
+      ],
+      "evidence_key": "APX-SSH-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "c705b2f3-30ef-5917-a63b-a2da6a9e4564",
@@ -2866,7 +3526,11 @@
       "tags": [
         "Vulnerability Management",
         "Nessus"
-      ]
+      ],
+      "evidence_key": "APX-VM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "cfaac30d-5f62-559b-8b6e-aa2fef39d101",
@@ -2879,7 +3543,11 @@
       "approval_status": "approved",
       "tags": [
         "Vulnerability Management"
-      ]
+      ],
+      "evidence_key": "APX-VM-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "55852658-d3a8-5cac-89c4-086cafd70197",
@@ -2894,7 +3562,11 @@
         "Team Building",
         "Engineering Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "HTW-ORG-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "91850115-a61a-5c82-be3e-d2f650ba4727",
@@ -2908,13 +3580,17 @@
       "tags": [
         "People Leadership",
         "Engineering Management"
-      ]
+      ],
+      "evidence_key": "HTW-ORG-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "81f57d24-6879-5fb4-b298-315ca7d778da",
       "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
       "category": "data_center",
-      "claim": "Helped build a new office’s IT infrastructure and personally installed/configured approximately 140 rack servers in the data center.",
+      "claim": "Helped build a new office\u2019s IT infrastructure and personally installed/configured approximately 140 rack servers in the data center.",
       "context": null,
       "metric": "~140 rack servers",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2922,7 +3598,11 @@
       "tags": [
         "Data Center Operations",
         "Platform Engineering"
-      ]
+      ],
+      "evidence_key": "HTW-DC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "22c8c112-9627-5425-b811-543878a90927",
@@ -2938,13 +3618,17 @@
         "Physical Security",
         "Facilities Operations",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "HTW-OPS-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "daeb821b-79d2-592b-bdc4-b1f7db03c4f6",
       "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
       "category": "leadership",
-      "claim": "Had substantial influence over IT/security strategy, architecture, operational decisions, and budget, frequently acting as the Director of IT’s trusted hands-on technical decision-maker.",
+      "claim": "Had substantial influence over IT/security strategy, architecture, operational decisions, and budget, frequently acting as the Director of IT\u2019s trusted hands-on technical decision-maker.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -2953,7 +3637,11 @@
         "Technical Leadership",
         "Strategy",
         "Engineering Management"
-      ]
+      ],
+      "evidence_key": "HTW-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b61935fb-0223-50b5-8b66-a63c822a08d5",
@@ -2967,7 +3655,11 @@
       "tags": [
         "Security Governance",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "HTW-SEC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7a5a9da6-6d52-5f50-81ec-fb4e1067a932",
@@ -2982,7 +3674,11 @@
         "Private Cloud Architecture",
         "OpenStack",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "HTW-CLOUD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "821a5220-44c6-50ff-96ba-793e9db8e3a1",
@@ -2997,7 +3693,11 @@
         "Private Cloud Architecture",
         "OpenStack",
         "Capacity Planning"
-      ]
+      ],
+      "evidence_key": "HTW-CLOUD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "030244eb-ed01-5eb0-9974-dd81672b798e",
@@ -3013,13 +3713,17 @@
         "Network Security",
         "OpenStack",
         "Customer Security"
-      ]
+      ],
+      "evidence_key": "HTW-CLOUD-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ef19f382-9aa4-5d69-a8f6-ffc8cad70ad4",
       "experience_id": "bd078346-7885-5868-a001-b9383b3ab6fb",
       "category": "change_management",
-      "claim": "Designed and launched Hortonworks’ formal change-control process and selected/established the Change/Release Advisory committee.",
+      "claim": "Designed and launched Hortonworks\u2019 formal change-control process and selected/established the Change/Release Advisory committee.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3028,7 +3732,11 @@
         "Change Management",
         "Security Governance",
         "Strategy"
-      ]
+      ],
+      "evidence_key": "HTW-CHANGE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b31c216a-589c-5f4d-9e36-f686da3f540a",
@@ -3043,7 +3751,11 @@
         "Change Management",
         "Security Governance",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "HTW-CHANGE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "777a2df9-e3c6-5f58-a106-f7af2d629bf0",
@@ -3057,7 +3769,11 @@
       "tags": [
         "Change Management",
         "Reliability Engineering"
-      ]
+      ],
+      "evidence_key": "HTW-CHANGE-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "8b34521e-8974-58ac-9f84-c0a1ef1bed24",
@@ -3071,7 +3787,11 @@
       "tags": [
         "Change Management",
         "Security Governance"
-      ]
+      ],
+      "evidence_key": "HTW-CHANGE-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b74a96d7-c7f6-52e8-a025-617fc902f39b",
@@ -3085,7 +3805,11 @@
       "tags": [
         "People Leadership",
         "Engineering Management"
-      ]
+      ],
+      "evidence_key": "APC-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "7eb48db6-f1bb-5e24-a88c-9b5c7aee7302",
@@ -3099,13 +3823,17 @@
       "tags": [
         "Technical Leadership",
         "Platform Engineering"
-      ]
+      ],
+      "evidence_key": "APC-LEAD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "91017f2b-d972-5a68-ab67-e17e1e7b4d9b",
       "experience_id": "d9924b8b-1318-5eb1-a771-735a1e41633f",
       "category": "software_architecture",
-      "claim": "Re-architected Appcelerator’s corporate website from CodeIgniter to Zend Framework.",
+      "claim": "Re-architected Appcelerator\u2019s corporate website from CodeIgniter to Zend Framework.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3114,7 +3842,11 @@
         "Software Engineering",
         "CodeIgniter",
         "Zend Framework"
-      ]
+      ],
+      "evidence_key": "APC-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fb0d3856-b307-55f6-ad86-14459a7b8497",
@@ -3128,7 +3860,11 @@
       "tags": [
         "Software Engineering",
         "Zend Framework"
-      ]
+      ],
+      "evidence_key": "APC-ARCH-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e72e6da7-1b81-599b-a31c-2ba92ed98a3f",
@@ -3142,7 +3878,11 @@
       "tags": [
         "Performance Engineering",
         "Zend Framework"
-      ]
+      ],
+      "evidence_key": "APC-PERF-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "49ba4311-75e2-5135-808e-761fcba92ca6",
@@ -3158,7 +3898,11 @@
         "Git",
         "CI/CD",
         "Secure Coding"
-      ]
+      ],
+      "evidence_key": "APC-SDLC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6aae0bc0-0af7-5f4b-bd05-0603e18e4d60",
@@ -3172,7 +3916,11 @@
       "tags": [
         "Software Engineering",
         "CI/CD"
-      ]
+      ],
+      "evidence_key": "APC-TEST-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "db23350c-1643-5979-a3d8-3520d95e26b5",
@@ -3186,7 +3934,11 @@
       "tags": [
         "CI/CD",
         "Jenkins"
-      ]
+      ],
+      "evidence_key": "APC-CI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "dc40ec98-9fe6-501d-8e30-06ed9462203f",
@@ -3201,7 +3953,11 @@
         "CI/CD",
         "Jenkins",
         "Platform Engineering"
-      ]
+      ],
+      "evidence_key": "APC-CI-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1d51d41d-0a16-5ae2-a4a1-f252b6b94582",
@@ -3216,7 +3972,11 @@
         "CI/CD",
         "Jenkins",
         "Release Engineering"
-      ]
+      ],
+      "evidence_key": "APC-CI-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "40bf2c32-aa37-52e1-b16e-10b2e9b400e6",
@@ -3224,14 +3984,18 @@
       "category": "leadership",
       "claim": "Joined as the first software engineer for the web-services effort and helped grow the organization from one person to roughly 15 engineers before promotion to Director.",
       "context": null,
-      "metric": "1 → ~15 before Director promotion",
+      "metric": "1 \u2192 ~15 before Director promotion",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Team Building",
         "Engineering Management",
         "Technical Leadership"
-      ]
+      ],
+      "evidence_key": "RIC-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "64134234-f867-5d69-b1ee-871c762e2a88",
@@ -3245,7 +4009,11 @@
       "tags": [
         "Engineering Management",
         "People Leadership"
-      ]
+      ],
+      "evidence_key": "RIC-LEAD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5b19fbaa-8d41-59f0-ba33-0f28a8077278",
@@ -3259,7 +4027,11 @@
       "tags": [
         "Engineering Management",
         "People Leadership"
-      ]
+      ],
+      "evidence_key": "RIC-LEAD-003",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "9402c0e0-78d1-5ebe-a55c-b581eb280d62",
@@ -3274,7 +4046,11 @@
         "People Leadership",
         "Coaching",
         "Team Building"
-      ]
+      ],
+      "evidence_key": "RIC-LEAD-004",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "45dccec7-fc86-5e0b-8a12-71abdf3454b3",
@@ -3289,7 +4065,11 @@
         "Healthcare Security",
         "Software Engineering",
         "Product Security"
-      ]
+      ],
+      "evidence_key": "RIC-PROD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6bc7eca9-e51b-535f-adc2-f6f5749de063",
@@ -3304,7 +4084,11 @@
         "Software Engineering",
         "Data Security",
         "Cloud Architecture"
-      ]
+      ],
+      "evidence_key": "RIC-PROD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "4d47f057-a24e-5110-83ef-4bba1305f84f",
@@ -3319,7 +4103,11 @@
         "Data Security",
         "Cryptography",
         "Security Architecture"
-      ]
+      ],
+      "evidence_key": "RIC-INTEG-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "aede4c8d-a5d8-51d8-acde-21ea83141bff",
@@ -3338,7 +4126,11 @@
         "Zend Framework",
         "MySQL",
         "Distributed Systems"
-      ]
+      ],
+      "evidence_key": "RIC-CLOUD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "4affec1a-0e93-58fb-862e-f3e5cf0e7b3b",
@@ -3353,7 +4145,11 @@
         "Distributed Systems",
         "Cloud Architecture",
         "Cloud Cost Optimization"
-      ]
+      ],
+      "evidence_key": "RIC-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5f5de3fa-e09e-5f21-98b3-888f9e9daf43",
@@ -3368,7 +4164,11 @@
         "Distributed Systems",
         "Git",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "RIC-SYNC-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "023b675e-d3d3-57cc-8364-ffe617884642",
@@ -3383,7 +4183,11 @@
         "Reliability Engineering",
         "Distributed Systems",
         "ActiveMQ"
-      ]
+      ],
+      "evidence_key": "RIC-MQ-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1c321434-ce27-55a8-8507-3367a1412930",
@@ -3397,7 +4201,11 @@
       "tags": [
         "Performance Engineering",
         "Reliability Engineering"
-      ]
+      ],
+      "evidence_key": "RIC-PERF-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "544db58b-daca-5599-8a29-9ba2341b4ac4",
@@ -3411,20 +4219,28 @@
       "tags": [
         "Capacity Planning",
         "Performance Engineering"
-      ]
+      ],
+      "evidence_key": "RIC-SCALE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "089814cd-4567-57fc-80e4-d5cd765dd1fa",
       "experience_id": "9944c8b8-22ae-58d2-89b4-f4be57a5376f",
       "category": "scope",
-      "claim": "Left Ricoh before the product’s public launch, so post-launch production metrics should not be attributed to this tenure.",
+      "claim": "Left Ricoh before the product\u2019s public launch, so post-launch production metrics should not be attributed to this tenure.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=internal_only; resume_eligible=False",
       "approval_status": "approved",
       "tags": [
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "RIC-LIFE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "bd76cbb0-5eef-56c2-86aa-64665ddc6373",
@@ -3438,7 +4254,11 @@
       "tags": [
         "Web Platform Engineering",
         "Capacity Planning"
-      ]
+      ],
+      "evidence_key": "CBS-SCALE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d8c74804-6185-5247-a112-f946b3401776",
@@ -3452,20 +4272,28 @@
       "tags": [
         "Database Engineering",
         "Media Platform Engineering"
-      ]
+      ],
+      "evidence_key": "CBS-SCALE-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "d18a32b7-5336-51c9-a440-110fb661de49",
       "experience_id": "c634354f-6398-5233-9b3c-c5a4095ee22d",
       "category": "product",
-      "claim": "Worked in an environment where the Watch List was a major feature, with typical users tracking approximately 60–75 shows.",
+      "claim": "Worked in an environment where the Watch List was a major feature, with typical users tracking approximately 60\u201375 shows.",
       "context": null,
-      "metric": "~60–75 shows/watch list",
+      "metric": "~60\u201375 shows/watch list",
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=generalize; resume_eligible=True",
       "approval_status": "approved",
       "tags": [
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "CBS-WATCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "7f147a93-95ba-55ff-9de9-0b7cb71b3bae",
@@ -3480,7 +4308,11 @@
         "Media Platform Engineering",
         "Data Ingestion",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "CBS-VIDEO-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "381f2dcb-2582-518d-bb37-df363427c084",
@@ -3495,7 +4327,11 @@
         "Media Platform Engineering",
         "Data Ingestion",
         "Workflow Automation"
-      ]
+      ],
+      "evidence_key": "CBS-VIDEO-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "9759d3ac-be8a-5609-9e97-23ee75c117c9",
@@ -3509,7 +4345,11 @@
       "tags": [
         "Technical Leadership",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "CBS-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "232be055-bcff-5245-ab6f-9e9ce3296c85",
@@ -3524,7 +4364,11 @@
         "Database Engineering",
         "Performance Engineering",
         "MySQL"
-      ]
+      ],
+      "evidence_key": "CBS-DB-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ca89624a-eb98-54fe-aed9-d7dee129da74",
@@ -3539,7 +4383,11 @@
         "Database Engineering",
         "Performance Engineering",
         "MySQL"
-      ]
+      ],
+      "evidence_key": "CBS-DB-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "0b760afa-d1cf-56f7-b602-bd5691e47926",
@@ -3553,7 +4401,11 @@
       "tags": [
         "Professional Services",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "ZND-CONS-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "c5ea3e2a-edf6-50d4-929b-2ccf9289c4c4",
@@ -3568,7 +4420,11 @@
         "Technical Training",
         "Zend Framework",
         "Secure Coding"
-      ]
+      ],
+      "evidence_key": "ZND-TRAIN-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "0a0c9b32-fec5-58da-b952-bd10782ca229",
@@ -3582,7 +4438,11 @@
       "tags": [
         "Software Engineering",
         "Professional Services"
-      ]
+      ],
+      "evidence_key": "ZND-DEV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "16d19e85-4b06-5929-8c46-d93bb5e9948f",
@@ -3598,7 +4458,11 @@
         "Software Engineering",
         "PHP",
         "Zend Framework"
-      ]
+      ],
+      "evidence_key": "ZND-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "33ba2e5b-c69d-5cbd-86bb-222e4952f560",
@@ -3613,7 +4477,11 @@
         "Technical Consulting",
         "CI/CD",
         "Technical Training"
-      ]
+      ],
+      "evidence_key": "ZND-CI-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "b1e9f710-c98c-50c2-8886-be7498047c11",
@@ -3629,7 +4497,11 @@
         "Application Security",
         "Technical Consulting",
         "Database Engineering"
-      ]
+      ],
+      "evidence_key": "ZND-AUDIT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ac2d7b14-4ca6-5f13-9ab4-4f12ceab5896",
@@ -3644,7 +4516,11 @@
         "Security Architecture",
         "Technical Consulting",
         "Risk Management"
-      ]
+      ],
+      "evidence_key": "ZND-AUDIT-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "8ca29e92-3466-5221-b4a6-655ea9bb36c7",
@@ -3659,7 +4535,11 @@
         "Pre-Sales",
         "Technical Consulting",
         "Professional Services"
-      ]
+      ],
+      "evidence_key": "ZND-PRESALES-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "2911a1ae-f2d5-5561-9639-91dfc798ede7",
@@ -3674,7 +4554,11 @@
         "Technical Training",
         "Application Security",
         "CI/CD"
-      ]
+      ],
+      "evidence_key": "ZND-EDU-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5faf2cfb-cf7d-52ae-af0a-17e38ff2951f",
@@ -3688,7 +4572,11 @@
       "tags": [
         "Engineering Management",
         "People Leadership"
-      ]
+      ],
+      "evidence_key": "PKP-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "524383d3-0033-54be-8051-da8ea6d2e36e",
@@ -3702,7 +4590,11 @@
       "tags": [
         "Web Platform Engineering",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "PKP-PROD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "50877a79-f18a-520c-b956-ff71e8dbc33b",
@@ -3716,7 +4608,11 @@
       "tags": [
         "Data Center Operations",
         "Platform Engineering"
-      ]
+      ],
+      "evidence_key": "PKP-INFRA-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "57bcbea5-8d57-503c-b207-7a590ec743ac",
@@ -3731,7 +4627,11 @@
         "Database Engineering",
         "Reliability Engineering",
         "MySQL"
-      ]
+      ],
+      "evidence_key": "PKP-DB-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "a923549f-96ef-5ff8-96e9-f13e5a5583db",
@@ -3746,7 +4646,11 @@
         "Web Platform Engineering",
         "Capacity Planning",
         "Reliability Engineering"
-      ]
+      ],
+      "evidence_key": "PKP-WEB-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "00848a50-8c03-527a-9248-d8e27b8ba224",
@@ -3760,13 +4664,17 @@
       "tags": [
         "Capacity Planning",
         "Performance Engineering"
-      ]
+      ],
+      "evidence_key": "PKP-SCALE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fd79e715-06f6-5e57-b6f7-099816f90f66",
       "experience_id": "10da35ba-6be0-5738-956a-a1e491c950d4",
       "category": "architecture",
-      "claim": "Architected Pickspal’s technology platform from the ground up and remained highly hands-on as Director.",
+      "claim": "Architected Pickspal\u2019s technology platform from the ground up and remained highly hands-on as Director.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3775,7 +4683,11 @@
         "Software Engineering",
         "Technical Leadership",
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "PKP-ARCH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6afa0151-1e03-58f3-9279-df2fea76a9e3",
@@ -3789,13 +4701,17 @@
       "tags": [
         "Software Engineering",
         "Engineering Management"
-      ]
+      ],
+      "evidence_key": "PKP-DEV-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "dfb85021-b679-5b5e-a8b0-081589e49f40",
       "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
       "category": "scope",
-      "claim": "Served as an individual contributor on VMware’s web development team while acting as lead engineer for the Virtual Appliance Marketplace and lead developer for the VMware Technical Network.",
+      "claim": "Served as an individual contributor on VMware\u2019s web development team while acting as lead engineer for the Virtual Appliance Marketplace and lead developer for the VMware Technical Network.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3803,13 +4719,17 @@
       "tags": [
         "Technical Leadership",
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "VMW-ROLE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "25521b40-0d24-59e3-bcb2-10757e1853fc",
       "experience_id": "ac19e492-f740-5bd8-9648-99893fc4dada",
       "category": "identity",
-      "claim": "Integrated the Virtual Appliance Marketplace with VMware’s standardized SOAP-based SSO ecosystem using Java calls to the authentication service.",
+      "claim": "Integrated the Virtual Appliance Marketplace with VMware\u2019s standardized SOAP-based SSO ecosystem using Java calls to the authentication service.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3819,7 +4739,11 @@
         "SSO",
         "SOAP",
         "Java"
-      ]
+      ],
+      "evidence_key": "VMW-SSO-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e9b85c5a-8832-5fe8-9d8a-57cc2d47c118",
@@ -3833,7 +4757,11 @@
       "tags": [
         "Identity Federation",
         "SSO"
-      ]
+      ],
+      "evidence_key": "VMW-SSO-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "81606d0f-f086-578e-84ba-1055d65d2a41",
@@ -3848,7 +4776,11 @@
         "Release Engineering",
         "Workflow Automation",
         "CVS"
-      ]
+      ],
+      "evidence_key": "VMW-DEPLOY-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "dcecb5cd-64c2-5967-bdff-653e4af84cd3",
@@ -3862,7 +4794,11 @@
       "tags": [
         "Release Engineering",
         "Reliability Engineering"
-      ]
+      ],
+      "evidence_key": "VMW-DEPLOY-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1345c4c1-23fc-5012-b9f1-a0bbb0868d9e",
@@ -3876,7 +4812,11 @@
       "tags": [
         "Web Platform Engineering",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "VMW-MKT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ec785e41-5865-546d-9f4a-b08a66735bda",
@@ -3889,7 +4829,11 @@
       "approval_status": "approved",
       "tags": [
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "VMW-MKT-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "ad202f47-457a-5876-9df4-694a5f041e22",
@@ -3903,13 +4847,17 @@
       "tags": [
         "IAM Architecture",
         "Identity Federation"
-      ]
+      ],
+      "evidence_key": "VMW-IDENT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "e3fe4038-c911-5ad5-8ae9-ee22a93b2b0b",
       "experience_id": "c14673a7-d6c9-5785-8c5a-264293bc2046",
       "category": "product",
-      "claim": "Worked on Symantec’s Falcon initiative, which moved Norton Antivirus software activation from locally validated CD keys to an online activation model.",
+      "claim": "Worked on Symantec\u2019s Falcon initiative, which moved Norton Antivirus software activation from locally validated CD keys to an online activation model.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3917,7 +4865,11 @@
       "tags": [
         "Web Platform Engineering",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "SYM-PROD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "21a2ff6c-34fd-5bdf-8151-11dd641f8351",
@@ -3930,7 +4882,11 @@
       "approval_status": "approved",
       "tags": [
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "SYM-PROD-002",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "generalize"
     },
     {
       "id": "15ca205c-462d-5813-9497-58ea0a7eba9e",
@@ -3943,7 +4899,11 @@
       "approval_status": "approved",
       "tags": [
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "SYM-ROLE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "daa363be-bca6-54c7-90bb-76044e13b65d",
@@ -3960,7 +4920,11 @@
         "JavaScript",
         "CSS",
         "XML"
-      ]
+      ],
+      "evidence_key": "SYM-WEB-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "ea458a69-8539-5c4b-9f24-577f872e0edc",
@@ -3974,13 +4938,17 @@
       "tags": [
         "Technical Leadership",
         "Software Engineering"
-      ]
+      ],
+      "evidence_key": "WIS-ROLE-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "88a56dd3-0c85-5c09-9829-191d4349a787",
       "experience_id": "144bcdab-2df8-55b9-a496-b8956e7f3fb0",
       "category": "business_context",
-      "claim": "Worked for a small web-development business that grew out of an internet café and primarily served local businesses, especially automobile dealerships.",
+      "claim": "Worked for a small web-development business that grew out of an internet caf\u00e9 and primarily served local businesses, especially automobile dealerships.",
       "context": null,
       "metric": null,
       "provenance": "USER_VERIFIED; sources=8f0a69fa-6a8e-594b-a453-8af60bf81aec; visibility=public_safe; resume_eligible=True",
@@ -3988,7 +4956,11 @@
       "tags": [
         "Professional Services",
         "Technical Consulting"
-      ]
+      ],
+      "evidence_key": "WIS-BIZ-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "3b86afd4-230e-5d0f-b268-96fbb12f1a12",
@@ -4004,7 +4976,11 @@
         "PHP",
         "Perl",
         "MySQL"
-      ]
+      ],
+      "evidence_key": "WIS-TECH-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "fe28f99f-60ed-5e7a-bcb2-2fcd7475a509",
@@ -4018,7 +4994,11 @@
       "tags": [
         "Platform Engineering",
         "Rackspace"
-      ]
+      ],
+      "evidence_key": "WIS-INFRA-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "f09ef85a-df57-53ec-8646-dc4f9fa2fe42",
@@ -4032,7 +5012,11 @@
       "tags": [
         "Technical Leadership",
         "People Leadership"
-      ]
+      ],
+      "evidence_key": "WIS-TEAM-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "6e44c548-f9a7-5dc3-842d-3bc28b23661a",
@@ -4046,7 +5030,11 @@
       "tags": [
         "Technical Leadership",
         "Professional Services"
-      ]
+      ],
+      "evidence_key": "WIS-LEAD-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "1497b52b-54eb-56bf-94e5-a3845e3f61c1",
@@ -4061,7 +5049,11 @@
         "Technical Consulting",
         "Professional Services",
         "Technical Training"
-      ]
+      ],
+      "evidence_key": "WIS-CLIENT-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "826d16d2-ff51-575e-8245-156835b8cf48",
@@ -4074,7 +5066,11 @@
       "approval_status": "approved",
       "tags": [
         "Web Platform Engineering"
-      ]
+      ],
+      "evidence_key": "WIS-PROJ-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": false,
+      "resume_visibility": "internal_only"
     },
     {
       "id": "93a05762-b70b-5f97-9119-0589becc958a",
@@ -4089,7 +5085,11 @@
         "Technical Consulting",
         "Performance Engineering",
         "Capacity Planning"
-      ]
+      ],
+      "evidence_key": "TAO-REDIS-001",
+      "verification_status": "SOURCE_FACT",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "5c89bda1-7394-5bcf-b188-56296d5d7176",
@@ -4103,7 +5103,11 @@
       "tags": [
         "Python",
         "Performance Engineering"
-      ]
+      ],
+      "evidence_key": "TAO-REDIS-002",
+      "verification_status": "SOURCE_FACT",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     },
     {
       "id": "43eae94c-0fc1-5362-a7a2-4252919e6aa4",
@@ -4119,7 +5123,11 @@
         "Compliance",
         "HIPAA",
         "HITRUST"
-      ]
+      ],
+      "evidence_key": "RIC-COMP-001",
+      "verification_status": "USER_VERIFIED",
+      "resume_eligible": true,
+      "resume_visibility": "public_safe"
     }
   ],
   "skills": [
@@ -8040,7 +9048,7 @@
       "profile_id": "a6bc9095-ab55-5435-9fe1-a1e7adf4943a",
       "canonical_key": "ccsp",
       "name": "Certified Cloud Security Professional (CCSP)",
-      "issuer": "(ISC)²",
+      "issuer": "(ISC)\u00b2",
       "issued_on": "2017-07-01",
       "expires_on": null,
       "credential_id": null,

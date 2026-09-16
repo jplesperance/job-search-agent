@@ -27,18 +27,21 @@ class ExperienceRow(Base):
     profile_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("career_profiles.id", ondelete="CASCADE"), nullable=False
     )
+    canonical_key: Mapped[str | None] = mapped_column(String(200), unique=True, index=True)
     employer: Mapped[str] = mapped_column(String(200), nullable=False)
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     start_date: Mapped[date] = mapped_column(Date, nullable=False)
     end_date: Mapped[date | None] = mapped_column(Date)
     location: Mapped[str | None] = mapped_column(String(200))
     description: Mapped[str | None] = mapped_column(Text)
+    verification_status: Mapped[str | None] = mapped_column(String(30), index=True)
 
 
 class EvidenceItemRow(Base):
     __tablename__ = "evidence_items"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    evidence_key: Mapped[str | None] = mapped_column(String(80), unique=True, index=True)
     experience_id: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True), ForeignKey("experiences.id", ondelete="SET NULL")
     )
@@ -47,7 +50,10 @@ class EvidenceItemRow(Base):
     context: Mapped[str | None] = mapped_column(Text)
     metric: Mapped[str | None] = mapped_column(String(500))
     provenance: Mapped[str | None] = mapped_column(Text)
-    approval_status: Mapped[str] = mapped_column(String(30), nullable=False, default="draft")
+    verification_status: Mapped[str | None] = mapped_column(String(30), index=True)
+    approval_status: Mapped[str] = mapped_column(String(30), nullable=False, default="draft", index=True)
+    resume_eligible: Mapped[bool] = mapped_column(nullable=False, default=False, index=True)
+    resume_visibility: Mapped[str | None] = mapped_column(String(30), index=True)
     tags: Mapped[list[str]] = mapped_column(ARRAY(String(100)), nullable=False, default=list)
 
 

@@ -45,12 +45,14 @@ def import_seed(session: Session, seed: dict) -> None:
         obj = ExperienceRow(
             id=UUID(row["id"]),
             profile_id=UUID(row["profile_id"]),
+            canonical_key=row.get("canonical_key"),
             employer=row["employer"],
             title=row["title"],
             start_date=parse_date(row["start_date"]),
             end_date=parse_date(row.get("end_date")),
             location=row.get("location"),
             description=row.get("description"),
+            verification_status=row.get("verification_status"),
         )
         session.merge(obj)
 
@@ -66,13 +68,17 @@ def import_seed(session: Session, seed: dict) -> None:
     for row in seed["evidence_items"]:
         obj = EvidenceItemRow(
             id=UUID(row["id"]),
+            evidence_key=row.get("evidence_key"),
             experience_id=UUID(row["experience_id"]) if row.get("experience_id") else None,
             category=row["category"],
             claim=row["claim"],
             context=row.get("context"),
             metric=row.get("metric"),
             provenance=row.get("provenance"),
+            verification_status=row.get("verification_status"),
             approval_status=row.get("approval_status", "draft"),
+            resume_eligible=bool(row.get("resume_eligible", False)),
+            resume_visibility=row.get("resume_visibility"),
             tags=row.get("tags", []),
         )
         session.merge(obj)
@@ -122,9 +128,9 @@ def main() -> None:
     if args.dry_run:
         return
 
-    from job_agent.db.session import SessionLocal
+    from job_agent.db.session import get_session_factory
 
-    with SessionLocal() as session:
+    with get_session_factory()() as session:
         import_seed(session, seed)
     print("Knowledge base import complete")
 
