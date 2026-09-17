@@ -6,6 +6,8 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 
+from job_agent.domain.jobs import LocationCompensationRule
+
 from job_agent.domain.enums import (
     ApplicationStatus,
     ApprovalStatus,
@@ -84,6 +86,8 @@ class TargetingPolicy(DomainModel):
     hybrid_allowed: bool = True
     onsite_allowed: bool = False
     minimum_base_salary_usd: Decimal | None = None
+    remote_minimum_base_salary_usd: Decimal | None = None
+    location_compensation_rules: list[LocationCompensationRule] = Field(default_factory=list)
     required_terms: set[str] = Field(default_factory=set)
     excluded_terms: set[str] = Field(default_factory=set)
     weights: dict[str, float] = Field(default_factory=dict)

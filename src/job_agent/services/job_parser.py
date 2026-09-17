@@ -162,6 +162,7 @@ class DeterministicJobParser:
         for label, terms in (
             ("executive", ("chief", "ciso", "vice president", "vp ")),
             ("director", ("director", "head of")),
+            ("senior manager", ("senior manager", "sr. manager", "sr manager")),
             ("principal", ("principal",)),
             ("staff", ("staff",)),
             ("lead", ("lead",)),
@@ -186,7 +187,7 @@ class DeterministicJobParser:
             ("cloud_security", ("cloud security", "infrastructure security")),
             ("ai_security", ("ai security", "llm security", "model security")),
             ("security_engineering", ("security engineer", "security engineering")),
-            ("security_leadership", ("security director", "director of security", "head of security")),
+            ("security_leadership", ("security director", "director of security", "director of information security", "director of cybersecurity", "head of security", "head of cybersecurity", "security manager")),
         )
         for family, terms in families:
             if any(term in title_lower for term in terms):

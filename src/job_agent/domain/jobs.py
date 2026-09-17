@@ -89,6 +89,29 @@ class JobSummary(BaseModel):
     content_hash: str | None
 
 
+class LocationCompensationRule(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    zone: str
+    name: str
+    locations: list[str] = Field(default_factory=list)
+    minimum_base_salary_usd: float = Field(ge=0)
+
+
+class LocationCompensationDecision(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    raw_location: str | None = None
+    normalized_city: str | None = None
+    commute_zone: str | None = None
+    work_arrangement: WorkArrangement
+    required_minimum_base_salary_usd: float | None = None
+    published_max_base_salary_usd: float | None = None
+    salary_passed: bool | None = None
+    manual_review_required: bool = False
+    rationale: str
+
+
 class TargetingPolicyCreate(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -102,6 +125,8 @@ class TargetingPolicyCreate(BaseModel):
     hybrid_allowed: bool = True
     onsite_allowed: bool = False
     minimum_base_salary_usd: float | None = Field(default=None, ge=0)
+    remote_minimum_base_salary_usd: float | None = Field(default=None, ge=0)
+    location_compensation_rules: list[LocationCompensationRule] = Field(default_factory=list)
     required_terms: list[str] = Field(default_factory=list)
     excluded_terms: list[str] = Field(default_factory=list)
     weights: dict[str, float] = Field(default_factory=dict)
@@ -144,6 +169,7 @@ class JobMatchResponse(BaseModel):
     gaps: list[str]
     unknowns: list[str]
     components: dict[str, float]
+    location_compensation: LocationCompensationDecision
 
 
 class PolicyActivationRequest(BaseModel):
@@ -166,6 +192,8 @@ class PolicySummary(BaseModel):
     hybrid_allowed: bool
     onsite_allowed: bool
     minimum_base_salary_usd: float | None
+    remote_minimum_base_salary_usd: float | None
+    location_compensation_rules: list[LocationCompensationRule]
     required_terms: list[str]
     excluded_terms: list[str]
     weights: dict[str, float]

@@ -68,3 +68,13 @@ def test_parser_keeps_useful_short_taxonomy_terms_without_matching_go_noise():
     assert "AWS" in parsed.discovered_skills
     assert "Git" in parsed.discovered_skills
     assert "Go" not in parsed.discovered_skills
+
+
+def test_senior_manager_is_detected_as_distinct_seniority():
+    parser = DeterministicJobParser(_skills())
+    parsed = parser.parse(
+        "Senior Manager, Application Security",
+        "Requirements:\n- Application Security experience",
+        "San Jose, CA",
+    )
+    assert parsed.seniority == "senior manager"

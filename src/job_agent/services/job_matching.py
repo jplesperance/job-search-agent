@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 import hashlib
-import re
 from dataclasses import dataclass
-from decimal import Decimal
 from uuid import UUID
 
 from job_agent.domain.enums import ApprovalStatus, VerificationStatus
@@ -12,6 +10,7 @@ from job_agent.domain.jobs import (
     JobIngestResponse,
     JobMatchRequest,
     JobMatchResponse,
+    LocationCompensationDecision,
     ParsedJobDescription,
     ParsedJobRequirement,
     RequirementCoverage,
@@ -24,6 +23,7 @@ from job_agent.repositories.interfaces import CareerRepository, JobRepository, P
 from job_agent.scoring.hard_filters import evaluate_hard_filters
 from job_agent.services.evidence_search import EvidenceSearchService
 from job_agent.services.job_parser import DeterministicJobParser
+from job_agent.services.location_policy import evaluate_location_compensation
 
 
 _DEFAULT_WEIGHTS = {
@@ -105,7 +105,7 @@ class JobMatchService:
         if not requirements:
             requirements = self.job_repo.replace_requirements(job.id, parsed.requirements)
 
-        hard_passed, hard_reasons = self._hard_filters(job, policy, parsed)
+        hard_passed, hard_reasons, location_compensation = self._hard_filters(job, policy, parsed)
 
         matches: list[_RequirementMatch] = []
         gaps: list[str] = []
@@ -180,6 +180,7 @@ class JobMatchService:
                 requirement_coverage=[match.coverage for match in matches],
                 role_family=parsed.role_family,
                 seniority=parsed.seniority,
+                location_context=location_compensation.model_dump(mode="json"),
             )
         except TypeError:
             save(analysis)
@@ -198,6 +199,7 @@ class JobMatchService:
             gaps=gaps,
             unknowns=unknowns,
             components=components,
+            location_compensation=location_compensation,
         )
 
     def _match_requirement(
@@ -321,7 +323,7 @@ class JobMatchService:
 
     def _hard_filters(
         self, job: JobOpportunity, policy: TargetingPolicy, parsed: ParsedJobDescription
-    ) -> tuple[bool, list[str]]:
+    ) -> tuple[bool, list[str], LocationCompensationDecision]:
         base = evaluate_hard_filters(job, policy)
         reasons = list(base.reasons)
 
@@ -337,26 +339,11 @@ class JobMatchService:
             if not any(normalize_term(allowed) in location for allowed in policy.allowed_locations):
                 reasons.append(f"Location not allowed by policy: {job.location}")
 
-        if policy.minimum_base_salary_usd is not None and job.compensation_text:
-            maximum = self._max_salary(job.compensation_text)
-            if maximum is not None and maximum < float(policy.minimum_base_salary_usd):
-                reasons.append(
-                    f"Published compensation maximum ${maximum:,.0f} is below policy minimum "
-                    f"${float(policy.minimum_base_salary_usd):,.0f}"
-                )
-        return (not reasons), reasons
+        location_result = evaluate_location_compensation(job, policy, parsed.work_arrangement)
+        if location_result.hard_filter_reason:
+            reasons.append(location_result.hard_filter_reason)
 
-    @staticmethod
-    def _max_salary(text: str) -> float | None:
-        values: list[float] = []
-        for raw, suffix in re.findall(r"\$?([0-9]{2,3}(?:,[0-9]{3})|[0-9]{5,6}|[0-9]{2,3})(\s*[kK])?", text):
-            value = float(raw.replace(",", ""))
-            if suffix.strip().lower() == "k":
-                value *= 1000
-            # Ignore likely hourly/monthly values when no k/comma and below normal annual salary.
-            if value >= 1000:
-                values.append(value)
-        return max(values) if values else None
+        return (not reasons), reasons, location_result.decision
 
     @staticmethod
     def _normalized_weights(policy: TargetingPolicy) -> dict[str, float]:

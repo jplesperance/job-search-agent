@@ -28,6 +28,8 @@ def main() -> None:
         hybrid_allowed=payload.hybrid_allowed,
         onsite_allowed=payload.onsite_allowed,
         minimum_base_salary_usd=payload.minimum_base_salary_usd,
+        remote_minimum_base_salary_usd=payload.remote_minimum_base_salary_usd,
+        location_compensation_rules=payload.location_compensation_rules,
         required_terms=set(payload.required_terms),
         excluded_terms=set(payload.excluded_terms),
         weights=payload.weights,

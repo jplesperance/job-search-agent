@@ -25,15 +25,43 @@ def main() -> None:
     if missing_cols := sorted(expected - req_columns):
         raise SystemExit(f"job_requirements missing columns: {', '.join(missing_cols)}")
 
+    policy_columns = {column["name"] for column in inspector.get_columns("targeting_policies")}
+    policy_expected = {"remote_minimum_base_salary_usd", "location_compensation_rules"}
+    if missing_cols := sorted(policy_expected - policy_columns):
+        raise SystemExit(f"targeting_policies missing Phase 3.1 columns: {', '.join(missing_cols)}")
+
+    analysis_columns = {column["name"] for column in inspector.get_columns("job_analyses")}
+    if "location_context" not in analysis_columns:
+        raise SystemExit("job_analyses.location_context is missing")
+
     with engine.connect() as conn:
         evidence_count = conn.execute(text("SELECT COUNT(*) FROM evidence_items")).scalar_one()
         skill_count = conn.execute(text("SELECT COUNT(*) FROM skills")).scalar_one()
         policy_count = conn.execute(text("SELECT COUNT(*) FROM targeting_policies")).scalar_one()
+        active = conn.execute(
+            text(
+                """
+                SELECT name, version, remote_minimum_base_salary_usd,
+                       jsonb_array_length(location_compensation_rules)
+                FROM targeting_policies
+                WHERE active = true
+                ORDER BY version DESC
+                LIMIT 1
+                """
+            )
+        ).one_or_none()
 
-    print("Phase 3 schema verified")
+    print("Phase 3.1 schema verified")
     print(f"career evidence available  {evidence_count}")
     print(f"skill taxonomy available   {skill_count}")
     print(f"targeting policies         {policy_count}")
+    if active:
+        name, version, remote_floor, rule_count = active
+        print(f"active policy              {name} v{version}")
+        print(f"remote base floor          ${float(remote_floor):,.0f}" if remote_floor else "remote base floor          unset")
+        print(f"commute-zone rules         {rule_count}")
+    else:
+        print("active policy              none (create/activate the v2 policy next)")
 
 
 if __name__ == "__main__":

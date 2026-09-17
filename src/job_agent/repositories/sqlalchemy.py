@@ -21,6 +21,7 @@ from job_agent.db.tables import (
 from job_agent.domain.enums import ApprovalStatus, ResumeVisibility, VerificationStatus
 from job_agent.domain.jobs import (
     JobMatchResponse,
+    LocationCompensationDecision,
     ParsedJobRequirement,
     RequirementCoverage,
     RequirementImportance,
@@ -243,6 +244,8 @@ def _policy(row: TargetingPolicyRow) -> TargetingPolicy:
         hybrid_allowed=row.hybrid_allowed,
         onsite_allowed=row.onsite_allowed,
         minimum_base_salary_usd=row.minimum_base_salary_usd,
+        remote_minimum_base_salary_usd=row.remote_minimum_base_salary_usd,
+        location_compensation_rules=list(row.location_compensation_rules or []),
         required_terms=set(row.required_terms or []),
         excluded_terms=set(row.excluded_terms or []),
         weights=dict(row.weights or {}),
@@ -400,6 +403,7 @@ class SqlAlchemyJobRepository:
         requirement_coverage: list[RequirementCoverage] | None = None,
         role_family: str | None = None,
         seniority: str | None = None,
+        location_context: dict | None = None,
     ) -> JobAnalysis:
         row = JobAnalysisRow(
             id=analysis.id,
@@ -414,6 +418,7 @@ class SqlAlchemyJobRepository:
             ],
             role_family=role_family,
             detected_seniority=seniority,
+            location_context=dict(location_context or {}),
             matched_evidence_ids=list(stable_evidence_keys or []),
             gaps=list(analysis.gaps),
             unknowns=list(analysis.unknowns),
@@ -460,6 +465,11 @@ class SqlAlchemyJobRepository:
             gaps=list(row.gaps or []),
             unknowns=list(row.unknowns or []),
             components=components,
+            location_compensation=LocationCompensationDecision.model_validate(row.location_context or {
+                "work_arrangement": "unknown",
+                "manual_review_required": True,
+                "rationale": "Location/compensation context was not persisted for this older analysis.",
+            }),
         )
 
 
@@ -501,6 +511,8 @@ class SqlAlchemyPolicyRepository:
             hybrid_allowed=policy.hybrid_allowed,
             onsite_allowed=policy.onsite_allowed,
             minimum_base_salary_usd=policy.minimum_base_salary_usd,
+            remote_minimum_base_salary_usd=policy.remote_minimum_base_salary_usd,
+            location_compensation_rules=[rule.model_dump(mode="json") for rule in policy.location_compensation_rules],
             required_terms=sorted(policy.required_terms),
             excluded_terms=sorted(policy.excluded_terms),
             weights=dict(policy.weights),

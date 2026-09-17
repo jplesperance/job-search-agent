@@ -182,3 +182,16 @@ def test_hard_filter_rejects_disallowed_term():
 
     assert result.hard_filter_passed is False
     assert any("Excluded term present: Kubernetes" == reason for reason in result.hard_filter_reasons)
+
+
+def test_remote_compensation_floor_is_a_hard_filter():
+    service, _, job = _fixture()
+    service.policy_repo.policy.remote_minimum_base_salary_usd = 275000
+    job.compensation_text = "$240k-$270k"
+
+    result = service.analyze(job.id, JobMatchRequest())
+
+    assert result.hard_filter_passed is False
+    assert result.location_compensation.commute_zone == "REMOTE"
+    assert result.location_compensation.required_minimum_base_salary_usd == 275000
+    assert any("below remote policy minimum $275,000" in reason for reason in result.hard_filter_reasons)
