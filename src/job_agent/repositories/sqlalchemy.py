@@ -53,6 +53,7 @@ from job_agent.domain.models import (
     TargetingPolicy,
 )
 from job_agent.domain.retrieval import EvidenceRecord
+from job_agent.services.role_preferences import evaluate_role_preferences
 
 
 def _profile(row: CareerProfileRow) -> CareerProfile:
@@ -263,6 +264,9 @@ def _policy(row: TargetingPolicyRow) -> TargetingPolicy:
         location_compensation_rules=list(row.location_compensation_rules or []),
         required_terms=set(row.required_terms or []),
         excluded_terms=set(row.excluded_terms or []),
+        excluded_title_terms=set(row.excluded_title_terms or []),
+        exclude_software_engineering_roles=bool(row.exclude_software_engineering_roles),
+        exclude_heavy_coding_roles=bool(row.exclude_heavy_coding_roles),
         weights=dict(row.weights or {}),
     )
 
@@ -639,8 +643,22 @@ class SqlAlchemyDiscoveryRepository:
         if open_only:
             jobs_stmt = jobs_stmt.where(JobOpportunityRow.posting_status == "open")
         jobs = list(self.session.execute(jobs_stmt).scalars())
+        policy_row = self.session.execute(
+            select(TargetingPolicyRow)
+            .where(TargetingPolicyRow.active.is_(True))
+            .order_by(TargetingPolicyRow.version.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        active_policy = _policy(policy_row) if policy_row is not None else None
         candidates: list[DiscoveryCandidateSummary] = []
         for job in jobs:
+            role_pref = evaluate_role_preferences(
+                title=job.title,
+                description=job.description_raw,
+                policy=active_policy,
+            )
+            if not role_pref.accepted:
+                continue
             analysis = self.session.execute(
                 select(JobAnalysisRow)
                 .where(JobAnalysisRow.job_id == job.id)
@@ -743,6 +761,9 @@ class SqlAlchemyPolicyRepository:
             location_compensation_rules=[rule.model_dump(mode="json") for rule in policy.location_compensation_rules],
             required_terms=sorted(policy.required_terms),
             excluded_terms=sorted(policy.excluded_terms),
+            excluded_title_terms=sorted(policy.excluded_title_terms),
+            exclude_software_engineering_roles=policy.exclude_software_engineering_roles,
+            exclude_heavy_coding_roles=policy.exclude_heavy_coding_roles,
             weights=dict(policy.weights),
         )
         self.session.add(row)

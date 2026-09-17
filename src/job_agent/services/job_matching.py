@@ -28,6 +28,7 @@ from job_agent.scoring.hard_filters import evaluate_hard_filters
 from job_agent.services.evidence_search import EvidenceSearchService
 from job_agent.services.job_parser import DeterministicJobParser
 from job_agent.services.location_policy import evaluate_location_compensation, extract_base_salary_range
+from job_agent.services.role_preferences import evaluate_role_preferences
 
 
 _DEFAULT_WEIGHTS = {
@@ -556,6 +557,14 @@ class JobMatchService:
     ) -> tuple[bool, list[str], LocationCompensationDecision]:
         base = evaluate_hard_filters(job, policy)
         reasons = list(base.reasons)
+
+        role_pref = evaluate_role_preferences(
+            title=job.title,
+            description=job.description_raw,
+            policy=policy,
+        )
+        if not role_pref.accepted:
+            reasons.append(f"Role preference filter: {role_pref.rationale}")
 
         if parsed.work_arrangement is WorkArrangement.REMOTE and not policy.remote_allowed:
             reasons.append("Remote work is disallowed by the targeting policy")

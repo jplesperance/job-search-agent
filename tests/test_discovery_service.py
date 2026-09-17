@@ -114,3 +114,38 @@ def test_discovery_run_ingests_and_analyzes_only_security_title_candidates():
     assert result.totals["postings_closed"] == 2
     assert result.runs[0].status is DiscoveryRunStatus.COMPLETED
     assert len(repo.links) == 1
+
+
+def test_discovery_run_deduplicates_same_external_posting_before_analysis():
+    source = _source()
+    repo = FakeDiscoveryRepo(source)
+
+    class DuplicateAdapter:
+        def fetch(self, source):
+            posting = DiscoveryPosting(
+                provider=source.provider,
+                external_id="dup-1",
+                company=source.company,
+                title="Director of Application Security",
+                location="Palo Alto, CA",
+                description_raw="Requirements: Threat modeling and application security. " * 2,
+                source_url="https://example.com/dup-1",
+            )
+            return [posting, posting]
+
+    class DuplicateRegistry:
+        def get(self, provider):
+            return DuplicateAdapter()
+
+    service = DiscoveryService(
+        discovery_repo=repo,
+        policy_repo=FakePolicyRepo(),
+        ingestion_service=FakeIngestion(),
+        match_service=FakeMatcher(),
+        adapters=DuplicateRegistry(),
+    )
+    result = service.run(DiscoveryRunRequest(source_id=source.id, minimum_surface_score=80))
+    assert result.totals["postings_retrieved"] == 2
+    assert result.totals["title_candidates"] == 1
+    assert result.totals["jobs_analyzed"] == 1
+    assert result.totals["surfaced"] == 1

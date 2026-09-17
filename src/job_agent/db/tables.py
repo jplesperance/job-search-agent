@@ -112,6 +112,9 @@ class TargetingPolicyRow(Base):
     location_compensation_rules: Mapped[list[dict]] = mapped_column(JSONB, nullable=False, default=list)
     required_terms: Mapped[list[str]] = mapped_column(ARRAY(String(150)), nullable=False, default=list)
     excluded_terms: Mapped[list[str]] = mapped_column(ARRAY(String(150)), nullable=False, default=list)
+    excluded_title_terms: Mapped[list[str]] = mapped_column(ARRAY(String(150)), nullable=False, default=list)
+    exclude_software_engineering_roles: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    exclude_heavy_coding_roles: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     weights: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
 
 

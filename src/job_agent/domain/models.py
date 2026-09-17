@@ -90,6 +90,9 @@ class TargetingPolicy(DomainModel):
     location_compensation_rules: list[LocationCompensationRule] = Field(default_factory=list)
     required_terms: set[str] = Field(default_factory=set)
     excluded_terms: set[str] = Field(default_factory=set)
+    excluded_title_terms: set[str] = Field(default_factory=set)
+    exclude_software_engineering_roles: bool = False
+    exclude_heavy_coding_roles: bool = False
     weights: dict[str, float] = Field(default_factory=dict)
 
 

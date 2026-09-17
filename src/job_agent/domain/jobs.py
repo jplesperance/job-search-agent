@@ -146,6 +146,9 @@ class TargetingPolicyCreate(BaseModel):
     location_compensation_rules: list[LocationCompensationRule] = Field(default_factory=list)
     required_terms: list[str] = Field(default_factory=list)
     excluded_terms: list[str] = Field(default_factory=list)
+    excluded_title_terms: list[str] = Field(default_factory=list)
+    exclude_software_engineering_roles: bool = False
+    exclude_heavy_coding_roles: bool = False
     weights: dict[str, float] = Field(default_factory=dict)
 
 
@@ -242,4 +245,7 @@ class PolicySummary(BaseModel):
     location_compensation_rules: list[LocationCompensationRule]
     required_terms: list[str]
     excluded_terms: list[str]
+    excluded_title_terms: list[str]
+    exclude_software_engineering_roles: bool
+    exclude_heavy_coding_roles: bool
     weights: dict[str, float]

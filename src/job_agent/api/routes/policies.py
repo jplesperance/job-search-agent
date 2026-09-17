@@ -30,6 +30,9 @@ def _summary(policy: TargetingPolicy) -> PolicySummary:
         location_compensation_rules=policy.location_compensation_rules,
         required_terms=sorted(policy.required_terms),
         excluded_terms=sorted(policy.excluded_terms),
+        excluded_title_terms=sorted(policy.excluded_title_terms),
+        exclude_software_engineering_roles=policy.exclude_software_engineering_roles,
+        exclude_heavy_coding_roles=policy.exclude_heavy_coding_roles,
         weights=dict(policy.weights),
     )
 
@@ -61,6 +64,9 @@ def create_policy(
         location_compensation_rules=request.location_compensation_rules,
         required_terms=set(request.required_terms),
         excluded_terms=set(request.excluded_terms),
+        excluded_title_terms=set(request.excluded_title_terms),
+        exclude_software_engineering_roles=request.exclude_software_engineering_roles,
+        exclude_heavy_coding_roles=request.exclude_heavy_coding_roles,
         weights=request.weights,
     )
     try:

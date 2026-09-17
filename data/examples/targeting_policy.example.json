@@ -1,6 +1,6 @@
 {
   "name": "primary-security-search",
-  "version": 2,
+  "version": 3,
   "active": true,
   "target_titles": [
     "Director of Application Security",
@@ -120,5 +120,10 @@
     "title": 0.15,
     "seniority": 0.1,
     "role_family": 0.15
-  }
+  },
+  "excluded_title_terms": [
+    "physical security"
+  ],
+  "exclude_software_engineering_roles": true,
+  "exclude_heavy_coding_roles": true
 }

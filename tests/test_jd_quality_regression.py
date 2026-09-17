@@ -226,3 +226,8 @@ def test_tenure_requirements_use_threshold_proofs_not_decimal_year_claims():
         assert "Estimated " not in item.rationale
         assert ".8 years" not in item.rationale
         assert ".2 years" not in item.rationale
+
+
+def test_salary_extraction_handles_line_breaks_inside_greenhouse_content():
+    text = """Compensation\nThe expected base salary range for this position is\n$193,800 - $285,000\nper year, plus bonus."""
+    assert extract_base_salary_range(text) == (193800.0, 285000.0)

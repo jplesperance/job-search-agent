@@ -17,30 +17,8 @@ from job_agent.domain.jobs import JobIngestRequest, JobMatchRequest, WorkArrange
 from job_agent.repositories.interfaces import DiscoveryRepository, PolicyRepository
 from job_agent.services.discovery_adapters import AdapterRegistry
 from job_agent.services.job_matching import JobIngestionService, JobMatchService
-
-
-_SECURITY_TITLE_TERMS = (
-    "security",
-    "appsec",
-    "application security",
-    "product security",
-    "cybersecurity",
-    "cyber security",
-    "information security",
-    "infosec",
-    "red team",
-    "offensive",
-    "vulnerability",
-    "threat",
-    "trust security",
-)
-
-_STRONG_EXCLUSION_TERMS = (
-    "security guard",
-    "physical security officer",
-    "loss prevention",
-    "public safety",
-)
+from job_agent.services.role_preferences import evaluate_role_preferences
+from job_agent.domain.models import TargetingPolicy
 
 
 @dataclass(frozen=True)
@@ -50,25 +28,22 @@ class TitlePrefilterDecision:
 
 
 class SecurityTitlePrefilter:
-    def __init__(self, target_titles: list[str] | None = None) -> None:
-        self.target_titles = [title.lower().strip() for title in (target_titles or []) if title.strip()]
+    def __init__(self, policy_or_titles: TargetingPolicy | list[str] | None = None) -> None:
+        if isinstance(policy_or_titles, TargetingPolicy):
+            self.policy = policy_or_titles
+        else:
+            self.policy = TargetingPolicy(
+                name="prefilter",
+                target_titles=list(policy_or_titles or []),
+            )
 
-    def evaluate(self, title: str) -> TitlePrefilterDecision:
-        lower = re.sub(r"\s+", " ", title.lower()).strip()
-        if any(term in lower for term in _STRONG_EXCLUSION_TERMS):
-            return TitlePrefilterDecision(False, "explicit non-cyber security title")
-        if any(term in lower for term in _SECURITY_TITLE_TERMS):
-            return TitlePrefilterDecision(True, "security-family title")
-        if any(self._title_overlap(lower, target) for target in self.target_titles):
-            return TitlePrefilterDecision(True, "overlaps configured target title")
-        return TitlePrefilterDecision(False, "no security-title signal")
-
-    @staticmethod
-    def _title_overlap(candidate: str, target: str) -> bool:
-        stop = {"of", "and", "the", "senior", "sr", "lead", "staff", "principal", "manager", "director", "head"}
-        candidate_tokens = {token for token in re.findall(r"[a-z0-9]+", candidate) if token not in stop}
-        target_tokens = {token for token in re.findall(r"[a-z0-9]+", target) if token not in stop}
-        return bool(candidate_tokens and target_tokens and len(candidate_tokens & target_tokens) >= 2)
+    def evaluate(self, title: str, description: str | None = None) -> TitlePrefilterDecision:
+        decision = evaluate_role_preferences(
+            title=title,
+            description=description,
+            policy=self.policy,
+        )
+        return TitlePrefilterDecision(decision.accepted, decision.rationale)
 
 
 class DiscoveryService:
@@ -99,7 +74,7 @@ class DiscoveryService:
         active_policy = self.policy_repo.get_active()
         if request.analyze and active_policy is None:
             raise LookupError("targeting policy not found; create or activate a policy first")
-        prefilter = SecurityTitlePrefilter(active_policy.target_titles if active_policy else [])
+        prefilter = SecurityTitlePrefilter(active_policy)
 
         summaries = [self._run_source(source, request, prefilter) for source in sources]
         fields = (
@@ -155,8 +130,10 @@ class DiscoveryService:
             counters["postings_retrieved"] = len(postings)
 
             for posting in postings:
+                if posting.external_id in seen_external_ids:
+                    continue
                 seen_external_ids.add(posting.external_id)
-                decision = prefilter.evaluate(posting.title)
+                decision = prefilter.evaluate(posting.title, posting.description_raw)
                 if not decision.accepted:
                     continue
                 counters["title_candidates"] += 1

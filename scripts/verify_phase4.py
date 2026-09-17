@@ -24,10 +24,20 @@ def main() -> None:
         version = conn.execute(text("SELECT version_num FROM alembic_version")).scalar_one()
         source_count = conn.execute(text("SELECT COUNT(*) FROM discovery_sources")).scalar_one()
         run_count = conn.execute(text("SELECT COUNT(*) FROM discovery_runs")).scalar_one()
-    if version != "0006":
-        raise SystemExit(f"Expected Alembic 0006, found {version}")
+    policy_columns = {column["name"] for column in inspector.get_columns("targeting_policies")}
+    required_policy_columns = {
+        "excluded_title_terms",
+        "exclude_software_engineering_roles",
+        "exclude_heavy_coding_roles",
+    }
+    missing_policy_columns = required_policy_columns - policy_columns
+    if missing_policy_columns:
+        raise SystemExit(f"Missing Phase 4.0.1 policy columns: {sorted(missing_policy_columns)}")
 
-    print("Phase 4 discovery schema verified")
+    if version != "0007":
+        raise SystemExit(f"Expected Alembic 0007, found {version}")
+
+    print("Phase 4.0.1 discovery schema verified")
     print(f"alembic head              {version}")
     print(f"configured sources        {source_count}")
     print(f"discovery runs            {run_count}")

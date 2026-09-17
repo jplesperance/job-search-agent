@@ -32,6 +32,9 @@ def main() -> None:
         location_compensation_rules=payload.location_compensation_rules,
         required_terms=set(payload.required_terms),
         excluded_terms=set(payload.excluded_terms),
+        excluded_title_terms=set(payload.excluded_title_terms),
+        exclude_software_engineering_roles=payload.exclude_software_engineering_roles,
+        exclude_heavy_coding_roles=payload.exclude_heavy_coding_roles,
         weights=payload.weights,
     )
 

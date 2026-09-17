@@ -59,6 +59,7 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
     if not text:
         return None, None
 
+    compact = re.sub(r"\s+", " ", text).strip()
     amount = r"\$\s*([0-9]{2,3}(?:,[0-9]{3})|[0-9]{5,6}|[0-9]{2,3})\s*([kK])?"
     contextual = re.compile(
         rf"(?:base\s+(?:salary|pay)|salary\s+range|pay\s+range|annual\s+salary)"
@@ -72,7 +73,7 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
     )
 
     for pattern in (contextual, explicit_range):
-        match = pattern.search(text)
+        match = pattern.search(compact)
         if match:
             low = _salary_amount(match.group(1), match.group(2))
             high = _salary_amount(match.group(3), match.group(4))
@@ -82,8 +83,8 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
     # A dedicated compensation field is often just "$250k-$300k" without labels.
     # Only use this generic form for short strings to avoid mining unrelated dollar
     # amounts from a full job description.
-    if len(text.strip()) <= 180:
-        generic = re.compile(rf"{amount}\s*(?:-|–|—|to)\s*{amount}", re.I).search(text)
+    if len(compact) <= 180:
+        generic = re.compile(rf"{amount}\s*(?:-|–|—|to)\s*{amount}", re.I).search(compact)
         if generic:
             low = _salary_amount(generic.group(1), generic.group(2))
             high = _salary_amount(generic.group(3), generic.group(4))
@@ -93,7 +94,7 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
     single = re.compile(
         rf"(?:base\s+(?:salary|pay)|annual\s+salary)[^\n]{{0,100}}?{amount}",
         re.I,
-    ).search(text)
+    ).search(compact)
     if single:
         value = _salary_amount(single.group(1), single.group(2))
         return value, value
