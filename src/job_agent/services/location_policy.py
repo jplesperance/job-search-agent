@@ -40,23 +40,69 @@ class LocationPolicyResult:
     hard_filter_reason: str | None = None
 
 
-def extract_max_annual_salary(text: str | None) -> float | None:
-    """Extract the largest plausible annual USD salary from a compensation string.
+def _salary_amount(raw: str, suffix: str | None = None) -> float | None:
+    try:
+        value = float(raw.replace(",", "").replace("$", "").strip())
+    except ValueError:
+        return None
+    if suffix and suffix.strip().lower() == "k":
+        value *= 1000
+    return value if 10_000 <= value <= 2_000_000 else None
 
-    This intentionally ignores percentages and values below $1,000, so bonus percentages,
-    equity percentages, and hourly rates do not become false annual-salary matches.
+
+def extract_base_salary_range(text: str | None) -> tuple[float | None, float | None]:
+    """Extract an annual base-salary range conservatively.
+
+    Prefer salary/pay context and explicit currency ranges. This avoids treating years,
+    401(k), percentages, or unrelated dollar figures as base salary.
     """
     if not text:
-        return None
-    values: list[float] = []
-    pattern = r"\$?([0-9]{2,3}(?:,[0-9]{3})|[0-9]{5,6}|[0-9]{2,3})(\s*[kK])?"
-    for raw, suffix in re.findall(pattern, text):
-        value = float(raw.replace(",", ""))
-        if suffix.strip().lower() == "k":
-            value *= 1000
-        if value >= 1000:
-            values.append(value)
-    return max(values) if values else None
+        return None, None
+
+    amount = r"\$\s*([0-9]{2,3}(?:,[0-9]{3})|[0-9]{5,6}|[0-9]{2,3})\s*([kK])?"
+    contextual = re.compile(
+        rf"(?:base\s+(?:salary|pay)|salary\s+range|pay\s+range|annual\s+salary)"
+        rf"[^\n]{{0,140}}?{amount}\s*(?:-|–|—|to)\s*{amount}",
+        re.I,
+    )
+    explicit_range = re.compile(
+        rf"{amount}\s*(?:-|–|—|to)\s*{amount}[^\n]{{0,80}}?"
+        rf"(?:base\s+(?:salary|pay)|per\s+year|annually|annual)",
+        re.I,
+    )
+
+    for pattern in (contextual, explicit_range):
+        match = pattern.search(text)
+        if match:
+            low = _salary_amount(match.group(1), match.group(2))
+            high = _salary_amount(match.group(3), match.group(4))
+            if low is not None and high is not None:
+                return (min(low, high), max(low, high))
+
+    # A dedicated compensation field is often just "$250k-$300k" without labels.
+    # Only use this generic form for short strings to avoid mining unrelated dollar
+    # amounts from a full job description.
+    if len(text.strip()) <= 180:
+        generic = re.compile(rf"{amount}\s*(?:-|–|—|to)\s*{amount}", re.I).search(text)
+        if generic:
+            low = _salary_amount(generic.group(1), generic.group(2))
+            high = _salary_amount(generic.group(3), generic.group(4))
+            if low is not None and high is not None:
+                return (min(low, high), max(low, high))
+
+    single = re.compile(
+        rf"(?:base\s+(?:salary|pay)|annual\s+salary)[^\n]{{0,100}}?{amount}",
+        re.I,
+    ).search(text)
+    if single:
+        value = _salary_amount(single.group(1), single.group(2))
+        return value, value
+
+    return None, None
+
+
+def extract_max_annual_salary(text: str | None) -> float | None:
+    return extract_base_salary_range(text)[1]
 
 
 def _match_location(raw_location: str | None, policy: TargetingPolicy) -> tuple[str | None, str | None, float | None]:
@@ -87,7 +133,8 @@ def evaluate_location_compensation(
     policy: TargetingPolicy,
     work_arrangement: WorkArrangement,
 ) -> LocationPolicyResult:
-    published_max = extract_max_annual_salary(job.compensation_text)
+    salary_source = job.compensation_text or job.description_raw
+    published_max = extract_max_annual_salary(salary_source)
 
     if work_arrangement is WorkArrangement.REMOTE:
         minimum = (

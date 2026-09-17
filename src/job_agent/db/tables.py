@@ -145,6 +145,8 @@ class JobRequirementRow(Base):
     text: Mapped[str] = mapped_column(Text, nullable=False)
     canonical_skills: Mapped[list[str]] = mapped_column(ARRAY(String(150)), nullable=False, default=list)
     minimum_years: Mapped[int | None] = mapped_column(Integer)
+    requirement_kind: Mapped[str] = mapped_column(String(40), nullable=False, default="skill")
+    skill_match_mode: Mapped[str] = mapped_column(String(10), nullable=False, default="all")
     source_section: Mapped[str | None] = mapped_column(String(120))
     matched: Mapped[bool | None] = mapped_column(Boolean)
 
@@ -167,6 +169,7 @@ class JobAnalysisRow(Base):
     role_family: Mapped[str | None] = mapped_column(String(80))
     detected_seniority: Mapped[str | None] = mapped_column(String(40))
     location_context: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
+    confidence_context: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
     matched_evidence_ids: Mapped[list[str]] = mapped_column(ARRAY(String(80)), nullable=False, default=list)
     gaps: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     unknowns: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)

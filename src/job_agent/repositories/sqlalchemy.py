@@ -22,9 +22,12 @@ from job_agent.domain.enums import ApprovalStatus, ResumeVisibility, Verificatio
 from job_agent.domain.jobs import (
     JobMatchResponse,
     LocationCompensationDecision,
+    MatchConfidence,
     ParsedJobRequirement,
     RequirementCoverage,
     RequirementImportance,
+    RequirementKind,
+    RequirementSkillMode,
     RequirementType,
 )
 from job_agent.domain.models import (
@@ -261,6 +264,8 @@ def _requirement(row: JobRequirementRow) -> ParsedJobRequirement:
         text=row.text,
         canonical_skills=list(row.canonical_skills or []),
         minimum_years=row.minimum_years,
+        requirement_kind=RequirementKind(row.requirement_kind or "skill"),
+        skill_match_mode=RequirementSkillMode(row.skill_match_mode or "all"),
         source_section=row.source_section,
         matched=row.matched,
     )
@@ -371,6 +376,8 @@ class SqlAlchemyJobRepository:
                 text=req.text,
                 canonical_skills=list(req.canonical_skills),
                 minimum_years=req.minimum_years,
+                requirement_kind=req.requirement_kind.value,
+                skill_match_mode=req.skill_match_mode.value,
                 source_section=req.source_section,
                 matched=req.matched,
             )
@@ -404,6 +411,7 @@ class SqlAlchemyJobRepository:
         role_family: str | None = None,
         seniority: str | None = None,
         location_context: dict | None = None,
+        confidence_context: dict | None = None,
     ) -> JobAnalysis:
         row = JobAnalysisRow(
             id=analysis.id,
@@ -419,6 +427,7 @@ class SqlAlchemyJobRepository:
             role_family=role_family,
             detected_seniority=seniority,
             location_context=dict(location_context or {}),
+            confidence_context=dict(confidence_context or {}),
             matched_evidence_ids=list(stable_evidence_keys or []),
             gaps=list(analysis.gaps),
             unknowns=list(analysis.unknowns),
@@ -465,6 +474,10 @@ class SqlAlchemyJobRepository:
             gaps=list(row.gaps or []),
             unknowns=list(row.unknowns or []),
             components=components,
+            confidence=MatchConfidence.model_validate(row.confidence_context or {
+                "manual_review_required": True,
+                "overall_confidence": 50.0,
+            }),
             location_compensation=LocationCompensationDecision.model_validate(row.location_context or {
                 "work_arrangement": "unknown",
                 "manual_review_required": True,

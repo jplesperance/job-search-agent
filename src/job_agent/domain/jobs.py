@@ -20,6 +20,19 @@ class RequirementImportance(StrEnum):
     CONTEXT = "context"
 
 
+class RequirementKind(StrEnum):
+    SKILL = "skill"
+    EXPERIENCE_YEARS = "experience_years"
+    LEADERSHIP_YEARS = "leadership_years"
+    OPERATING_MODEL = "operating_model"
+    OTHER = "other"
+
+
+class RequirementSkillMode(StrEnum):
+    ALL = "all"
+    ANY = "any"
+
+
 class WorkArrangement(StrEnum):
     REMOTE = "remote"
     HYBRID = "hybrid"
@@ -37,6 +50,8 @@ class ParsedJobRequirement(BaseModel):
     text: str
     canonical_skills: list[str] = Field(default_factory=list)
     minimum_years: int | None = Field(default=None, ge=0, le=50)
+    requirement_kind: RequirementKind = RequirementKind.SKILL
+    skill_match_mode: RequirementSkillMode = RequirementSkillMode.ALL
     source_section: str | None = None
     matched: bool | None = None
 
@@ -138,12 +153,33 @@ class RequirementCoverage(BaseModel):
     ordinal: int
     requirement: str
     importance: RequirementImportance
+    requirement_kind: RequirementKind = RequirementKind.SKILL
+    skill_match_mode: RequirementSkillMode = RequirementSkillMode.ALL
     canonical_skills: list[str]
+    recognized: bool = True
     matched: bool
     evidence_keys: list[str] = Field(default_factory=list)
     score: float = Field(ge=0, le=100)
     rationale: str
 
+
+
+
+class MatchConfidence(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    required_total: int = 0
+    required_recognized: int = 0
+    required_matched: int = 0
+    required_unknown: int = 0
+    preferred_total: int = 0
+    preferred_recognized: int = 0
+    preferred_matched: int = 0
+    recognized_required_pct: float = Field(default=100.0, ge=0, le=100)
+    matched_required_pct: float = Field(default=0.0, ge=0, le=100)
+    matched_preferred_pct: float = Field(default=0.0, ge=0, le=100)
+    overall_confidence: float = Field(default=100.0, ge=0, le=100)
+    manual_review_required: bool = False
 
 class JobMatchRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -169,6 +205,7 @@ class JobMatchResponse(BaseModel):
     gaps: list[str]
     unknowns: list[str]
     components: dict[str, float]
+    confidence: MatchConfidence
     location_compensation: LocationCompensationDecision
 
 

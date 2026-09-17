@@ -20,7 +20,7 @@ def main() -> None:
     req_columns = {column["name"] for column in inspector.get_columns("job_requirements")}
     expected = {
         "job_id", "ordinal", "requirement_type", "importance", "text",
-        "canonical_skills", "minimum_years", "source_section", "matched",
+        "canonical_skills", "minimum_years", "requirement_kind", "skill_match_mode", "source_section", "matched",
     }
     if missing_cols := sorted(expected - req_columns):
         raise SystemExit(f"job_requirements missing columns: {', '.join(missing_cols)}")
@@ -31,8 +31,9 @@ def main() -> None:
         raise SystemExit(f"targeting_policies missing Phase 3.1 columns: {', '.join(missing_cols)}")
 
     analysis_columns = {column["name"] for column in inspector.get_columns("job_analyses")}
-    if "location_context" not in analysis_columns:
-        raise SystemExit("job_analyses.location_context is missing")
+    analysis_expected = {"location_context", "confidence_context"}
+    if missing_cols := sorted(analysis_expected - analysis_columns):
+        raise SystemExit(f"job_analyses missing Phase 3.2 columns: {', '.join(missing_cols)}")
 
     with engine.connect() as conn:
         evidence_count = conn.execute(text("SELECT COUNT(*) FROM evidence_items")).scalar_one()
@@ -51,7 +52,7 @@ def main() -> None:
             )
         ).one_or_none()
 
-    print("Phase 3.1 schema verified")
+    print("Phase 3.2 schema verified")
     print(f"career evidence available  {evidence_count}")
     print(f"skill taxonomy available   {skill_count}")
     print(f"targeting policies         {policy_count}")

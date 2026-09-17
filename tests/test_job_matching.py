@@ -123,7 +123,7 @@ def _fixture():
     job = JobOpportunity(
         id=uuid4(), source="manual", company="Acme", title="Principal Application Security Architect",
         location="Remote", compensation_text="$220k-$280k",
-        description_raw="Requirements:\n- Application Security\n- Threat Modeling\n- Kubernetes",
+        description_raw="Requirements:\n- Application Security\n- Threat Modeling\n- Kubernetes\n- Experience with QuantumBanana",
         discovered_at=datetime.now(timezone.utc),
     )
     requirements = [
