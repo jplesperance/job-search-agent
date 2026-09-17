@@ -19,5 +19,16 @@ def get_session_factory() -> sessionmaker[Session]:
 
 
 def get_db_session() -> Iterator[Session]:
+    """Request-scoped unit of work.
+
+    Read-only Phase 2 routes did not need transaction finalization. Phase 3 adds
+    policy, job-ingestion, requirement, and analysis writes, so successful
+    requests commit and failed requests roll back at the dependency boundary.
+    """
     with get_session_factory()() as session:
-        yield session
+        try:
+            yield session
+            session.commit()
+        except Exception:
+            session.rollback()
+            raise

@@ -76,6 +76,7 @@ class TargetingPolicy(DomainModel):
     id: UUID = Field(default_factory=uuid4)
     name: str
     version: int = 1
+    active: bool = False
     target_titles: list[str] = Field(default_factory=list)
     target_seniority: list[str] = Field(default_factory=list)
     allowed_locations: list[str] = Field(default_factory=list)
@@ -98,6 +99,7 @@ class JobOpportunity(DomainModel):
     location: str | None = None
     compensation_text: str | None = None
     description_raw: str
+    content_hash: str | None = None
     discovered_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 

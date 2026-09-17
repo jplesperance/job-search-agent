@@ -4,7 +4,7 @@ import uuid
 from datetime import date, datetime
 from decimal import Decimal
 
-from sqlalchemy import Date, DateTime, ForeignKey, Numeric, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Integer, Numeric, String, Text, UniqueConstraint
 from sqlalchemy.dialects.postgresql import ARRAY, JSONB, UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -126,6 +126,25 @@ class JobOpportunityRow(Base):
     compensation_text: Mapped[str | None] = mapped_column(Text)
     description_raw: Mapped[str] = mapped_column(Text, nullable=False)
     discovered_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    content_hash: Mapped[str | None] = mapped_column(String(64), index=True)
+
+
+class JobRequirementRow(Base):
+    __tablename__ = "job_requirements"
+    __table_args__ = (UniqueConstraint("job_id", "ordinal"),)
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    job_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("job_opportunities.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
+    requirement_type: Mapped[str] = mapped_column(String(40), nullable=False, index=True)
+    importance: Mapped[str] = mapped_column(String(30), nullable=False, index=True)
+    text: Mapped[str] = mapped_column(Text, nullable=False)
+    canonical_skills: Mapped[list[str]] = mapped_column(ARRAY(String(150)), nullable=False, default=list)
+    minimum_years: Mapped[int | None] = mapped_column(Integer)
+    source_section: Mapped[str | None] = mapped_column(String(120))
+    matched: Mapped[bool | None] = mapped_column(Boolean)
 
 
 class JobAnalysisRow(Base):
@@ -142,7 +161,10 @@ class JobAnalysisRow(Base):
     hard_filter_reasons: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     total_score: Mapped[Decimal] = mapped_column(Numeric(5, 2), nullable=False)
     components: Mapped[list[dict]] = mapped_column(JSONB, nullable=False, default=list)
-    matched_evidence_ids: Mapped[list[str]] = mapped_column(ARRAY(String(36)), nullable=False, default=list)
+    requirement_coverage: Mapped[list[dict]] = mapped_column(JSONB, nullable=False, default=list)
+    role_family: Mapped[str | None] = mapped_column(String(80))
+    detected_seniority: Mapped[str | None] = mapped_column(String(40))
+    matched_evidence_ids: Mapped[list[str]] = mapped_column(ARRAY(String(80)), nullable=False, default=list)
     gaps: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     unknowns: Mapped[list[str]] = mapped_column(ARRAY(Text), nullable=False, default=list)
     analyzed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)

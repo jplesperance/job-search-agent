@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections import defaultdict
 from uuid import UUID
 
-from sqlalchemy import select
+from sqlalchemy import delete, select, update
 from sqlalchemy.orm import Session
 
 from job_agent.db.tables import (
@@ -12,10 +12,31 @@ from job_agent.db.tables import (
     EvidenceItemRow,
     EvidenceSkillRow,
     ExperienceRow,
+    JobAnalysisRow,
+    JobOpportunityRow,
+    JobRequirementRow,
     SkillRow,
+    TargetingPolicyRow,
 )
 from job_agent.domain.enums import ApprovalStatus, ResumeVisibility, VerificationStatus
-from job_agent.domain.models import CareerProfile, Certification, EvidenceItem, Experience, Skill
+from job_agent.domain.jobs import (
+    JobMatchResponse,
+    ParsedJobRequirement,
+    RequirementCoverage,
+    RequirementImportance,
+    RequirementType,
+)
+from job_agent.domain.models import (
+    CareerProfile,
+    Certification,
+    EvidenceItem,
+    Experience,
+    JobAnalysis,
+    JobOpportunity,
+    ScoreComponent,
+    Skill,
+    TargetingPolicy,
+)
 from job_agent.domain.retrieval import EvidenceRecord
 
 
@@ -190,3 +211,309 @@ class SqlAlchemyEvidenceRepository:
             )
             for row in rows
         ]
+
+
+
+def _job(row: JobOpportunityRow) -> JobOpportunity:
+    return JobOpportunity(
+        id=row.id,
+        source=row.source,
+        external_id=row.external_id,
+        source_url=row.source_url,
+        company=row.company,
+        title=row.title,
+        location=row.location,
+        compensation_text=row.compensation_text,
+        description_raw=row.description_raw,
+        content_hash=row.content_hash,
+        discovered_at=row.discovered_at,
+    )
+
+
+def _policy(row: TargetingPolicyRow) -> TargetingPolicy:
+    return TargetingPolicy(
+        id=row.id,
+        name=row.name,
+        version=row.version,
+        active=row.active,
+        target_titles=list(row.target_titles or []),
+        target_seniority=list(row.target_seniority or []),
+        allowed_locations=list(row.allowed_locations or []),
+        remote_allowed=row.remote_allowed,
+        hybrid_allowed=row.hybrid_allowed,
+        onsite_allowed=row.onsite_allowed,
+        minimum_base_salary_usd=row.minimum_base_salary_usd,
+        required_terms=set(row.required_terms or []),
+        excluded_terms=set(row.excluded_terms or []),
+        weights=dict(row.weights or {}),
+    )
+
+
+def _requirement(row: JobRequirementRow) -> ParsedJobRequirement:
+    return ParsedJobRequirement(
+        id=row.id,
+        ordinal=row.ordinal,
+        requirement_type=RequirementType(row.requirement_type),
+        importance=RequirementImportance(row.importance),
+        text=row.text,
+        canonical_skills=list(row.canonical_skills or []),
+        minimum_years=row.minimum_years,
+        source_section=row.source_section,
+        matched=row.matched,
+    )
+
+
+def _analysis(row: JobAnalysisRow) -> JobAnalysis:
+    components = []
+    for item in row.components or []:
+        # v0.3 persists score components with stable evidence keys. JobAnalysis's
+        # legacy ScoreComponent model is retained for backwards compatibility,
+        # while evidence ids are omitted here because the stable keys live in
+        # matched_evidence_ids and the API match response.
+        components.append(
+            ScoreComponent(
+                criterion=str(item.get("criterion", "component")),
+                weight=float(item.get("weight", 0)),
+                raw_score=float(item.get("raw_score", 0)),
+                weighted_score=float(item.get("weighted_score", 0)),
+                rationale=str(item.get("rationale", "")),
+                evidence_ids=[],
+            )
+        )
+    return JobAnalysis(
+        id=row.id,
+        job_id=row.job_id,
+        policy_id=row.policy_id,
+        hard_filter_passed=row.hard_filter_passed,
+        hard_filter_reasons=list(row.hard_filter_reasons or []),
+        total_score=float(row.total_score),
+        components=components,
+        matched_evidence_ids=[],
+        gaps=list(row.gaps or []),
+        unknowns=list(row.unknowns or []),
+        analyzed_at=row.analyzed_at,
+    )
+
+
+class SqlAlchemyJobRepository:
+    def __init__(self, session: Session) -> None:
+        self.session = session
+
+    def get(self, job_id: UUID) -> JobOpportunity | None:
+        row = self.session.get(JobOpportunityRow, job_id)
+        return _job(row) if row else None
+
+    def list(self, limit: int = 100) -> list[JobOpportunity]:
+        rows = self.session.execute(
+            select(JobOpportunityRow)
+            .order_by(JobOpportunityRow.discovered_at.desc())
+            .limit(limit)
+        ).scalars()
+        return [_job(row) for row in rows]
+
+    def upsert(self, job: JobOpportunity, content_hash: str) -> tuple[JobOpportunity, bool]:
+        row = None
+        if job.external_id:
+            row = self.session.execute(
+                select(JobOpportunityRow).where(
+                    JobOpportunityRow.source == job.source,
+                    JobOpportunityRow.external_id == job.external_id,
+                )
+            ).scalar_one_or_none()
+        if row is None:
+            row = self.session.execute(
+                select(JobOpportunityRow).where(
+                    JobOpportunityRow.company == job.company,
+                    JobOpportunityRow.title == job.title,
+                    JobOpportunityRow.content_hash == content_hash,
+                )
+            ).scalar_one_or_none()
+
+        created = row is None
+        if row is None:
+            row = JobOpportunityRow(
+                id=job.id,
+                source=job.source,
+                external_id=job.external_id,
+                source_url=str(job.source_url) if job.source_url else None,
+                company=job.company,
+                title=job.title,
+                location=job.location,
+                compensation_text=job.compensation_text,
+                description_raw=job.description_raw,
+                discovered_at=job.discovered_at,
+                content_hash=content_hash,
+            )
+            self.session.add(row)
+        else:
+            row.source_url = str(job.source_url) if job.source_url else row.source_url
+            row.location = job.location
+            row.compensation_text = job.compensation_text
+            row.description_raw = job.description_raw
+            row.content_hash = content_hash
+        self.session.flush()
+        return _job(row), created
+
+    def replace_requirements(
+        self, job_id: UUID, requirements: list[ParsedJobRequirement]
+    ) -> list[ParsedJobRequirement]:
+        self.session.execute(delete(JobRequirementRow).where(JobRequirementRow.job_id == job_id))
+        rows: list[JobRequirementRow] = []
+        for req in requirements:
+            row = JobRequirementRow(
+                job_id=job_id,
+                ordinal=req.ordinal,
+                requirement_type=req.requirement_type.value,
+                importance=req.importance.value,
+                text=req.text,
+                canonical_skills=list(req.canonical_skills),
+                minimum_years=req.minimum_years,
+                source_section=req.source_section,
+                matched=req.matched,
+            )
+            self.session.add(row)
+            rows.append(row)
+        self.session.flush()
+        return [_requirement(row) for row in rows]
+
+    def list_requirements(self, job_id: UUID) -> list[ParsedJobRequirement]:
+        rows = self.session.execute(
+            select(JobRequirementRow)
+            .where(JobRequirementRow.job_id == job_id)
+            .order_by(JobRequirementRow.ordinal)
+        ).scalars()
+        return [_requirement(row) for row in rows]
+
+    def set_requirement_matches(self, job_id: UUID, matched_ordinals: set[int]) -> None:
+        rows = self.session.execute(
+            select(JobRequirementRow).where(JobRequirementRow.job_id == job_id)
+        ).scalars()
+        for row in rows:
+            row.matched = row.ordinal in matched_ordinals
+        self.session.flush()
+
+    def save_analysis(
+        self,
+        analysis: JobAnalysis,
+        *,
+        stable_evidence_keys: list[str] | None = None,
+        requirement_coverage: list[RequirementCoverage] | None = None,
+        role_family: str | None = None,
+        seniority: str | None = None,
+    ) -> JobAnalysis:
+        row = JobAnalysisRow(
+            id=analysis.id,
+            job_id=analysis.job_id,
+            policy_id=analysis.policy_id,
+            hard_filter_passed=analysis.hard_filter_passed,
+            hard_filter_reasons=list(analysis.hard_filter_reasons),
+            total_score=analysis.total_score,
+            components=[component.model_dump(mode="json") for component in analysis.components],
+            requirement_coverage=[
+                item.model_dump(mode="json") for item in (requirement_coverage or [])
+            ],
+            role_family=role_family,
+            detected_seniority=seniority,
+            matched_evidence_ids=list(stable_evidence_keys or []),
+            gaps=list(analysis.gaps),
+            unknowns=list(analysis.unknowns),
+            analyzed_at=analysis.analyzed_at,
+        )
+        self.session.add(row)
+        self.session.flush()
+        return analysis
+
+    def latest_analysis(self, job_id: UUID) -> JobAnalysis | None:
+        row = self.session.execute(
+            select(JobAnalysisRow)
+            .where(JobAnalysisRow.job_id == job_id)
+            .order_by(JobAnalysisRow.analyzed_at.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        return _analysis(row) if row else None
+
+    def latest_match_response(self, job_id: UUID) -> JobMatchResponse | None:
+        row = self.session.execute(
+            select(JobAnalysisRow)
+            .where(JobAnalysisRow.job_id == job_id)
+            .order_by(JobAnalysisRow.analyzed_at.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        if row is None:
+            return None
+        coverage = [RequirementCoverage.model_validate(item) for item in (row.requirement_coverage or [])]
+        components = {
+            str(item.get("criterion")): round(float(item.get("raw_score", 0)) * 100, 2)
+            for item in (row.components or [])
+        }
+        return JobMatchResponse(
+            analysis_id=row.id,
+            job_id=row.job_id,
+            policy_id=row.policy_id,
+            hard_filter_passed=row.hard_filter_passed,
+            hard_filter_reasons=list(row.hard_filter_reasons or []),
+            total_score=float(row.total_score),
+            role_family=row.role_family or "other",
+            seniority=row.detected_seniority,
+            requirement_coverage=coverage,
+            matched_evidence_keys=list(row.matched_evidence_ids or []),
+            gaps=list(row.gaps or []),
+            unknowns=list(row.unknowns or []),
+            components=components,
+        )
+
+
+class SqlAlchemyPolicyRepository:
+    def __init__(self, session: Session) -> None:
+        self.session = session
+
+    def get(self, policy_id: UUID) -> TargetingPolicy | None:
+        row = self.session.get(TargetingPolicyRow, policy_id)
+        return _policy(row) if row else None
+
+    def get_active(self) -> TargetingPolicy | None:
+        row = self.session.execute(
+            select(TargetingPolicyRow)
+            .where(TargetingPolicyRow.active.is_(True))
+            .order_by(TargetingPolicyRow.version.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        return _policy(row) if row else None
+
+    def list(self) -> list[TargetingPolicy]:
+        rows = self.session.execute(
+            select(TargetingPolicyRow).order_by(TargetingPolicyRow.name, TargetingPolicyRow.version.desc())
+        ).scalars()
+        return [_policy(row) for row in rows]
+
+    def add(self, policy: TargetingPolicy, active: bool = False) -> TargetingPolicy:
+        if active:
+            self.session.execute(update(TargetingPolicyRow).values(active=False))
+        row = TargetingPolicyRow(
+            id=policy.id,
+            name=policy.name,
+            version=policy.version,
+            active=active,
+            target_titles=list(policy.target_titles),
+            target_seniority=list(policy.target_seniority),
+            allowed_locations=list(policy.allowed_locations),
+            remote_allowed=policy.remote_allowed,
+            hybrid_allowed=policy.hybrid_allowed,
+            onsite_allowed=policy.onsite_allowed,
+            minimum_base_salary_usd=policy.minimum_base_salary_usd,
+            required_terms=sorted(policy.required_terms),
+            excluded_terms=sorted(policy.excluded_terms),
+            weights=dict(policy.weights),
+        )
+        self.session.add(row)
+        self.session.flush()
+        return _policy(row)
+
+    def activate(self, policy_id: UUID) -> TargetingPolicy | None:
+        row = self.session.get(TargetingPolicyRow, policy_id)
+        if row is None:
+            return None
+        self.session.execute(update(TargetingPolicyRow).values(active=False))
+        row.active = True
+        self.session.flush()
+        return _policy(row)

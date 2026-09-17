@@ -1,0 +1,25 @@
+{
+  "name": "primary-security-search",
+  "version": 1,
+  "active": true,
+  "target_titles": [
+    "Application Security Architect",
+    "Principal Application Security Engineer",
+    "Staff Application Security Engineer",
+    "Security Architect"
+  ],
+  "target_seniority": ["staff", "principal", "lead", "senior"],
+  "allowed_locations": [],
+  "remote_allowed": true,
+  "hybrid_allowed": true,
+  "onsite_allowed": false,
+  "minimum_base_salary_usd": null,
+  "required_terms": [],
+  "excluded_terms": [],
+  "weights": {
+    "requirements": 0.6,
+    "title": 0.15,
+    "seniority": 0.1,
+    "role_family": 0.15
+  }
+}
