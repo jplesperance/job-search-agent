@@ -4,10 +4,13 @@ from sqlalchemy.orm import Session
 from job_agent.db.session import get_db_session
 from job_agent.repositories.sqlalchemy import (
     SqlAlchemyCareerRepository,
+    SqlAlchemyDiscoveryRepository,
     SqlAlchemyEvidenceRepository,
     SqlAlchemyJobRepository,
     SqlAlchemyPolicyRepository,
 )
+from job_agent.services.discovery import DiscoveryService
+from job_agent.services.discovery_adapters import AdapterRegistry
 from job_agent.services.evidence_search import EvidenceSearchService
 from job_agent.services.job_matching import JobIngestionService, JobMatchService
 
@@ -63,4 +66,33 @@ def get_job_match_service(
         policy_repo=SqlAlchemyPolicyRepository(session),
         career_repo=career_repo,
         evidence_search=EvidenceSearchService(evidence_repo=evidence_repo, career_repo=career_repo),
+    )
+
+
+def get_discovery_repository(
+    session: Session = Depends(get_db_session),
+) -> SqlAlchemyDiscoveryRepository:
+    return SqlAlchemyDiscoveryRepository(session)
+
+
+def get_discovery_service(
+    session: Session = Depends(get_db_session),
+) -> DiscoveryService:
+    career_repo = SqlAlchemyCareerRepository(session)
+    evidence_repo = SqlAlchemyEvidenceRepository(session)
+    job_repo = SqlAlchemyJobRepository(session)
+    policy_repo = SqlAlchemyPolicyRepository(session)
+    ingestion = JobIngestionService(job_repo=job_repo, career_repo=career_repo)
+    matcher = JobMatchService(
+        job_repo=job_repo,
+        policy_repo=policy_repo,
+        career_repo=career_repo,
+        evidence_search=EvidenceSearchService(evidence_repo=evidence_repo, career_repo=career_repo),
+    )
+    return DiscoveryService(
+        discovery_repo=SqlAlchemyDiscoveryRepository(session),
+        policy_repo=policy_repo,
+        ingestion_service=ingestion,
+        match_service=matcher,
+        adapters=AdapterRegistry(),
     )

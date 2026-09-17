@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from uuid import UUID
+from datetime import datetime, timezone
+from uuid import UUID, uuid4
 
 from sqlalchemy import delete, select, update
 from sqlalchemy.orm import Session
@@ -11,12 +12,22 @@ from job_agent.db.tables import (
     CertificationRow,
     EvidenceItemRow,
     EvidenceSkillRow,
+    DiscoveryRunRow,
+    DiscoverySourceRow,
     ExperienceRow,
     JobAnalysisRow,
     JobOpportunityRow,
     JobRequirementRow,
     SkillRow,
     TargetingPolicyRow,
+)
+from job_agent.domain.discovery import (
+    DiscoveryCandidateSummary,
+    DiscoveryProvider,
+    DiscoveryRunStatus,
+    DiscoveryRunSummary,
+    DiscoverySourceCreate,
+    DiscoverySourceSummary,
 )
 from job_agent.domain.enums import ApprovalStatus, ResumeVisibility, VerificationStatus
 from job_agent.domain.jobs import (
@@ -228,6 +239,7 @@ def _job(row: JobOpportunityRow) -> JobOpportunity:
         title=row.title,
         location=row.location,
         compensation_text=row.compensation_text,
+        work_arrangement=row.work_arrangement,
         description_raw=row.description_raw,
         content_hash=row.content_hash,
         discovered_at=row.discovered_at,
@@ -348,6 +360,7 @@ class SqlAlchemyJobRepository:
                 title=job.title,
                 location=job.location,
                 compensation_text=job.compensation_text,
+                work_arrangement=job.work_arrangement,
                 description_raw=job.description_raw,
                 discovered_at=job.discovered_at,
                 content_hash=content_hash,
@@ -357,6 +370,7 @@ class SqlAlchemyJobRepository:
             row.source_url = str(job.source_url) if job.source_url else row.source_url
             row.location = job.location
             row.compensation_text = job.compensation_text
+            row.work_arrangement = job.work_arrangement
             row.description_raw = job.description_raw
             row.content_hash = content_hash
         self.session.flush()
@@ -484,6 +498,207 @@ class SqlAlchemyJobRepository:
                 "rationale": "Location/compensation context was not persisted for this older analysis.",
             }),
         )
+
+
+def _discovery_source(row: DiscoverySourceRow) -> DiscoverySourceSummary:
+    return DiscoverySourceSummary(
+        id=row.id,
+        company=row.company,
+        provider=DiscoveryProvider(row.provider),
+        board_identifier=row.board_identifier,
+        enabled=row.enabled,
+        priority=row.priority,
+        config=dict(row.config or {}),
+        created_at=row.created_at,
+        last_checked_at=row.last_checked_at,
+    )
+
+
+def _discovery_run(row: DiscoveryRunRow, source: DiscoverySourceRow) -> DiscoveryRunSummary:
+    return DiscoveryRunSummary(
+        id=row.id,
+        source_id=row.source_id,
+        company=source.company,
+        provider=DiscoveryProvider(source.provider),
+        status=DiscoveryRunStatus(row.status),
+        started_at=row.started_at,
+        completed_at=row.completed_at,
+        postings_retrieved=row.postings_retrieved,
+        title_candidates=row.title_candidates,
+        jobs_created=row.jobs_created,
+        jobs_updated=row.jobs_updated,
+        jobs_analyzed=row.jobs_analyzed,
+        hard_filter_passed=row.hard_filter_passed,
+        surfaced=row.surfaced,
+        postings_closed=row.postings_closed,
+        error_message=row.error_message,
+    )
+
+
+class SqlAlchemyDiscoveryRepository:
+    def __init__(self, session: Session) -> None:
+        self.session = session
+
+    def add_source(self, source: DiscoverySourceCreate) -> DiscoverySourceSummary:
+        existing = self.session.execute(
+            select(DiscoverySourceRow).where(
+                DiscoverySourceRow.provider == source.provider.value,
+                DiscoverySourceRow.board_identifier == source.board_identifier,
+            )
+        ).scalar_one_or_none()
+        if existing is not None:
+            existing.company = source.company.strip()
+            existing.enabled = source.enabled
+            existing.priority = source.priority
+            existing.config = dict(source.config)
+            self.session.flush()
+            return _discovery_source(existing)
+        row = DiscoverySourceRow(
+            id=uuid4(),
+            company=source.company.strip(),
+            provider=source.provider.value,
+            board_identifier=source.board_identifier.strip(),
+            enabled=source.enabled,
+            priority=source.priority,
+            config=dict(source.config),
+            created_at=datetime.now(timezone.utc),
+        )
+        self.session.add(row)
+        self.session.flush()
+        return _discovery_source(row)
+
+    def get_source(self, source_id: UUID) -> DiscoverySourceSummary | None:
+        row = self.session.get(DiscoverySourceRow, source_id)
+        return _discovery_source(row) if row else None
+
+    def list_sources(self, *, enabled_only: bool = False) -> list[DiscoverySourceSummary]:
+        stmt = select(DiscoverySourceRow)
+        if enabled_only:
+            stmt = stmt.where(DiscoverySourceRow.enabled.is_(True))
+        rows = self.session.execute(
+            stmt.order_by(DiscoverySourceRow.priority, DiscoverySourceRow.company)
+        ).scalars()
+        return [_discovery_source(row) for row in rows]
+
+    def touch_source(self, source_id: UUID, checked_at: datetime) -> None:
+        row = self.session.get(DiscoverySourceRow, source_id)
+        if row:
+            row.last_checked_at = checked_at
+            self.session.flush()
+
+    def start_run(self, source_id: UUID, started_at: datetime) -> UUID:
+        row = DiscoveryRunRow(
+            id=uuid4(),
+            source_id=source_id,
+            status=DiscoveryRunStatus.RUNNING.value,
+            started_at=started_at,
+        )
+        self.session.add(row)
+        self.session.flush()
+        return row.id
+
+    def finish_run(
+        self,
+        *,
+        run_id: UUID,
+        completed_at: datetime,
+        status: DiscoveryRunStatus,
+        counters: dict[str, int],
+        error_message: str | None,
+    ) -> DiscoveryRunSummary:
+        row = self.session.get(DiscoveryRunRow, run_id)
+        if row is None:
+            raise LookupError("discovery run not found")
+        row.status = status.value
+        row.completed_at = completed_at
+        row.error_message = error_message
+        for field in (
+            "postings_retrieved", "title_candidates", "jobs_created", "jobs_updated",
+            "jobs_analyzed", "hard_filter_passed", "surfaced", "postings_closed",
+        ):
+            setattr(row, field, int(counters.get(field, 0)))
+        source = self.session.get(DiscoverySourceRow, row.source_id)
+        if source is None:
+            raise LookupError("discovery source not found")
+        self.session.flush()
+        return _discovery_run(row, source)
+
+    def list_runs(self, limit: int = 100) -> list[DiscoveryRunSummary]:
+        rows = self.session.execute(
+            select(DiscoveryRunRow, DiscoverySourceRow)
+            .join(DiscoverySourceRow, DiscoverySourceRow.id == DiscoveryRunRow.source_id)
+            .order_by(DiscoveryRunRow.started_at.desc())
+            .limit(limit)
+        ).all()
+        return [_discovery_run(run, source) for run, source in rows]
+
+    def list_candidates(
+        self, *, minimum_score: float = 80.0, limit: int = 100, open_only: bool = True
+    ) -> list[DiscoveryCandidateSummary]:
+        jobs_stmt = select(JobOpportunityRow).where(JobOpportunityRow.discovery_source_id.is_not(None))
+        if open_only:
+            jobs_stmt = jobs_stmt.where(JobOpportunityRow.posting_status == "open")
+        jobs = list(self.session.execute(jobs_stmt).scalars())
+        candidates: list[DiscoveryCandidateSummary] = []
+        for job in jobs:
+            analysis = self.session.execute(
+                select(JobAnalysisRow)
+                .where(JobAnalysisRow.job_id == job.id)
+                .order_by(JobAnalysisRow.analyzed_at.desc())
+                .limit(1)
+            ).scalar_one_or_none()
+            if analysis is None or not analysis.hard_filter_passed or float(analysis.total_score) < minimum_score:
+                continue
+            candidates.append(
+                DiscoveryCandidateSummary(
+                    job_id=job.id,
+                    company=job.company,
+                    title=job.title,
+                    location=job.location,
+                    work_arrangement=job.work_arrangement,
+                    compensation_text=job.compensation_text,
+                    source_url=job.source_url,
+                    provider_source=job.source,
+                    posting_status=job.posting_status,
+                    last_seen_at=job.last_seen_at,
+                    total_score=float(analysis.total_score),
+                    hard_filter_passed=analysis.hard_filter_passed,
+                    analyzed_at=analysis.analyzed_at,
+                    gaps=list(analysis.gaps or []),
+                    unknowns=list(analysis.unknowns or []),
+                )
+            )
+        candidates.sort(key=lambda item: (item.total_score, item.analyzed_at), reverse=True)
+        return candidates[:limit]
+
+    def link_job(self, *, job_id: UUID, source_id: UUID, seen_at: datetime) -> None:
+        row = self.session.get(JobOpportunityRow, job_id)
+        if row is None:
+            raise LookupError("job not found")
+        row.discovery_source_id = source_id
+        row.last_seen_at = seen_at
+        row.posting_status = "open"
+        self.session.flush()
+
+    def mark_unseen_closed(
+        self, *, source_id: UUID, seen_external_ids: set[str], seen_at: datetime
+    ) -> int:
+        stmt = select(JobOpportunityRow).where(
+            JobOpportunityRow.discovery_source_id == source_id,
+            JobOpportunityRow.posting_status == "open",
+        )
+        rows = list(self.session.execute(stmt).scalars())
+        changed = 0
+        for row in rows:
+            if row.external_id and row.external_id not in seen_external_ids:
+                # Only close postings that existed before this run. Jobs first linked during
+                # this run are always in seen_external_ids, so this also protects partial runs.
+                if row.last_seen_at is None or row.last_seen_at < seen_at:
+                    row.posting_status = "closed"
+                    changed += 1
+        if changed:
+            self.session.flush()
+        return changed
 
 
 class SqlAlchemyPolicyRepository:

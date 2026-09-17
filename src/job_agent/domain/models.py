@@ -102,6 +102,7 @@ class JobOpportunity(DomainModel):
     title: str
     location: str | None = None
     compensation_text: str | None = None
+    work_arrangement: str | None = None
     description_raw: str
     content_hash: str | None = None
     discovered_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

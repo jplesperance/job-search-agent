@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Example Greenhouse Company",
+    "provider": "greenhouse",
+    "board_identifier": "example-board-token",
+    "enabled": true,
+    "priority": 100,
+    "config": {}
+  },
+  {
+    "company": "Example Lever Company",
+    "provider": "lever",
+    "board_identifier": "example-site-name",
+    "enabled": true,
+    "priority": 100,
+    "config": {"region": "global"}
+  },
+  {
+    "company": "Example Ashby Company",
+    "provider": "ashby",
+    "board_identifier": "ExampleBoardName",
+    "enabled": true,
+    "priority": 100,
+    "config": {}
+  }
+]

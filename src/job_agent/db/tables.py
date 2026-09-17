@@ -115,6 +115,42 @@ class TargetingPolicyRow(Base):
     weights: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
 
 
+class DiscoverySourceRow(Base):
+    __tablename__ = "discovery_sources"
+    __table_args__ = (UniqueConstraint("provider", "board_identifier"),)
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    company: Mapped[str] = mapped_column(String(200), nullable=False)
+    provider: Mapped[str] = mapped_column(String(30), nullable=False, index=True)
+    board_identifier: Mapped[str] = mapped_column(String(250), nullable=False)
+    enabled: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True, index=True)
+    priority: Mapped[int] = mapped_column(Integer, nullable=False, default=100)
+    config: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    last_checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+
+class DiscoveryRunRow(Base):
+    __tablename__ = "discovery_runs"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    source_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("discovery_sources.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    status: Mapped[str] = mapped_column(String(30), nullable=False, index=True)
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    postings_retrieved: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    title_candidates: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    jobs_created: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    jobs_updated: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    jobs_analyzed: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    hard_filter_passed: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    surfaced: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    postings_closed: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    error_message: Mapped[str | None] = mapped_column(Text)
+
+
 class JobOpportunityRow(Base):
     __tablename__ = "job_opportunities"
 
@@ -126,9 +162,15 @@ class JobOpportunityRow(Base):
     title: Mapped[str] = mapped_column(String(250), nullable=False)
     location: Mapped[str | None] = mapped_column(String(250))
     compensation_text: Mapped[str | None] = mapped_column(Text)
+    work_arrangement: Mapped[str | None] = mapped_column(String(20), index=True)
     description_raw: Mapped[str] = mapped_column(Text, nullable=False)
     discovered_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     content_hash: Mapped[str | None] = mapped_column(String(64), index=True)
+    discovery_source_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("discovery_sources.id", ondelete="SET NULL"), index=True
+    )
+    last_seen_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    posting_status: Mapped[str] = mapped_column(String(20), nullable=False, default="open", index=True)
 
 
 class JobRequirementRow(Base):

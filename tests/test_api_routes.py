@@ -11,6 +11,11 @@ def test_phase3_routes_are_registered():
     assert ("/api/v1/evidence", "GET") in routes
     assert ("/api/v1/evidence/search", "POST") in routes
     assert ("/api/v1/evidence/{identifier}", "GET") in routes
+    assert ("/api/v1/discovery/sources", "GET") in routes
+    assert ("/api/v1/discovery/sources", "POST") in routes
+    assert ("/api/v1/discovery/run", "POST") in routes
+    assert ("/api/v1/discovery/runs", "GET") in routes
+    assert ("/api/v1/discovery/candidates", "GET") in routes
     assert ("/api/v1/targeting-policies", "GET") in routes
     assert ("/api/v1/targeting-policies", "POST") in routes
     assert ("/api/v1/targeting-policies/activate", "POST") in routes

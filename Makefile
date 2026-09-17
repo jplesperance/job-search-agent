@@ -1,4 +1,4 @@
-.PHONY: test lint run validate-kb seed-kb seed-kb-dry-run search-evidence verify-phase2 verify-phase3 create-policy ingest-job analyze-job
+.PHONY: test lint run validate-kb seed-kb seed-kb-dry-run search-evidence verify-phase2 verify-phase3 verify-phase4 create-policy ingest-job analyze-job load-discovery-sources run-discovery list-candidates
 
 test:
 	pytest
@@ -37,3 +37,16 @@ ingest-job:
 # Usage: make analyze-job JOB_ID=<uuid>
 analyze-job:
 	PYTHONPATH=src python scripts/analyze_job.py "$(JOB_ID)"
+
+verify-phase4:
+	PYTHONPATH=src python scripts/verify_phase4.py
+
+# Usage: make load-discovery-sources SOURCES=/path/to/sources.json
+load-discovery-sources:
+	PYTHONPATH=src python scripts/load_discovery_sources.py "$(SOURCES)"
+
+run-discovery:
+	PYTHONPATH=src python scripts/run_discovery.py --all
+
+list-candidates:
+	PYTHONPATH=src python scripts/list_discovery_candidates.py --minimum-score 80

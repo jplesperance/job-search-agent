@@ -99,11 +99,17 @@ class JobIngestionService:
             title=request.title.strip(),
             location=request.location.strip() if request.location else None,
             compensation_text=compensation,
+            work_arrangement=request.work_arrangement.value if request.work_arrangement else None,
             description_raw=request.description_raw,
         )
         persisted, created = self.job_repo.upsert(job, content_hash)
         parser = DeterministicJobParser(self.career_repo.list_skills())
         parsed = parser.parse(persisted.title, persisted.description_raw, persisted.location)
+        if persisted.work_arrangement:
+            try:
+                parsed = parsed.model_copy(update={"work_arrangement": WorkArrangement(persisted.work_arrangement)})
+            except ValueError:
+                pass
         stored_requirements = self.job_repo.replace_requirements(persisted.id, parsed.requirements)
         parsed = parsed.model_copy(update={"requirements": stored_requirements})
         return JobIngestResponse(job_id=persisted.id, created=created, content_hash=content_hash, parsed=parsed)
@@ -134,6 +140,11 @@ class JobMatchService:
 
         parser = DeterministicJobParser(self.career_repo.list_skills())
         parsed = parser.parse(job.title, job.description_raw, job.location)
+        if job.work_arrangement:
+            try:
+                parsed = parsed.model_copy(update={"work_arrangement": WorkArrangement(job.work_arrangement)})
+            except ValueError:
+                pass
         # Always refresh persisted requirements from the current deterministic parser.
         # This is what lets a parser-quality release repair already-ingested jobs.
         requirements = self.job_repo.replace_requirements(job.id, parsed.requirements)

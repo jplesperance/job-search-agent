@@ -49,6 +49,7 @@ def list_jobs(
                 title=job.title,
                 location=job.location,
                 compensation_text=job.compensation_text,
+                work_arrangement=job.work_arrangement,
                 discovered_at=job.discovered_at,
                 content_hash=job.content_hash,
             )
@@ -73,6 +74,7 @@ def get_job(
         title=job.title,
         location=job.location,
         compensation_text=job.compensation_text,
+        work_arrangement=job.work_arrangement,
         discovered_at=job.discovered_at,
         content_hash=job.content_hash,
     )

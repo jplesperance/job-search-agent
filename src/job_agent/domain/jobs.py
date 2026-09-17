@@ -77,6 +77,7 @@ class JobIngestRequest(BaseModel):
     title: str
     location: str | None = None
     compensation_text: str | None = None
+    work_arrangement: WorkArrangement | None = None
     description_raw: str = Field(min_length=20)
 
 
@@ -100,6 +101,7 @@ class JobSummary(BaseModel):
     title: str
     location: str | None
     compensation_text: str | None
+    work_arrangement: WorkArrangement | None = None
     discovered_at: datetime
     content_hash: str | None
 
