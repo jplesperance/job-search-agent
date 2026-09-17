@@ -345,7 +345,25 @@ class JobMatchService:
         years = self._union_years(qualifying_ids)
         ratio = min(years / minimum, 1.0) if minimum else 1.0
         matched = years >= minimum
-        rationale = f"Estimated {years:.1f} years of {label} against a {minimum}+ year requirement."
+
+        # The role-span calculation is useful as an internal threshold test, but
+        # it is not precise enough to claim a decimal number of specialized
+        # security years. A role can contain qualifying security work without
+        # every day of that role being exclusively security engineering or
+        # leadership. Persist a threshold proof plus the qualifying experiences
+        # instead of exposing pseudo-precision.
+        if matched:
+            rationale = (
+                f"Verified qualifying career evidence meets the {minimum}+ year {label} threshold; "
+                "exact specialized tenure is intentionally not asserted."
+            )
+        else:
+            rationale = (
+                f"Verified qualifying career evidence does not establish the {minimum}+ year {label} threshold; "
+                "manual review is recommended."
+            )
+
+        experience_keys = self._canonical_experience_keys(qualifying_ids)
         return _RequirementMatch(
             coverage=RequirementCoverage(
                 ordinal=requirement.ordinal,
@@ -359,6 +377,9 @@ class JobMatchService:
                 evidence_keys=keys[: request.max_evidence_per_requirement * 2],
                 score=round(ratio * 100, 2),
                 rationale=rationale,
+                minimum_years=minimum,
+                tenure_threshold_met=matched,
+                qualifying_experience_keys=experience_keys,
             ),
             evidence_uuids=tuple(ids),
         )
@@ -379,6 +400,18 @@ class JobMatchService:
                 if item.evidence_id not in ids:
                     ids.append(item.evidence_id)
         return experience_ids, keys, ids
+
+    def _canonical_experience_keys(self, experience_ids: set[UUID]) -> list[str]:
+        if not experience_ids:
+            return []
+        keys: list[str] = []
+        for experience in self.career_repo.list_experiences():
+            if experience.id not in experience_ids:
+                continue
+            key = getattr(experience, "canonical_key", None)
+            if key and key not in keys:
+                keys.append(key)
+        return keys
 
     def _search_skill(self, skill: str, request: JobMatchRequest, *, limit: int):
         search = EvidenceSearchRequest(

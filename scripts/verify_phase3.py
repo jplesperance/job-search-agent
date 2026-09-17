@@ -52,7 +52,7 @@ def main() -> None:
             )
         ).one_or_none()
 
-    print("Phase 3.2 schema verified")
+    print("Phase 3.2.1 schema verified")
     print(f"career evidence available  {evidence_count}")
     print(f"skill taxonomy available   {skill_count}")
     print(f"targeting policies         {policy_count}")

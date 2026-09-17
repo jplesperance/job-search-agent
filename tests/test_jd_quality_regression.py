@@ -197,3 +197,32 @@ def test_betterhelp_regression_is_not_a_false_100_and_salary_passes_zone_a():
     assert "Strong background in offensive security (red team, penetration testing, or bug bounty)" in result.gaps
     assert not any("401k" in item for item in result.unknowns)
     assert not any("Benefits" == item for item in result.unknowns)
+
+
+def test_tenure_requirements_use_threshold_proofs_not_decimal_year_claims():
+    skills, experiences, records = _seed_models()
+    career = CareerRepo(skills, experiences)
+    job = JobOpportunity(
+        source="manual", company="BetterHelp", title="Head of Security Engineering",
+        location="Mountain View (Hybrid)", compensation_text=None, description_raw=BETTERHELP_JD,
+        discovered_at=datetime.now(timezone.utc),
+    )
+    service = JobMatchService(
+        job_repo=JobRepo(job), policy_repo=PolicyRepo(_policy()), career_repo=career,
+        evidence_search=EvidenceSearchService(EvidenceRepo(records), career),
+    )
+    result = service.analyze(job.id, JobMatchRequest())
+    by_text = {item.requirement: item for item in result.requirement_coverage}
+
+    leadership = by_text["5+ years of security leadership experience"]
+    engineering = by_text["10+ years of experience in security engineering"]
+
+    for item, minimum in ((leadership, 5), (engineering, 10)):
+        assert item.matched is True
+        assert item.minimum_years == minimum
+        assert item.tenure_threshold_met is True
+        assert item.qualifying_experience_keys
+        assert "exact specialized tenure is intentionally not asserted" in item.rationale
+        assert "Estimated " not in item.rationale
+        assert ".8 years" not in item.rationale
+        assert ".2 years" not in item.rationale

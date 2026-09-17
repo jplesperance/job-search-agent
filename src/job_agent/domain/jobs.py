@@ -161,6 +161,13 @@ class RequirementCoverage(BaseModel):
     evidence_keys: list[str] = Field(default_factory=list)
     score: float = Field(ge=0, le=100)
     rationale: str
+    # Tenure requirements are deliberately represented as threshold proofs rather
+    # than pseudo-precise decimal-year claims. These fields preserve the audit
+    # trail needed to understand why a threshold passed without asserting an
+    # exact amount of specialized experience.
+    minimum_years: int | None = Field(default=None, ge=0, le=50)
+    tenure_threshold_met: bool | None = None
+    qualifying_experience_keys: list[str] = Field(default_factory=list)
 
 
 
