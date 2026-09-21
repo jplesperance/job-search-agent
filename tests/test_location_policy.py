@@ -125,3 +125,24 @@ def test_non_remote_outside_bay_area_is_rejected():
     assert result.decision.commute_zone is None
     assert result.decision.manual_review_required is False
     assert "outside configured SF Bay Area commute zones" in result.hard_filter_reason
+
+
+def test_salary_extraction_handles_long_compensation_preamble():
+    from job_agent.services.location_policy import extract_base_salary_range
+
+    text = (
+        "Compensation The successful candidate's starting pay will fall within the pay range listed below "
+        "and is determined based on job-related factors including skills, experience, qualifications, "
+        "work location, and market conditions. Base salary is localized according to an employee's work "
+        "location. Ranges are market-dependent and may be modified in the future. In addition to base salary, "
+        "the compensation for this role includes opportunities for equity grants. The national base pay range "
+        "for this position within the United States is $193,800 - $285,000 USD."
+    )
+    assert extract_base_salary_range(text) == (193800.0, 285000.0)
+
+
+def test_salary_extraction_handles_us_base_salary_range_phrase():
+    from job_agent.services.location_policy import extract_base_salary_range
+
+    text = "The US base salary range for this position (this does not include bonus, equity and benefits): $206,181 - $252,000 USD"
+    assert extract_base_salary_range(text) == (206181.0, 252000.0)

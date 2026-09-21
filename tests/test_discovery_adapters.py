@@ -79,3 +79,37 @@ def test_ashby_uses_public_board_and_compensation_summary():
     assert jobs[0].external_id == "https://jobs.ashbyhq.com/acme/uuid"
     assert jobs[0].compensation_text == "$300K - $360K"
     assert "includeCompensation=true" in http.urls[0]
+
+
+def test_greenhouse_enrich_uses_pay_transparency_ranges():
+    from datetime import datetime, timezone
+    from uuid import uuid4
+    from job_agent.domain.discovery import DiscoveryPosting, DiscoveryProvider, DiscoverySourceSummary
+    from job_agent.services.discovery_adapters import GreenhouseAdapter
+
+    class FakeHttp:
+        def get_json(self, url):
+            assert "pay_transparency=true" in url
+            return {
+                "pay_input_ranges": [
+                    {
+                        "min_cents": 19380000,
+                        "max_cents": 28500000,
+                        "currency_type": "USD",
+                        "title": "US Base Salary Range",
+                    }
+                ]
+            }
+
+    source = DiscoverySourceSummary(
+        id=uuid4(), company="DoorDash", provider=DiscoveryProvider.GREENHOUSE,
+        board_identifier="doordashusa", enabled=True, priority=100, config={},
+        created_at=datetime.now(timezone.utc),
+    )
+    posting = DiscoveryPosting(
+        provider=DiscoveryProvider.GREENHOUSE, external_id="8160819", company="DoorDash",
+        title="Engineering Manager, Proactive Security - Pods", location="United States - Remote",
+        description_raw="security leadership role", source_url="https://example.com/job",
+    )
+    enriched = GreenhouseAdapter(FakeHttp()).enrich(source, posting)
+    assert enriched.compensation_text == "USD $193,800 - $285,000 base"

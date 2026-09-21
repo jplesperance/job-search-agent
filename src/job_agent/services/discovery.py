@@ -122,6 +122,9 @@ class DiscoveryService:
             "postings_closed": 0,
         }
         seen_external_ids: set[str] = set()
+        analyzed_job_ids: set[UUID] = set()
+        hard_passed_job_ids: set[UUID] = set()
+        surfaced_job_ids: set[UUID] = set()
         errors: list[str] = []
 
         try:
@@ -137,6 +140,15 @@ class DiscoveryService:
                 if not decision.accepted:
                     continue
                 counters["title_candidates"] += 1
+
+                enrich = getattr(adapter, "enrich", None)
+                if callable(enrich):
+                    try:
+                        posting = enrich(source, posting)
+                    except Exception:
+                        # Enrichment is best-effort. The existing ingestion salary parser
+                        # still gets a chance to recover compensation from the raw JD.
+                        pass
 
                 source_key = f"{source.provider.value}:{source.board_identifier}"
                 try:
@@ -165,13 +177,17 @@ class DiscoveryService:
 
                     if request.analyze:
                         match = self.match_service.analyze(ingest.job_id, JobMatchRequest())
-                        counters["jobs_analyzed"] += 1
+                        analyzed_job_ids.add(ingest.job_id)
                         if match.hard_filter_passed:
-                            counters["hard_filter_passed"] += 1
+                            hard_passed_job_ids.add(ingest.job_id)
                             if match.total_score >= request.minimum_surface_score:
-                                counters["surfaced"] += 1
+                                surfaced_job_ids.add(ingest.job_id)
                 except Exception as exc:  # isolate malformed postings instead of aborting board scan
                     errors.append(f"{posting.external_id}: processing failed: {exc}")
+
+            counters["jobs_analyzed"] = len(analyzed_job_ids)
+            counters["hard_filter_passed"] = len(hard_passed_job_ids)
+            counters["surfaced"] = len(surfaced_job_ids)
 
             counters["postings_closed"] = self.discovery_repo.mark_unseen_closed(
                 source_id=source.id,

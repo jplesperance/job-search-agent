@@ -63,7 +63,12 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
     amount = r"\$\s*([0-9]{2,3}(?:,[0-9]{3})|[0-9]{5,6}|[0-9]{2,3})\s*([kK])?"
     contextual = re.compile(
         rf"(?:base\s+(?:salary|pay)|salary\s+range|pay\s+range|annual\s+salary)"
-        rf"[^\n]{{0,140}}?{amount}\s*(?:-|–|—|to)\s*{amount}",
+        rf"[^\n]{{0,600}}?{amount}\s*(?:-|–|—|to)\s*{amount}",
+        re.I,
+    )
+    compensation_section = re.compile(
+        rf"(?:compensation|pay\s+and\s+benefits|salary)[^\n]{{0,1200}}?"
+        rf"{amount}\s*(?:-|–|—|to)\s*{amount}",
         re.I,
     )
     explicit_range = re.compile(
@@ -72,7 +77,7 @@ def extract_base_salary_range(text: str | None) -> tuple[float | None, float | N
         re.I,
     )
 
-    for pattern in (contextual, explicit_range):
+    for pattern in (contextual, compensation_section, explicit_range):
         match = pattern.search(compact)
         if match:
             low = _salary_amount(match.group(1), match.group(2))

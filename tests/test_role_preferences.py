@@ -62,3 +62,32 @@ def test_heavy_coding_requires_multiple_strong_signals_before_exclusion():
     decision = evaluate_role_preferences(title="Staff Product Security Engineer", description=heavy, policy=policy)
     assert not decision.accepted
     assert "coding-heavy" in decision.rationale
+
+
+def test_live_style_coding_heavy_security_roles_are_excluded_but_security_manager_is_kept():
+    policy = _policy()
+    harvey = (
+        "We are all software engineers - contributing code daily. "
+        "Strong programming skills with demonstrated experience writing high-quality, production software."
+    )
+    perplexity_offsec = (
+        "Develop and maintain custom offensive tooling, exploits, and automation. "
+        "Strong programming and scripting skills in Python, Go, or similar languages."
+    )
+    flexport_corp = (
+        "You'll spend your time writing code and shipping automation. "
+        "Comfort writing real code or scripts (Python, Go, or similar)."
+    )
+    flexport_detection = (
+        "Proficiency in Python or Go and comfort writing production-grade detection and automation code."
+    )
+    doordash_manager = (
+        "Coach and mentor highly skilled engineers as a player-coach. "
+        "Success is not measured in shipping code; it is measured in eliminating classes of vulnerabilities."
+    )
+
+    assert not evaluate_role_preferences(title="Staff Product Security Engineer", description=harvey, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Member of Technical Staff (Offensive Security Engineer)", description=perplexity_offsec, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Security Engineer, Corporate Security", description=flexport_corp, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Senior Security Engineer, Detection & Response", description=flexport_detection, policy=policy).accepted
+    assert evaluate_role_preferences(title="Engineering Manager, Proactive Security - Pods", description=doordash_manager, policy=policy).accepted

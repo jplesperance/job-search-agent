@@ -59,10 +59,17 @@ _HEAVY_CODING_PATTERNS: tuple[tuple[re.Pattern[str], int], ...] = (
     (re.compile(r"\b\d+\+?\s+years?[^\n]{0,60}\bsoftware\s+(?:engineering|development)\b", re.I), 3),
     (re.compile(r"\bbuild(?:ing)?\s+and\s+maintain(?:ing)?\s+(?:production\s+)?(?:software|services|platforms?)\b", re.I), 2),
     (re.compile(r"\bdesign(?:ing)?\s+and\s+implement(?:ing)?[^\n]{0,80}\bsoftware\b", re.I), 2),
-    (re.compile(r"\bstrong\s+(?:software\s+)?programming\s+(?:skills|experience)\b", re.I), 2),
+    (re.compile(r"\bstrong\s+(?:software\s+)?programming(?:\s+and\s+scripting)?\s+(?:skills|experience)\b", re.I), 2),
     (re.compile(r"\bcoding\s+(?:skills|experience|interview)\b", re.I), 2),
     (re.compile(r"\bproficien(?:cy|t)\s+(?:in|with)\s+(?:python|go|golang|java|rust|c\+\+|typescript)\b", re.I), 1),
-    (re.compile(r"\bdevelop(?:ing)?\s+(?:and\s+maintain(?:ing)?\s+)?security\s+tooling\b", re.I), 1),
+    (re.compile(r"\bdevelop(?:ing)?\s+(?:and\s+maintain(?:ing)?\s+)?(?:custom\s+)?(?:offensive\s+|security\s+)?tooling\b", re.I), 2),
+    (re.compile(r"\bcontribut(?:e|es|ing)\s+code\s+daily\b", re.I), 3),
+    (re.compile(r"\bwriting\s+(?:high[- ]quality,?\s+)?production\s+software\b", re.I), 3),
+    (re.compile(r"\bproduction[- ]grade[^\n]{0,40}\bcode\b", re.I), 3),
+    (re.compile(r"\bspend(?:s|ing)?[^\n]{0,50}\btime\s+writing\s+code\b", re.I), 4),
+    (re.compile(r"\bwriting\s+(?:real\s+)?code(?:\s+or\s+scripts)?\b", re.I), 3),
+    (re.compile(r"\bwrite\s+and\s+ship[^\n]{0,50}\b(?:code|automation)\b", re.I), 3),
+    (re.compile(r"\bcustom\s+(?:offensive\s+)?tooling,?\s+exploits?\b", re.I), 2),
 )
 
 

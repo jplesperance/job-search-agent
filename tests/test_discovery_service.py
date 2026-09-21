@@ -149,3 +149,58 @@ def test_discovery_run_deduplicates_same_external_posting_before_analysis():
     assert result.totals["title_candidates"] == 1
     assert result.totals["jobs_analyzed"] == 1
     assert result.totals["surfaced"] == 1
+
+
+def test_surfaced_counter_counts_unique_persisted_jobs_not_processing_events():
+    source = _source()
+    repo = FakeDiscoveryRepo(source)
+    shared_job_id = uuid4()
+
+    class AliasAdapter:
+        def fetch(self, source):
+            return [
+                DiscoveryPosting(
+                    provider=source.provider,
+                    external_id="alias-1",
+                    company=source.company,
+                    title="Director of Application Security",
+                    location="Palo Alto, CA",
+                    description_raw="Requirements: Threat modeling and application security. " * 2,
+                    source_url="https://example.com/a1",
+                ),
+                DiscoveryPosting(
+                    provider=source.provider,
+                    external_id="alias-2",
+                    company=source.company,
+                    title="Director of Application Security",
+                    location="Palo Alto, CA",
+                    description_raw="Requirements: Threat modeling and application security. " * 2,
+                    source_url="https://example.com/a2",
+                ),
+            ]
+
+    class AliasRegistry:
+        def get(self, provider):
+            return AliasAdapter()
+
+    class SameJobIngestion:
+        def ingest(self, request):
+            return JobIngestResponse(
+                job_id=shared_job_id,
+                created=False,
+                content_hash="x" * 64,
+                parsed=ParsedJobDescription(role_family="application_security", requirements=[]),
+            )
+
+    service = DiscoveryService(
+        discovery_repo=repo,
+        policy_repo=FakePolicyRepo(),
+        ingestion_service=SameJobIngestion(),
+        match_service=FakeMatcher(),
+        adapters=AliasRegistry(),
+    )
+    result = service.run(DiscoveryRunRequest(source_id=source.id, minimum_surface_score=80))
+    assert result.totals["title_candidates"] == 2
+    assert result.totals["jobs_analyzed"] == 1
+    assert result.totals["hard_filter_passed"] == 1
+    assert result.totals["surfaced"] == 1

@@ -100,9 +100,56 @@ class DiscoveryAdapter(ABC):
     def fetch(self, source: DiscoverySourceSummary) -> list[DiscoveryPosting]:
         raise NotImplementedError
 
+    def enrich(self, source: DiscoverySourceSummary, posting: DiscoveryPosting) -> DiscoveryPosting:
+        """Optionally enrich a prefiltered posting without expanding the initial board scan."""
+        return posting
+
 
 class GreenhouseAdapter(DiscoveryAdapter):
     provider = DiscoveryProvider.GREENHOUSE
+
+    def enrich(self, source: DiscoverySourceSummary, posting: DiscoveryPosting) -> DiscoveryPosting:
+        if posting.compensation_text:
+            return posting
+        token = quote(source.board_identifier.strip(), safe="")
+        job_id = quote(posting.external_id.strip(), safe="")
+        url = f"https://api.greenhouse.io/v1/boards/{token}/jobs/{job_id}?pay_transparency=true"
+        try:
+            payload = self.http.get_json(url)
+        except Exception:
+            return posting
+        ranges = payload.get("pay_input_ranges", []) if isinstance(payload, dict) else []
+        if not isinstance(ranges, list) or not ranges:
+            return posting
+
+        parsed: list[tuple[str, float, float, str]] = []
+        for item in ranges:
+            if not isinstance(item, dict):
+                continue
+            try:
+                low = float(item.get("min_cents")) / 100.0
+                high = float(item.get("max_cents")) / 100.0
+            except (TypeError, ValueError):
+                continue
+            if low <= 0 or high <= 0:
+                continue
+            title = str(item.get("title") or "").strip()
+            currency = str(item.get("currency_type") or "USD").upper()
+            parsed.append((title, min(low, high), max(low, high), currency))
+        if not parsed:
+            return posting
+
+        salary_like = [
+            item for item in parsed
+            if any(token in item[0].lower() for token in ("salary", "base", "pay"))
+        ]
+        selected = salary_like or parsed
+        usd = [item for item in selected if item[3] == "USD"] or selected
+        low = min(item[1] for item in usd)
+        high = max(item[2] for item in usd)
+        currency = usd[0][3]
+        compensation = f"{currency} ${low:,.0f} - ${high:,.0f} base"
+        return posting.model_copy(update={"compensation_text": compensation})
 
     def fetch(self, source: DiscoverySourceSummary) -> list[DiscoveryPosting]:
         token = quote(source.board_identifier.strip(), safe="")
@@ -120,6 +167,24 @@ class GreenhouseAdapter(DiscoveryAdapter):
                 continue
             location_obj = job.get("location") or {}
             location = location_obj.get("name") if isinstance(location_obj, dict) else None
+
+            compensation_text = None
+            metadata = job.get("metadata")
+            if isinstance(metadata, list):
+                pay_parts: list[str] = []
+                for item in metadata:
+                    if not isinstance(item, dict):
+                        continue
+                    name = str(item.get("name") or "").strip()
+                    value = item.get("value")
+                    if name and any(token in name.lower() for token in ("salary", "compensation", "pay range", "base pay")):
+                        if isinstance(value, dict):
+                            pay_parts.append(f"{name}: {value}")
+                        elif value not in (None, ""):
+                            pay_parts.append(f"{name}: {value}")
+                if pay_parts:
+                    compensation_text = " | ".join(pay_parts)
+
             results.append(
                 DiscoveryPosting(
                     provider=self.provider,
@@ -127,7 +192,7 @@ class GreenhouseAdapter(DiscoveryAdapter):
                     company=source.company,
                     title=title,
                     location=str(location).strip() if location else None,
-                    compensation_text=None,
+                    compensation_text=compensation_text,
                     description_raw=description,
                     source_url=job.get("absolute_url"),
                     published_at=_parse_dt(job.get("updated_at")),
