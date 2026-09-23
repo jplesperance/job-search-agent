@@ -29,6 +29,11 @@ class FakeDiscoveryRepo:
     def start_run(self, source_id, started_at): return self.run_id
     def link_job(self, **kwargs): self.links.append(kwargs)
     def mark_unseen_closed(self, **kwargs): return self.closed
+    def list_candidates(self, *, minimum_score=80.0, limit=100, open_only=True, source_id=None):
+        # Discovery links can be emitted more than once for aliases, but the rendered
+        # candidate set is unique by persisted job id.
+        unique = {item["job_id"] for item in self.links}
+        return [SimpleNamespace(job_id=job_id) for job_id in list(unique)[:limit]]
     def touch_source(self, source_id, checked_at): pass
     def finish_run(self, *, run_id, completed_at, status, counters, error_message):
         return DiscoveryRunSummary(

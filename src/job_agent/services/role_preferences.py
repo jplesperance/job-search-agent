@@ -62,6 +62,7 @@ _HEAVY_CODING_PATTERNS: tuple[tuple[re.Pattern[str], int], ...] = (
     (re.compile(r"\bstrong\s+(?:software\s+)?programming(?:\s+and\s+scripting)?\s+(?:skills|experience)\b", re.I), 2),
     (re.compile(r"\bcoding\s+(?:skills|experience|interview)\b", re.I), 2),
     (re.compile(r"\bproficien(?:cy|t)\s+(?:in|with)\s+(?:python|go|golang|java|rust|c\+\+|typescript)\b", re.I), 1),
+    (re.compile(r"\bproficien(?:cy|t)\s+in\s+(?:at\s+least\s+one\s+)?programming\s+language\b", re.I), 2),
     (re.compile(r"\bdevelop(?:ing)?\s+(?:and\s+maintain(?:ing)?\s+)?(?:custom\s+)?(?:offensive\s+|security\s+)?tooling\b", re.I), 2),
     (re.compile(r"\bcontribut(?:e|es|ing)\s+code\s+daily\b", re.I), 3),
     (re.compile(r"\bwriting\s+(?:high[- ]quality,?\s+)?production\s+software\b", re.I), 3),

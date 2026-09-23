@@ -89,6 +89,7 @@ def test_greenhouse_enrich_uses_pay_transparency_ranges():
 
     class FakeHttp:
         def get_json(self, url):
+            assert url.startswith("https://boards-api.greenhouse.io/v1/boards/")
             assert "pay_transparency=true" in url
             return {
                 "pay_input_ranges": [

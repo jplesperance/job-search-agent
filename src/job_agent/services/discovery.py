@@ -187,13 +187,29 @@ class DiscoveryService:
 
             counters["jobs_analyzed"] = len(analyzed_job_ids)
             counters["hard_filter_passed"] = len(hard_passed_job_ids)
-            counters["surfaced"] = len(surfaced_job_ids)
 
             counters["postings_closed"] = self.discovery_repo.mark_unseen_closed(
                 source_id=source.id,
                 seen_external_ids=seen_external_ids,
                 seen_at=started,
             )
+
+            # Reconcile the surfaced counter against the same persisted/current-candidate
+            # view used by list_discovery_candidates.py. This prevents a run from reporting
+            # a surfaced posting that was subsequently closed or is rejected by the current
+            # role-preference policy when the candidate list is rendered.
+            if request.analyze:
+                counters["surfaced"] = len(
+                    self.discovery_repo.list_candidates(
+                        minimum_score=request.minimum_surface_score,
+                        limit=10_000,
+                        open_only=True,
+                        source_id=source.id,
+                    )
+                )
+            else:
+                counters["surfaced"] = 0
+
             completed = datetime.now(timezone.utc)
             status = DiscoveryRunStatus.PARTIAL if errors else DiscoveryRunStatus.COMPLETED
             error_message = " | ".join(errors[:10]) if errors else None

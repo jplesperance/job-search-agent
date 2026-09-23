@@ -91,3 +91,29 @@ def test_live_style_coding_heavy_security_roles_are_excluded_but_security_manage
     assert not evaluate_role_preferences(title="Security Engineer, Corporate Security", description=flexport_corp, policy=policy).accepted
     assert not evaluate_role_preferences(title="Senior Security Engineer, Detection & Response", description=flexport_detection, policy=policy).accepted
     assert evaluate_role_preferences(title="Engineering Manager, Proactive Security - Pods", description=doordash_manager, policy=policy).accepted
+
+
+def test_current_live_wording_for_coding_heavy_security_roles_is_rejected():
+    policy = _policy()
+    harvey = """
+    At the same time, we are all software engineers - contributing code daily and approaching
+    security with an engineering-first mindset. Strong programming skills with demonstrated
+    experience writing high-quality, production software. Own and review security-critical code.
+    """
+    perplexity = """
+    Develop and maintain custom offensive tooling, exploits, and automation. Strong programming
+    and scripting skills in Python, Go, or similar languages; comfortable writing custom tooling
+    and exploits.
+    """
+    flexport = """
+    This is a security engineering role, not an IT support role. You'll spend your time writing code
+    and shipping automation. Comfort writing real code or scripts (Python, Go, or similar).
+    """
+    detection = """
+    Proficiency in at least one programming language (Python, Go, or similar) and comfort writing
+    production-grade detection and automation code.
+    """
+    assert not evaluate_role_preferences(title="Staff Product Security Engineer", description=harvey, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Member of Technical Staff (Offensive Security Engineer)", description=perplexity, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Security Engineer, Corporate Security", description=flexport, policy=policy).accepted
+    assert not evaluate_role_preferences(title="Senior Security Engineer, Detection & Response", description=detection, policy=policy).accepted

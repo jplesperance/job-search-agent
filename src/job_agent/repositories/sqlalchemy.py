@@ -637,9 +637,12 @@ class SqlAlchemyDiscoveryRepository:
         return [_discovery_run(run, source) for run, source in rows]
 
     def list_candidates(
-        self, *, minimum_score: float = 80.0, limit: int = 100, open_only: bool = True
+        self, *, minimum_score: float = 80.0, limit: int = 100, open_only: bool = True,
+        source_id: UUID | None = None,
     ) -> list[DiscoveryCandidateSummary]:
         jobs_stmt = select(JobOpportunityRow).where(JobOpportunityRow.discovery_source_id.is_not(None))
+        if source_id is not None:
+            jobs_stmt = jobs_stmt.where(JobOpportunityRow.discovery_source_id == source_id)
         if open_only:
             jobs_stmt = jobs_stmt.where(JobOpportunityRow.posting_status == "open")
         jobs = list(self.session.execute(jobs_stmt).scalars())

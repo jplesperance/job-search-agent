@@ -146,3 +146,18 @@ def test_salary_extraction_handles_us_base_salary_range_phrase():
 
     text = "The US base salary range for this position (this does not include bonus, equity and benefits): $206,181 - $252,000 USD"
     assert extract_base_salary_range(text) == (206181.0, 252000.0)
+
+
+def test_salary_parser_handles_live_greenhouse_pay_transparency_copy():
+    from job_agent.services.location_policy import extract_base_salary_range
+
+    flexport = """
+    The US base salary range for this position (this does not include bonus, equity and benefits):
+    $165,375 - $202,125 USD
+    """
+    stripe = """
+    Pay and benefits
+    The annual US base salary range for this role is $131,200 - $196,800.
+    """
+    assert extract_base_salary_range(flexport) == (165375.0, 202125.0)
+    assert extract_base_salary_range(stripe) == (131200.0, 196800.0)

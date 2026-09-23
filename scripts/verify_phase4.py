@@ -24,6 +24,10 @@ def main() -> None:
         version = conn.execute(text("SELECT version_num FROM alembic_version")).scalar_one()
         source_count = conn.execute(text("SELECT COUNT(*) FROM discovery_sources")).scalar_one()
         run_count = conn.execute(text("SELECT COUNT(*) FROM discovery_runs")).scalar_one()
+        active_policy = conn.execute(text(
+            "SELECT name, version, exclude_software_engineering_roles, exclude_heavy_coding_roles "
+            "FROM targeting_policies WHERE active = true ORDER BY version DESC LIMIT 1"
+        )).mappings().first()
     policy_columns = {column["name"] for column in inspector.get_columns("targeting_policies")}
     required_policy_columns = {
         "excluded_title_terms",
@@ -36,11 +40,20 @@ def main() -> None:
 
     if version != "0007":
         raise SystemExit(f"Expected Alembic 0007, found {version}")
+    if active_policy is None:
+        raise SystemExit("No active targeting policy found")
+    if not active_policy["exclude_software_engineering_roles"]:
+        raise SystemExit("Active policy does not exclude software-engineering roles")
+    if not active_policy["exclude_heavy_coding_roles"]:
+        raise SystemExit("Active policy does not exclude coding-heavy roles")
 
-    print("Phase 4.0.1 discovery schema verified")
+    print("Phase 4.0.3 discovery configuration verified")
     print(f"alembic head              {version}")
     print(f"configured sources        {source_count}")
     print(f"discovery runs            {run_count}")
+    print(f"active policy             {active_policy['name']} v{active_policy['version']}")
+    print("software engineering      excluded")
+    print("heavy coding              excluded")
 
 
 if __name__ == "__main__":

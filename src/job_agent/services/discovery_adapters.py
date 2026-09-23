@@ -113,7 +113,7 @@ class GreenhouseAdapter(DiscoveryAdapter):
             return posting
         token = quote(source.board_identifier.strip(), safe="")
         job_id = quote(posting.external_id.strip(), safe="")
-        url = f"https://api.greenhouse.io/v1/boards/{token}/jobs/{job_id}?pay_transparency=true"
+        url = f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs/{job_id}?pay_transparency=true"
         try:
             payload = self.http.get_json(url)
         except Exception:
