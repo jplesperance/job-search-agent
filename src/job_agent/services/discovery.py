@@ -169,6 +169,10 @@ class DiscoveryService:
                         job_id=ingest.job_id,
                         source_id=source.id,
                         seen_at=datetime.now(timezone.utc),
+                        source=source_key,
+                        external_id=posting.external_id,
+                        source_url=str(posting.source_url) if posting.source_url else None,
+                        content_hash=ingest.content_hash,
                     )
                     if ingest.created:
                         counters["jobs_created"] += 1

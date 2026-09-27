@@ -1,0 +1,11 @@
+[Unit]
+Description=Job Search Agent scheduled discovery
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=jese
+WorkingDirectory=/home/jese/job-search-agent
+Environment=PYTHONPATH=/home/jese/job-search-agent/src
+ExecStart=/home/jese/job-search-agent/.venv/bin/python scripts/run_scheduled_discovery.py

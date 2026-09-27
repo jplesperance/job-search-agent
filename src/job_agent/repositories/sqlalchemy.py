@@ -18,6 +18,7 @@ from job_agent.db.tables import (
     JobAnalysisRow,
     JobOpportunityRow,
     JobRequirementRow,
+    JobSourcePostingRow,
     SkillRow,
     TargetingPolicyRow,
 )
@@ -53,6 +54,13 @@ from job_agent.domain.models import (
     TargetingPolicy,
 )
 from job_agent.domain.retrieval import EvidenceRecord
+from job_agent.services.canonical_jobs import (
+    description_similarity,
+    normalize_company,
+    normalize_location,
+    normalize_source_url,
+    normalize_title,
+)
 from job_agent.services.role_preferences import evaluate_role_preferences
 
 
@@ -335,25 +343,122 @@ class SqlAlchemyJobRepository:
         ).scalars()
         return [_job(row) for row in rows]
 
-    def upsert(self, job: JobOpportunity, content_hash: str) -> tuple[JobOpportunity, bool]:
-        row = None
+    def _find_canonical_job(
+        self, job: JobOpportunity, content_hash: str
+    ) -> JobOpportunityRow | None:
         if job.external_id:
-            row = self.session.execute(
-                select(JobOpportunityRow).where(
-                    JobOpportunityRow.source == job.source,
-                    JobOpportunityRow.external_id == job.external_id,
+            posting = self.session.execute(
+                select(JobSourcePostingRow).where(
+                    JobSourcePostingRow.source == job.source,
+                    JobSourcePostingRow.external_id == job.external_id,
                 )
             ).scalar_one_or_none()
-        if row is None:
-            row = self.session.execute(
-                select(JobOpportunityRow).where(
-                    JobOpportunityRow.company == job.company,
-                    JobOpportunityRow.title == job.title,
-                    JobOpportunityRow.content_hash == content_hash,
-                )
-            ).scalar_one_or_none()
+            if posting is not None:
+                return self.session.get(JobOpportunityRow, posting.job_id)
 
+        normalized_url = normalize_source_url(
+            str(job.source_url) if job.source_url else None
+        )
+        if normalized_url:
+            posting = self.session.execute(
+                select(JobSourcePostingRow)
+                .where(JobSourcePostingRow.normalized_source_url == normalized_url)
+                .limit(1)
+            ).scalar_one_or_none()
+            if posting is not None:
+                return self.session.get(JobOpportunityRow, posting.job_id)
+
+        exact = self.session.execute(
+            select(JobOpportunityRow)
+            .where(
+                JobOpportunityRow.company == job.company,
+                JobOpportunityRow.title == job.title,
+                JobOpportunityRow.content_hash == content_hash,
+            )
+            .limit(1)
+        ).scalar_one_or_none()
+        if exact is not None:
+            return exact
+
+        company = normalize_company(job.company)
+        title = normalize_title(job.title)
+        location = normalize_location(job.location)
+        if not company or not title:
+            return None
+
+        postings = list(
+            self.session.execute(
+                select(JobSourcePostingRow)
+                .where(
+                    JobSourcePostingRow.normalized_company == company,
+                    JobSourcePostingRow.normalized_title == title,
+                    JobSourcePostingRow.normalized_location == location,
+                    JobSourcePostingRow.source != job.source,
+                )
+                .limit(20)
+            ).scalars()
+        )
+        seen: set[UUID] = set()
+        for posting in postings:
+            if posting.job_id in seen:
+                continue
+            seen.add(posting.job_id)
+            candidate = self.session.get(JobOpportunityRow, posting.job_id)
+            if candidate is None:
+                continue
+            if description_similarity(
+                candidate.description_raw, job.description_raw
+            ) >= 0.97:
+                return candidate
+        return None
+
+    def _upsert_source_posting(
+        self, *, row: JobOpportunityRow, job: JobOpportunity, content_hash: str
+    ) -> None:
+        if not job.external_id:
+            return
+        now = datetime.now(timezone.utc)
+        source_url = str(job.source_url) if job.source_url else None
+        posting = self.session.execute(
+            select(JobSourcePostingRow).where(
+                JobSourcePostingRow.source == job.source,
+                JobSourcePostingRow.external_id == job.external_id,
+            )
+        ).scalar_one_or_none()
+        if posting is None:
+            posting = JobSourcePostingRow(
+                id=uuid4(),
+                job_id=row.id,
+                source=job.source,
+                external_id=job.external_id,
+                source_url=source_url,
+                normalized_source_url=normalize_source_url(source_url),
+                normalized_company=normalize_company(job.company),
+                normalized_title=normalize_title(job.title),
+                normalized_location=normalize_location(job.location),
+                content_hash=content_hash,
+                posting_status="open",
+                first_seen_at=now,
+                last_seen_at=now,
+            )
+            self.session.add(posting)
+        else:
+            posting.job_id = row.id
+            posting.source_url = source_url or posting.source_url
+            posting.normalized_source_url = (
+                normalize_source_url(source_url) or posting.normalized_source_url
+            )
+            posting.normalized_company = normalize_company(job.company)
+            posting.normalized_title = normalize_title(job.title)
+            posting.normalized_location = normalize_location(job.location)
+            posting.content_hash = content_hash
+            posting.posting_status = "open"
+            posting.last_seen_at = now
+
+    def upsert(self, job: JobOpportunity, content_hash: str) -> tuple[JobOpportunity, bool]:
+        row = self._find_canonical_job(job, content_hash)
         created = row is None
+
         if row is None:
             row = JobOpportunityRow(
                 id=job.id,
@@ -368,15 +473,34 @@ class SqlAlchemyJobRepository:
                 description_raw=job.description_raw,
                 discovered_at=job.discovered_at,
                 content_hash=content_hash,
+                posting_status="open",
             )
             self.session.add(row)
+            self.session.flush()
         else:
-            row.source_url = str(job.source_url) if job.source_url else row.source_url
-            row.location = job.location
-            row.compensation_text = job.compensation_text
-            row.work_arrangement = job.work_arrangement
-            row.description_raw = job.description_raw
-            row.content_hash = content_hash
+            same_source = row.source == job.source and row.external_id == job.external_id
+            if same_source:
+                row.source_url = str(job.source_url) if job.source_url else row.source_url
+                row.location = job.location
+                row.compensation_text = job.compensation_text
+                row.work_arrangement = job.work_arrangement
+                row.description_raw = job.description_raw
+                row.content_hash = content_hash
+            else:
+                if not row.source_url and job.source_url:
+                    row.source_url = str(job.source_url)
+                if not row.location and job.location:
+                    row.location = job.location
+                if not row.compensation_text and job.compensation_text:
+                    row.compensation_text = job.compensation_text
+                if not row.work_arrangement and job.work_arrangement:
+                    row.work_arrangement = job.work_arrangement
+                if len(job.description_raw) > len(row.description_raw or ""):
+                    row.description_raw = job.description_raw
+                    row.content_hash = content_hash
+            row.posting_status = "open"
+
+        self._upsert_source_posting(row=row, job=job, content_hash=content_hash)
         self.session.flush()
         return _job(row), created
 
@@ -640,9 +764,16 @@ class SqlAlchemyDiscoveryRepository:
         self, *, minimum_score: float = 80.0, limit: int = 100, open_only: bool = True,
         source_id: UUID | None = None,
     ) -> list[DiscoveryCandidateSummary]:
-        jobs_stmt = select(JobOpportunityRow).where(JobOpportunityRow.discovery_source_id.is_not(None))
+        source_jobs = select(JobSourcePostingRow.job_id)
         if source_id is not None:
-            jobs_stmt = jobs_stmt.where(JobOpportunityRow.discovery_source_id == source_id)
+            source_jobs = source_jobs.where(
+                JobSourcePostingRow.discovery_source_id == source_id
+            )
+        if open_only:
+            source_jobs = source_jobs.where(JobSourcePostingRow.posting_status == "open")
+        jobs_stmt = select(JobOpportunityRow).where(
+            JobOpportunityRow.id.in_(source_jobs)
+        )
         if open_only:
             jobs_stmt = jobs_stmt.where(JobOpportunityRow.posting_status == "open")
         jobs = list(self.session.execute(jobs_stmt).scalars())
@@ -692,31 +823,103 @@ class SqlAlchemyDiscoveryRepository:
         candidates.sort(key=lambda item: (item.total_score, item.analyzed_at), reverse=True)
         return candidates[:limit]
 
-    def link_job(self, *, job_id: UUID, source_id: UUID, seen_at: datetime) -> None:
+    def link_job(
+        self,
+        *,
+        job_id: UUID,
+        source_id: UUID,
+        seen_at: datetime,
+        source: str | None = None,
+        external_id: str | None = None,
+        source_url: str | None = None,
+        content_hash: str | None = None,
+    ) -> None:
         row = self.session.get(JobOpportunityRow, job_id)
         if row is None:
             raise LookupError("job not found")
-        row.discovery_source_id = source_id
+        if row.discovery_source_id is None:
+            row.discovery_source_id = source_id
         row.last_seen_at = seen_at
         row.posting_status = "open"
+
+        if source and external_id:
+            posting = self.session.execute(
+                select(JobSourcePostingRow).where(
+                    JobSourcePostingRow.source == source,
+                    JobSourcePostingRow.external_id == external_id,
+                )
+            ).scalar_one_or_none()
+            if posting is None:
+                posting = JobSourcePostingRow(
+                    id=uuid4(),
+                    job_id=job_id,
+                    discovery_source_id=source_id,
+                    source=source,
+                    external_id=external_id,
+                    source_url=source_url,
+                    normalized_source_url=normalize_source_url(source_url),
+                    normalized_company=normalize_company(row.company),
+                    normalized_title=normalize_title(row.title),
+                    normalized_location=normalize_location(row.location),
+                    content_hash=content_hash,
+                    posting_status="open",
+                    first_seen_at=seen_at,
+                    last_seen_at=seen_at,
+                )
+                self.session.add(posting)
+            else:
+                posting.job_id = job_id
+                posting.discovery_source_id = source_id
+                posting.source_url = source_url or posting.source_url
+                posting.normalized_source_url = (
+                    normalize_source_url(source_url) or posting.normalized_source_url
+                )
+                posting.normalized_company = normalize_company(row.company)
+                posting.normalized_title = normalize_title(row.title)
+                posting.normalized_location = normalize_location(row.location)
+                posting.content_hash = content_hash or posting.content_hash
+                posting.posting_status = "open"
+                posting.last_seen_at = seen_at
         self.session.flush()
 
     def mark_unseen_closed(
         self, *, source_id: UUID, seen_external_ids: set[str], seen_at: datetime
     ) -> int:
-        stmt = select(JobOpportunityRow).where(
-            JobOpportunityRow.discovery_source_id == source_id,
-            JobOpportunityRow.posting_status == "open",
+        postings = list(
+            self.session.execute(
+                select(JobSourcePostingRow).where(
+                    JobSourcePostingRow.discovery_source_id == source_id,
+                    JobSourcePostingRow.posting_status == "open",
+                )
+            ).scalars()
         )
-        rows = list(self.session.execute(stmt).scalars())
         changed = 0
-        for row in rows:
-            if row.external_id and row.external_id not in seen_external_ids:
-                # Only close postings that existed before this run. Jobs first linked during
-                # this run are always in seen_external_ids, so this also protects partial runs.
-                if row.last_seen_at is None or row.last_seen_at < seen_at:
-                    row.posting_status = "closed"
-                    changed += 1
+        affected: set[UUID] = set()
+        for posting in postings:
+            if posting.external_id in seen_external_ids:
+                continue
+            if posting.last_seen_at < seen_at:
+                posting.posting_status = "closed"
+                affected.add(posting.job_id)
+                changed += 1
+
+        for job_id in affected:
+            job = self.session.get(JobOpportunityRow, job_id)
+            if job is None:
+                continue
+            all_postings = list(
+                self.session.execute(
+                    select(JobSourcePostingRow).where(
+                        JobSourcePostingRow.job_id == job_id
+                    )
+                ).scalars()
+            )
+            job.posting_status = (
+                "open" if any(item.posting_status == "open" for item in all_postings) else "closed"
+            )
+            if all_postings:
+                job.last_seen_at = max(item.last_seen_at for item in all_postings)
+
         if changed:
             self.session.flush()
         return changed

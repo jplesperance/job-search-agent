@@ -154,6 +154,60 @@ class DiscoveryRunRow(Base):
     error_message: Mapped[str | None] = mapped_column(Text)
 
 
+class JobSourcePostingRow(Base):
+    __tablename__ = "job_source_postings"
+    __table_args__ = (
+        UniqueConstraint("source", "external_id", name="uq_job_source_postings_source_external"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    job_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("job_opportunities.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    discovery_source_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("discovery_sources.id", ondelete="SET NULL"), index=True
+    )
+    source: Mapped[str] = mapped_column(String(120), nullable=False)
+    external_id: Mapped[str] = mapped_column(String(300), nullable=False)
+    source_url: Mapped[str | None] = mapped_column(Text)
+    normalized_source_url: Mapped[str | None] = mapped_column(Text)
+    normalized_company: Mapped[str] = mapped_column(String(200), nullable=False, default="")
+    normalized_title: Mapped[str] = mapped_column(String(250), nullable=False, default="")
+    normalized_location: Mapped[str] = mapped_column(String(250), nullable=False, default="")
+    content_hash: Mapped[str | None] = mapped_column(String(64))
+    posting_status: Mapped[str] = mapped_column(String(20), nullable=False, default="open", index=True)
+    first_seen_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    last_seen_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class NotificationStateRow(Base):
+    __tablename__ = "notification_states"
+    __table_args__ = (
+        UniqueConstraint(
+            "job_id", "channel", "notification_type",
+            name="uq_notification_states_job_channel_type",
+        ),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    job_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("job_opportunities.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    discovery_run_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("discovery_runs.id", ondelete="SET NULL")
+    )
+    channel: Mapped[str] = mapped_column(String(40), nullable=False)
+    notification_type: Mapped[str] = mapped_column(String(80), nullable=False)
+    status: Mapped[str] = mapped_column(String(30), nullable=False, index=True)
+    attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    sent_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_attempt_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    provider_message_id: Mapped[str | None] = mapped_column(String(250))
+    last_error: Mapped[str | None] = mapped_column(Text)
+    payload_hash: Mapped[str | None] = mapped_column(String(64))
+
+
 class JobOpportunityRow(Base):
     __tablename__ = "job_opportunities"
 
