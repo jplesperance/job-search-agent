@@ -13,6 +13,12 @@ class Settings(BaseSettings):
     notification_provider: str = "disabled"
     notification_recipient: str | None = None
     notification_max_attempts: int = 3
+    pushover_api_token: str | None = None
+    pushover_user_key: str | None = None
+    pushover_device: str | None = None
+
+    # Deprecated settings accepted solely so existing .env files do not break
+    # Pydantic validation. No Twilio transport exists in Phase 4.1.1.
     twilio_account_sid: str | None = None
     twilio_auth_token: str | None = None
     twilio_from_number: str | None = None
