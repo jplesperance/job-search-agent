@@ -5,8 +5,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     app_env: str = "development"
-    database_url: str = | None = None
-    openai_api_key: str = | None = None
+    database_url: str | None = None
+    openai_api_key: str | None = None
     log_level: str = "INFO"
 
     scheduled_discovery_minimum_score: float = 80.0
