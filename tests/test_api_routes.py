@@ -36,6 +36,7 @@ def test_phase3_routes_are_registered():
     assert ("/api/v1/discovery/run", "POST") in routes
     assert ("/api/v1/discovery/runs", "GET") in routes
     assert ("/api/v1/discovery/candidates", "GET") in routes
+    assert ("/api/v1/discovery/health", "GET") in routes
     assert ("/api/v1/targeting-policies", "GET") in routes
     assert ("/api/v1/targeting-policies", "POST") in routes
     assert ("/api/v1/targeting-policies/activate", "POST") in routes

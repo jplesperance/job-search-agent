@@ -11,7 +11,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Add or update a public ATS discovery source")
     parser.add_argument("--company", required=True)
     parser.add_argument("--provider", required=True, choices=[p.value for p in DiscoveryProvider])
-    parser.add_argument("--identifier", required=True, help="Greenhouse board token, Lever site, or Ashby board name")
+    parser.add_argument("--identifier", required=True, help="Greenhouse board, Lever site, Ashby board, or SmartRecruiters company identifier")
     parser.add_argument("--priority", type=int, default=100)
     parser.add_argument("--disabled", action="store_true")
     parser.add_argument("--lever-region", choices=["global", "eu"], default="global")

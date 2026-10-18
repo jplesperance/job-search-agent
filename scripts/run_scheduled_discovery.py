@@ -17,6 +17,7 @@ from job_agent.services.discovery_adapters import AdapterRegistry
 from job_agent.services.evidence_search import EvidenceSearchService
 from job_agent.services.job_matching import JobIngestionService, JobMatchService
 from job_agent.services.notifications import NotificationService, build_notifier
+from job_agent.services.discovery_health import DiscoveryHealthService
 
 
 def build_discovery(session) -> tuple[DiscoveryService, SqlAlchemyDiscoveryRepository]:
@@ -80,6 +81,17 @@ def main() -> None:
         print(f"  {key:22} {value}")
 
     notifier = build_notifier(settings)
+    with get_session_factory()() as session:
+        health = DiscoveryHealthService(
+            session,
+            notifier=notifier,
+            alerts_enabled=settings.discovery_health_alerts_enabled,
+            failure_threshold=settings.discovery_health_failure_threshold,
+        )
+        health.record_runs(result.runs)
+        session.commit()
+        health_sent, health_failed = health.send_alerts()
+    print(f"Health notifications: sent={health_sent} failed={health_failed}")
     if notifier is None:
         print("Notifications disabled; discovery completed.")
         return

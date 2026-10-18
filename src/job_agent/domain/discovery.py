@@ -11,6 +11,7 @@ class DiscoveryProvider(StrEnum):
     GREENHOUSE = "greenhouse"
     LEVER = "lever"
     ASHBY = "ashby"
+    SMARTRECRUITERS = "smartrecruiters"
 
 
 class DiscoveryRunStatus(StrEnum):
@@ -139,3 +140,20 @@ class DiscoveryBatchResponse(BaseModel):
 
     runs: list[DiscoveryRunSummary]
     totals: dict[str, int]
+
+
+class DiscoverySourceHealthSummary(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    source_id: UUID
+    company: str
+    provider: str
+    enabled: bool
+    last_status: str
+    last_attempt_at: datetime | None = None
+    last_success_at: datetime | None = None
+    consecutive_failures: int = 0
+    incident_open: bool = False
+    failure_alert_sent: bool = False
+    stale: bool = False
+    last_error: str | None = None

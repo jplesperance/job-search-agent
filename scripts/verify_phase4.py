@@ -14,6 +14,7 @@ def main() -> None:
         "discovery_runs",
         "job_source_postings",
         "notification_states",
+        "discovery_source_health",
     }
     missing = required_tables - tables
     if missing:
@@ -41,13 +42,14 @@ def main() -> None:
         run_count = conn.execute(text("SELECT COUNT(*) FROM discovery_runs")).scalar_one()
         posting_count = conn.execute(text("SELECT COUNT(*) FROM job_source_postings")).scalar_one()
         notification_count = conn.execute(text("SELECT COUNT(*) FROM notification_states")).scalar_one()
+        health_count = conn.execute(text("SELECT COUNT(*) FROM discovery_source_health")).scalar_one()
         active_policy = conn.execute(text(
             "SELECT name, version, exclude_software_engineering_roles, exclude_heavy_coding_roles "
             "FROM targeting_policies WHERE active = true ORDER BY version DESC LIMIT 1"
         )).mappings().first()
 
-    if version != "0008":
-        raise SystemExit(f"Expected Alembic 0008, found {version}")
+    if version != "0009":
+        raise SystemExit(f"Expected Alembic 0009, found {version}")
     if active_policy is None:
         raise SystemExit("No active targeting policy found")
     if not active_policy["exclude_software_engineering_roles"]:
@@ -55,12 +57,13 @@ def main() -> None:
     if not active_policy["exclude_heavy_coding_roles"]:
         raise SystemExit("Active policy does not exclude coding-heavy roles")
 
-    print("Phase 4.1 scheduled discovery configuration verified")
+    print("Phase 4.2 discovery expansion and health configuration verified")
     print(f"alembic head              {version}")
     print(f"configured sources        {source_count}")
     print(f"discovery runs            {run_count}")
     print(f"source postings           {posting_count}")
     print(f"notification states       {notification_count}")
+    print(f"health-tracked sources    {health_count}")
     print(f"active policy             {active_policy['name']} v{active_policy['version']}")
     print("software engineering      excluded")
     print("heavy coding              excluded")

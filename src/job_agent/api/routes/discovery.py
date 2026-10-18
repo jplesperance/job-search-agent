@@ -3,6 +3,9 @@ from __future__ import annotations
 from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy.orm import Session
+from job_agent.db.session import get_db_session
+from job_agent.services.discovery_health import source_health_report
 
 from job_agent.api.dependencies import get_discovery_repository, get_discovery_service
 from job_agent.domain.discovery import (
@@ -12,6 +15,7 @@ from job_agent.domain.discovery import (
     DiscoveryRunSummary,
     DiscoverySourceCreate,
     DiscoverySourceSummary,
+    DiscoverySourceHealthSummary,
 )
 from job_agent.repositories.sqlalchemy import SqlAlchemyDiscoveryRepository
 from job_agent.services.discovery import DiscoveryService
@@ -64,3 +68,13 @@ def list_candidates(
     repo: SqlAlchemyDiscoveryRepository = Depends(get_discovery_repository),
 ) -> list[DiscoveryCandidateSummary]:
     return repo.list_candidates(minimum_score=minimum_score, limit=limit, open_only=open_only)
+
+
+@router.get("/health", response_model=list[DiscoverySourceHealthSummary])
+def source_health(
+    stale_hours: int = Query(default=12, ge=1, le=168),
+    session: Session = Depends(get_db_session),
+) -> list[DiscoverySourceHealthSummary]:
+    return [DiscoverySourceHealthSummary.model_validate(item) for item in source_health_report(
+        session, stale_hours=stale_hours
+    )]

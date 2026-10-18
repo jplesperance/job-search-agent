@@ -1,4 +1,4 @@
-.PHONY: test lint run validate-kb seed-kb seed-kb-dry-run search-evidence verify-phase2 verify-phase3 verify-phase4 verify-phase41 create-policy ingest-job analyze-job load-discovery-sources run-discovery list-candidates run-scheduled-discovery
+.PHONY: discovery-health recent-matches verify-phase42 test lint run validate-kb seed-kb seed-kb-dry-run search-evidence verify-phase2 verify-phase3 verify-phase4 verify-phase41 create-policy ingest-job analyze-job load-discovery-sources run-discovery list-candidates run-scheduled-discovery
 
 test:
 	pytest
@@ -56,3 +56,12 @@ verify-phase41:
 
 run-scheduled-discovery:
 	PYTHONPATH=src python scripts/run_scheduled_discovery.py
+
+verify-phase42:
+	PYTHONPATH=src python scripts/verify_phase4.py
+
+discovery-health:
+	PYTHONPATH=src python scripts/discovery_health.py
+
+recent-matches:
+	PYTHONPATH=src python scripts/recent_matches.py --hours 72 --minimum-score 80
