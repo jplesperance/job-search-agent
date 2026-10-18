@@ -73,7 +73,7 @@ class JsonHttpClient:
         last_error: Exception | None = None
         headers = {
             "Accept": "application/json",
-            "User-Agent": "job-agent-discovery/0.4 (+personal job-search automation)",
+            "User-Agent": "job-agent-discovery/0.4.6 (+personal job-search automation)",
         }
         for attempt in range(self.attempts):
             try:
@@ -323,12 +323,107 @@ class AshbyAdapter(DiscoveryAdapter):
         return results
 
 
+class SmartRecruitersAdapter(DiscoveryAdapter):
+    """Public SmartRecruiters Posting API. Fetch details only after title prefilter."""
+
+    provider = DiscoveryProvider.SMARTRECRUITERS
+    enrich_mandatory = True
+    PAGE_SIZE = 100
+    MAX_PAGES = 50
+
+    @staticmethod
+    def _location(info: dict) -> str | None:
+        parts = [str(info.get(key) or "").strip() for key in ("city", "region")]
+        return ", ".join(part for part in parts if part) or None
+
+    def fetch(self, source: DiscoverySourceSummary) -> list[DiscoveryPosting]:
+        identifier = quote(source.board_identifier.strip(), safe="")
+        base_url = f"https://api.smartrecruiters.com/v1/companies/{identifier}/postings"
+        results: list[DiscoveryPosting] = []
+        seen_ids: set[str] = set()
+        for page in range(self.MAX_PAGES):
+            offset = page * self.PAGE_SIZE
+            payload = self.http.get_json(f"{base_url}?limit={self.PAGE_SIZE}&offset={offset}")
+            if not isinstance(payload, dict) or not isinstance(payload.get("content"), list):
+                raise DiscoveryFetchError("SmartRecruiters returned an invalid postings payload")
+            jobs = payload["content"]
+            for job in jobs:
+                if not isinstance(job, dict):
+                    continue
+                job_id = str(job.get("id") or "").strip()
+                title = str(job.get("name") or "").strip()
+                if not job_id or not title or job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                location = job.get("location") if isinstance(job.get("location"), dict) else {}
+                results.append(
+                    DiscoveryPosting(
+                        provider=self.provider,
+                        external_id=job_id,
+                        company=source.company,
+                        title=title,
+                        location=self._location(location),
+                        work_arrangement="remote" if location.get("remote") is True else None,
+                        description_raw="Full job description will be retrieved after title filtering.",
+                        published_at=_parse_dt(job.get("releasedDate")),
+                    )
+                )
+            if "totalFound" not in payload:
+                raise DiscoveryFetchError("SmartRecruiters omitted totalFound; cannot verify full board")
+            try:
+                total = int(payload["totalFound"])
+            except (ValueError, TypeError) as exc:
+                raise DiscoveryFetchError("Invalid SmartRecruiters totalFound") from exc
+            if total < 0:
+                raise DiscoveryFetchError("Invalid SmartRecruiters totalFound")
+            if offset + len(jobs) >= total:
+                return results
+            if not jobs:
+                raise DiscoveryFetchError("SmartRecruiters pagination ended before totalFound")
+        raise DiscoveryFetchError("SmartRecruiters pagination exceeded configured maximum; no jobs closed")
+
+    def enrich(self, source: DiscoverySourceSummary, posting: DiscoveryPosting) -> DiscoveryPosting:
+        identifier = quote(source.board_identifier.strip(), safe="")
+        job_id = quote(posting.external_id, safe="")
+        url = f"https://api.smartrecruiters.com/v1/companies/{identifier}/postings/{job_id}"
+        payload = self.http.get_json(url)
+        if not isinstance(payload, dict):
+            raise DiscoveryFetchError(f"Missing SmartRecruiters details for {posting.external_id}")
+        sections = (payload.get("jobAd") or {}).get("sections") or {}
+        parts = []
+        if isinstance(sections, dict):
+            for key in ("jobDescription", "qualifications", "additionalInformation", "companyDescription"):
+                item = sections.get(key)
+                if isinstance(item, dict):
+                    content = html_to_text(item.get("text"))
+                    if content:
+                        parts.append(f"{item.get('title') or key}:\n{content}")
+        description = "\n\n".join(parts)
+        if len(description.strip()) < 30:
+            raise DiscoveryFetchError(f"SmartRecruiters details incomplete for {posting.external_id}")
+        loc = payload.get("location") if isinstance(payload.get("location"), dict) else {}
+        apply_url = payload.get("applyUrl")
+        job_url = payload.get("jobAdUrl") or apply_url
+        if job_url and not str(job_url).startswith(("https://", "http://")):
+            job_url = None
+        if apply_url and not str(apply_url).startswith(("https://", "http://")):
+            apply_url = None
+        return posting.model_copy(update={
+            "description_raw": description,
+            "source_url": job_url,
+            "apply_url": apply_url,
+            "location": self._location(loc) or posting.location,
+            "work_arrangement": "remote" if loc.get("remote") is True else posting.work_arrangement,
+        })
+
+
 class AdapterRegistry:
     def __init__(self, http: JsonHttpClient | None = None) -> None:
         self._adapters: dict[DiscoveryProvider, DiscoveryAdapter] = {
             DiscoveryProvider.GREENHOUSE: GreenhouseAdapter(http),
             DiscoveryProvider.LEVER: LeverAdapter(http),
             DiscoveryProvider.ASHBY: AshbyAdapter(http),
+            DiscoveryProvider.SMARTRECRUITERS: SmartRecruitersAdapter(http),
         }
 
     def get(self, provider: DiscoveryProvider) -> DiscoveryAdapter:

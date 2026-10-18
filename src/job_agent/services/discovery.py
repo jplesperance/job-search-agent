@@ -131,6 +131,10 @@ class DiscoveryService:
             adapter = self.adapters.get(source.provider)
             postings = adapter.fetch(source)
             counters["postings_retrieved"] = len(postings)
+            if not postings and source.last_checked_at is not None and not source.config.get("allow_empty_board"):
+                raise RuntimeError(
+                    "Unexpected empty board on an established source; preserving existing job status"
+                )
 
             for posting in postings:
                 if posting.external_id in seen_external_ids:
@@ -145,10 +149,15 @@ class DiscoveryService:
                 if callable(enrich):
                     try:
                         posting = enrich(source, posting)
-                    except Exception:
-                        # Enrichment is best-effort. The existing ingestion salary parser
-                        # still gets a chance to recover compensation from the raw JD.
-                        pass
+                    except Exception as exc:
+                        if getattr(adapter, "enrich_mandatory", False):
+                            errors.append(f"{posting.external_id}: mandatory detail fetch failed: {exc}")
+                            continue
+                        # Optional salary enrichment is best-effort.
+                # Recheck after enrichment; SmartRecruiters list entries do not have a JD,
+                # and coding-heavy exclusions require the full description.
+                if not prefilter.evaluate(posting.title, posting.description_raw).accepted:
+                    continue
 
                 source_key = f"{source.provider.value}:{source.board_identifier}"
                 try:

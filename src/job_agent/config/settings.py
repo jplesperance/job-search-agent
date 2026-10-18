@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     notification_provider: str = "disabled"
     notification_recipient: str | None = None
     notification_max_attempts: int = 3
+    discovery_health_alerts_enabled: bool = False
+    discovery_health_failure_threshold: int = 2
+    discovery_health_stale_hours: int = 12
     pushover_api_token: str | None = None
     pushover_user_key: str | None = None
     pushover_device: str | None = None

@@ -300,3 +300,25 @@ class ApplicationEventRow(Base):
     actor: Mapped[str] = mapped_column(String(120), nullable=False)
     detail: Mapped[dict] = mapped_column(JSONB, nullable=False, default=dict)
     occurred_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class DiscoverySourceHealthRow(Base):
+    """Failure/recovery incident state independent of job-level notifications."""
+
+    __tablename__ = "discovery_source_health"
+
+    source_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("discovery_sources.id", ondelete="CASCADE"), primary_key=True
+    )
+    consecutive_failures: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    last_status: Mapped[str] = mapped_column(String(30), nullable=False, default="unknown")
+    last_attempt_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_success_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_error: Mapped[str | None] = mapped_column(Text)
+    incident_open: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    incident_started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    failure_alert_sent: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    recovery_alert_pending: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    last_alert_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_alert_error: Mapped[str | None] = mapped_column(Text)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
