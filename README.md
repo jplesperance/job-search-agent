@@ -4,6 +4,8 @@
 
 Human-governed job-search system with a verified career evidence base, deterministic job matching, commute-aware compensation filters, and automated public-ATS job discovery.
 
+**Signing up for notifications** is easy, just text "START" to +18055900302
+
 ## Phase 4 capabilities
 
 - polls public Greenhouse, Lever, and Ashby job boards
