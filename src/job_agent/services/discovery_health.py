@@ -119,7 +119,7 @@ def source_health_report(session: Session, *, stale_hours: int = 12,
     threshold = current - timedelta(hours=max(1, stale_hours))
     data: list[dict] = []
     for source in session.execute(
-        select(DiscoverySourceRow).order_by(DiscoverySourceRow.company)
+        select(DiscoverySourceRow).where(DiscoverySourceRow.enabled.is_(True)).order_by(DiscoverySourceRow.company)
     ).scalars():
         row = session.get(DiscoverySourceHealthRow, source.id)
         last = row.last_attempt_at if row else source.last_checked_at
