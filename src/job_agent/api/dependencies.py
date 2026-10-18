@@ -96,3 +96,21 @@ def get_discovery_service(
         match_service=matcher,
         adapters=AdapterRegistry(),
     )
+
+
+def get_manual_job_intake_service(
+    session: Session = Depends(get_db_session),
+):
+    from job_agent.services.manual_job_intake import ManualJobIntakeService
+    career = SqlAlchemyCareerRepository(session)
+    evidence = SqlAlchemyEvidenceRepository(session)
+    jobs = SqlAlchemyJobRepository(session)
+    return ManualJobIntakeService(
+        session=session,
+        ingestion=JobIngestionService(job_repo=jobs, career_repo=career),
+        matcher=JobMatchService(
+            job_repo=jobs, policy_repo=SqlAlchemyPolicyRepository(session),
+            career_repo=career,
+            evidence_search=EvidenceSearchService(evidence_repo=evidence, career_repo=career),
+        ),
+    )

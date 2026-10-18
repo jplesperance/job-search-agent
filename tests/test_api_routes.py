@@ -41,6 +41,7 @@ def test_phase3_routes_are_registered():
     assert ("/api/v1/targeting-policies", "POST") in routes
     assert ("/api/v1/targeting-policies/activate", "POST") in routes
     assert ("/api/v1/jobs/ingest", "POST") in routes
+    assert ("/api/v1/jobs/manual-intake", "POST") in routes
     assert ("/api/v1/jobs", "GET") in routes
     assert ("/api/v1/jobs/{job_id}", "GET") in routes
     assert ("/api/v1/jobs/{job_id}/requirements", "GET") in routes

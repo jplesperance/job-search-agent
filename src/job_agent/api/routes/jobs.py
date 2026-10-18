@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from job_agent.api.dependencies import (
     get_job_ingestion_service,
+    get_manual_job_intake_service,
     get_job_match_service,
     get_job_repository,
 )
@@ -17,6 +18,9 @@ from job_agent.domain.jobs import (
     JobSummary,
     ParsedJobRequirement,
 )
+from job_agent.domain.manual_intake import ManualJobIntakeRequest, ManualJobIntakeResponse
+from job_agent.services.manual_job_fetch import ManualFetchError
+from job_agent.services.manual_job_intake import ManualJobIntakeService
 from job_agent.repositories.sqlalchemy import SqlAlchemyJobRepository
 from job_agent.services.job_matching import JobIngestionService, JobMatchService
 
@@ -115,3 +119,16 @@ def analyze_job(
         message = str(exc)
         status = 404 if message == "job not found" else 409
         raise HTTPException(status_code=status, detail=message) from exc
+
+
+@router.post("/manual-intake", response_model=ManualJobIntakeResponse)
+def manual_intake(
+    request: ManualJobIntakeRequest,
+    service: ManualJobIntakeService = Depends(get_manual_job_intake_service),
+) -> ManualJobIntakeResponse:
+    try:
+        return service.submit(request)
+    except ManualFetchError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except LookupError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc

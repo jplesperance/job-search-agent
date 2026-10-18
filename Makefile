@@ -65,3 +65,8 @@ discovery-health:
 
 recent-matches:
 	PYTHONPATH=src python scripts/recent_matches.py --hours 72 --minimum-score 80
+
+# Usage: make import-job-url URL='https://jobs.example.com/role/123'
+.PHONY: import-job-url
+import-job-url:
+	PYTHONPATH=src python scripts/import_job_url.py "$(URL)"
